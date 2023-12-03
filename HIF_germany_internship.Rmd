@@ -1,0 +1,623 @@
+---
+title: Compositional Data Analysis on Nova Scotia vegetation, and the driving influences for Barium compositions
+author: "Jasmine Ng, Lucjia Dujmovic, Solveig Pospeich, Raimon Tolosana Delgado, K. Gerald van den boogart"
+date: "28-07-2023"
+output: html_document
+---
+## Results {.tabset .tabset-fade}
+
+### Tidying the data
+
+Before I begin my analysis, I need to tidy the data so that it is usable and informative. 
+
+  1. Firstly, I loaded in packages and data. This data is from the Canadian Geochemical survey website(https://geochem.nrcan.gc.ca/cdogs/content/svy_dat/svy210254_e.dat.htm). Download the version under the red arrow,where results below the detection limit is denoted as -(detection limit). This spreadsheet (c54) details the types of vegetation present in central Nova Scotia, and its respective chemical composition.    
+  
+  **NOTE**: If GeochemUtils cannot be installed, check if the below packages are installed:"compositions","qdapRegex","ggrepel"
+
+```{r,echo = F, message = FALSE}
+library(readxl)
+library(magrittr)
+library(tidyverse)
+library(GeochemUtils)
+library(robCompositions)
+library(StatDA)
+library(egg)
+library(ggrepel)
+library(sf)
+library(compositions)
+library(data.table)
+library(ggplot2)
+library(dplyr)
+library(rgdal)
+library(igraph)
+library(compositions)
+library(stringr)
+
+
+source("/Users/Jasthecoolbean/Desktop/PCA_barium/Fct_ggplot-Extensions.R")
+source("/Users/Jasthecoolbean/Desktop/PCA_barium/Fct_Subfunctions.R")
+source("/Users/Jasthecoolbean/Desktop/PCA_barium/Fct_HelperFunction.R")
+
+c54 = read_xlsx("/Users/Jasthecoolbean/Desktop/PCA_barium/c54.xlsx")%>%data.table()
+
+```
+
+2. As the species and organ is currently combined into the same column, I would like to 
+make two new columns, each specifying only plant species and only plant organ.
+
+```{r,message = FALSE}
+c54[, Sample_Type_Name_en := as.factor(Sample_Type_Name_en)]
+c54[, plant_species := as.factor(str_remove(Sample_Type_Name_en, "[Tt]wigs"))]
+c54[, plant_organ := as.factor(str_extract(Sample_Type_Name_en, "[Tt]wig"))]
+```
+
+3. The columns of elements all end in 'INA'. These should be renamed without INA. Also, I would like to remove empty "Wt" column
+
+```{r,message = FALSE}
+setnames(c54, names(c54)[str_detect_elements(c54)], str_extract_elements(c54, nomatch = NULL))
+```
+
+4. Here I would like to unify all the units (ppm, ppb and %) to ppm. The corresponding units for each element are available in the link above. 
+
+NOTE: Sodium units are in ppm rather than %.    
+
+```{r,message = FALSE}
+
+#Make the unit an object listing the associated elements
+ppb = c("Au", "Ir")
+percent = c("Ca", "Fe", "K")
+
+```
+
+```{r, results = 'hide'}
+#find out which column name correspond to which index 
+cbind(names(c54)) 
+
+#Include the these units (ppb,%) in their column names
+setnames(c54, colnames(c54)[c(13,25)], paste0(ppb, "_ppb"))
+setnames(c54, colnames(c54)[c(16, 22, 26)], paste0(percent, "_%"))
+
+#Include ppm unit for all other column names
+setnames(c54, select.VarsElements(c54), paste0(select.VarsElements(c54), "_ppm"))
+
+#Remove the element names, leaving only the unit associated to the index
+my_conc_info = names(c54)[str_detect_elements(names(c54))] %>% str_remove_elements() %>% str_remove("_")
+
+#There is an extra "Wt" that is wrongfully selected as an element. We need to remove this from the object and from the dataset.
+my_conc_info=my_conc_info[-35]
+c54=c54[,-"Wt"]
+
+#Specify which units correspond to which element
+names(my_conc_info) = names(c54)[str_detect_elements(names(c54))]
+
+#Unify all units to ppm
+unify_conc(c54, vars = names(my_conc_info), target_conc = c("ppm"), conc_info=my_conc_info)
+```
+
+5. Now that I have unified all the values in ppm, I would like to discard the unit in the column name, and all NA values. c54_cl contains a cleaned data file.
+
+```{r,message = FALSE}
+
+names(c54) = stringr::str_remove(names(c54), "_pp[bm]$")
+names(c54) = stringr::str_remove(names(c54), "_%$")
+c54_cl = remove_NAs(c54, vars = names(c54)[str_detect_elements(c54)]) %>% data.frame()
+write.csv(c54_cl, "/Users/Jasthecoolbean/Desktop/PCA_barium/c54_cl.csv", row.names=FALSE)
+
+```
+
+### Geology
+
+Before we delve into analysis, it is nice to visualize what kind of geology we have beneath are sample points. Before running the code below, please carry out the following steps:   
+
+  1. Download the shapefile of Nova Scotia: https://novascotia.ca/natr/meb/download/dp043md.asp   
+  2. Download the shapefile of the vegetation sample area:
+  https://novascotia.ca/natr/meb/download/dp129md.asp   
+  3. Load both shapefiles (p00001gb.shp and c129gynl.shp) into qgis   
+  4. Vector > Geoprocessing tools > Clip > Input layer: Nova Scota, Overlay layer: Sample area    
+  5. Make the new layer permanent, and export as a shapefile.   
+  
+**NOTE**: On QGIS, you must click the three dots next to the file name to specify where you will store the layer/exporting file. It will show up as an error if not.
+  
+The new shapefile now contains the geological information for our vegetation sampling area. We now want to draw our vegetation sampling points on top of this geological map. See the rmd file for more guidance on how to clean and plot the data.
+
+```{r echo = F, results = 'hide'}
+
+#It is important for the sampling points data points and geological map to have the same crs, so that it is plotted on the same coordinate system. We will read the new shapefile, and specify the crs to be 4326.
+
+sema_litho = st_read("/Users/Jasthecoolbean/Desktop/PCA_barium/clipped_shapefile_2.shp",crs=26920, quiet = TRUE)%>%st_transform(crs=4326)
+
+#Here I will plot the different geologies using column Unit_Desc. As seen, the label names are too long.
+
+geoplot=ggplot(sema_litho, aes(fill = as.factor(UNIT_DESC))) + 
+ 	geom_sf()
+
+#In the geofactors object, we see that there are 17 different types of geologies. I will be renaming levels 2, 10, 11, 12, 14
+
+geofactors=sema_litho$UNIT_DESC=as.factor(sema_litho$UNIT_DESC)
+levels(geofactors) #There seem to be 17 types of geology
+
+levels(sema_litho$UNIT_DESC)[levels(sema_litho$UNIT_DESC)=="basalt, andesite, rhyolite, tuff (U-Pb concordant zircon age of 389+/-2 Ma(7))"] <- "basalt, andesite, rhyolite, tuff"
+levels(sema_litho$UNIT_DESC)[levels(sema_litho$UNIT_DESC)=="Orthogneiss: garnet-hornblende gneiss, quartzo-feldspathic augen gneiss (40Ar/39Ar total-gas ages on hornblende and mica of 377-371 Ma(38); Complex intruded Meguma Group)"] <- "orthogneiss"
+levels(sema_litho$UNIT_DESC)[levels(sema_litho$UNIT_DESC)=="Paragneiss: sillimanite-garnet+cordierite quartzo-feldspathic gneiss and schist"] <- "paragneiss"
+levels(sema_litho$UNIT_DESC)[levels(sema_litho$UNIT_DESC)=="sandstone turbidites and slate: continental rise prism (in places metamorphosed to schist and gneiss), >5600 m (U-Pb concordant zircon and detrital titanite ages near base and top of unit of 566+/-8 and 552+/-5 Ma(39) respectively)"] <- "sandstone turbidites and slate"
+levels(sema_litho$UNIT_DESC)[levels(sema_litho$UNIT_DESC)=="slope-outer shelf slate, siltstone, minor sandstone and Fe-Mn nodules (in places metamorphosed to schist), 500->4400 m (Tremadocian graptolites and acritarchs)"] <- "slate, siltstone"
+
+#I can now plot the vegetation sampling points on top of this map. Note I will need to read the cleaned data into an sf, so that it can be used as geographical vector data. I will use the same crs previously.
+
+c54_sf = st_as_sf(c54_cl, coords = c("Longitude_NAD83", "Latitude_NAD83"), crs = 4326)
+row_numbers = st_within(c54_sf,sema_litho)
+
+#The code below catches any empty values, and writes them as NA. This is to solve for 'Error in [[<-.data.frame(*tmp*, i, value = c(59L, 59L, 59L, 59L, 59L,  : replacement has 628 rows, data has 629'
+
+##aux is a function made to check the length of entry. If empty, length is 0
+aux = function(x) {length(x) == 0 }
+
+##for each list entry, a function is ran
+vector1=sapply(row_numbers, FUN = aux)
+
+##replace 0 length vector with na
+row_numbers[vector1]=NA
+row_numbers=row_numbers%>%unlist()
+
+#make a new column name called rock under c54_cl, which specifies the geologies
+rock_names = sema_litho[row_numbers,]$UNIT_DESC
+c54_sf$rock=rock_names
+info_from_map = sema_litho[row_numbers, "UNIT_DESC"]
+c54_sf= cbind(c54_sf, info_from_map)
+
+```
+  
+  The plot shows that it is mostly sandstone, turbites and slate (blue), with slate and siltstone running across east-west (purple).
+
+```{r,warning=FALSE,message=FALSE,echo=F}
+
+ggplot() + geom_sf(mapping = aes(fill = as.factor(UNIT_DESC)),data=sema_litho) + geom_sf(mapping = aes(),data=c54_sf$geometry,size=0.001) + labs(fill = "Geological units")
+
+```
+
+### PCA biplot {.tabset .tabset-fade}
+
+I will try both method 1 and method 2 for generating biplots.
+
+#### Method 1 {.tabset .tabset-fade}
+
+##### Plot 1A
+
+The first method uses ggplots to make a biplots. Plot 1A will show all elements (except for REE) on the biplot. The spread is mostly affected by the negative BDL values (Plot 1B will improve on this).
+
+```{r,warning=FALSE,echo=F,message=FALSE}
+
+c54_cl = c54_cl %>% as.data.table()
+
+par(mfrow = c(1,2))
+ggplot.biplot(c54_cl, vars = setdiff(select.VarsElements(c54_cl), c(select.VarsREE(c54_cl))),
+							color = "plant_species",
+							shape = "plant_organ",
+							Arrow = F, TextRepel = T) +
+	ggtitle("Survey 210254, cleaned data, all elements w/o REE")
+	
+```
+
+##### Plot 1B
+
+All elements have been 'imputed BDL' here. This means, the negative number showing BDL are transformed, so they are now very small values that will vary randomly (This is done so we do not falsely assign meaning to these uniform negative numbers). Eu is excluded.    
+
+**NOTE**: when using impute_BDL, download a datafile, that IF there is a number below detection limit, that it marks as -(detection limit). 
+
+```{r echo = F, results = 'hide'}
+
+c54_cl=c54_cl%>%data.table()
+c54_imputed=impute_BDL(c54_cl) 
+
+```
+
+```{r,echo=F}
+
+ggplot.biplot(c54_imputed, vars = setdiff(select.VarsElements(c54_imputed), "Eu"),
+												color = "plant_species",
+												shape = "plant_organ",
+												Arrow = F, TextRepel = T) +
+	ggtitle("Survey 210254, all elements imputed BDLs")
+
+ggplot.biplot
+
+```
+	
+##### Plot 1C
+
+Some elemental concentrations are so low, that it is lower than the limit of detection. This is tested out through  hist + ecdf + QQ-plot loop. As I would only like to look at the elements without a detection limit problem, I will select the following elements: "Ba", "Br", "Ca", "Cr", "Fe", "La", "Na", "Rb", "Sc", "Zn".
+
+```{r,message = FALSE,echo=F}
+
+ggplot.biplot(c54_imputed, vars = select.VarsElements(c54_cl)[c(3:5, 8, 11, 15, 18, 21, 23, 33)],
+											 color = "plant_species",
+											 shape = "plant_organ",
+											 Arrow = F, TextRepel = T) +
+	ggtitle("Survey 210254, cleaned data, selected elements")
+```
+	
+#### Method 2
+
+The second method is from http://file.statistik.tuwien.ac.at/StatDA/R-scripts/page195.html. It produces the same biplot as Plot 1C.
+
+```{r,warning=FALSE,message=FALSE,echo=F}
+
+c54_sel=c54_imputed%>%select(Ba, Br, Ca, Cr, Fe, La, Na, Rb, Sc, Zn, Latitude_NAD83, Longitude_NAD83)
+
+write.csv(c54_sel,"/Users/Jasthecoolbean/Desktop/PCA_barium/c54_sel.csv")
+
+# Closure problem with log-centring transformation
+c54_sel_no_gps=c54_sel[,-c(11,12)]
+xgeom=10^apply(log10(c54_sel_no_gps),1,mean)
+x2=c54_sel_no_gps/xgeom
+x2.obj=log10(x2)
+res2=princomp(x2.obj,cor=TRUE)
+
+#This will generate a biplot for PC1 and PC2. 
+biplot(res2,xlab="PC1 (clr-transformed)",ylab="PC2 (clr-transformed)",col=c(gray(0.6),1),xlabs=rep("+",nrow(c54_sel)),cex=0.8, choices=c(1,2))
+par(mar=c(1.5,1.5,1.5,1.5))
+```
+
+We've seen now that Ba and Na are strongly influenced by PC2.  
+
+### Mapping PCA
+
+Mapping the PCA scores will give us an idea how elemental compositions may vary with the local geography. We see that generally, there is a higher PC2 score inland, and a lower PC2 score towards the coast.
+
+```{r,echo=F,warning=FALSE,message=FALSE}
+
+X=c54_cl$Longitude_NAD83
+Y=c54_cl$Latitude_NAD83
+
+# Taking the scores of principal component 2
+el=res2$sco[,2]
+
+# Generate plot with background
+plot(X,Y,frame.plot=FALSE,xaxt="n",yaxt="n",xlab="",ylab="",type="n")
+
+# Plotting the data
+
+SymbLegend(X,Y,el,type="percentile",qutiles<-c(0,0.05,0.25,0.75,0.95,1),symbtype="EDA",symbmagn=0.8,
+           leg.position="topright",leg.title="PC2 scores",leg.title.cex=0.72,leg.round=1,leg.wid=3,leg.just="right")
+```
+
+### Mapping Barium concentrations 
+
+Whilst it makes sense for Na uptake into plants to be higher near the coast, it is odd that there is pattern in Barium uptake by plants. This may be due to a number of conditions, such as redox processes, geology, pH and more. 
+Below we will plot Barium's concentration on a map.   
+
+
+```{r,echo=F,warning=FALSE,message=FALSE}
+
+Ba=c54_sel$Ba
+
+plot(X,Y,frame.plot=FALSE,xaxt="n",yaxt="n",xlab="",ylab="",type="n")
+SymbLegend(X,Y, Ba,symbtype="EDA",symbmagn=0.8, 
+           leg.position="topright",leg.title="Ba (ppm)",leg.title.cex=0.72,leg.round=1,leg.wid=3,leg.just="right")
+           
+```
+  
+**PERSONAL NOTE**: This is just a visual representation that *maybe* there is a correlation of barium with the local geography. We cannot simply infer there is more barium uptake inland from plotting barium concentrations alone. This is because all elements are dependent on each other. Say, if each tree can only take up x amount of nutrients every day, uptaking more sodium due to seaspray effects will lead to less barium being taken up comparatively. Hence, we need to look at ratios between elements to reduce this spurious effect, as ratios do not change as much as concentration values.
+
+So in the next tab, lets explore using ratios of Barium, to see whether this pattern is significantly influenced by **a) Distance b) Elevation or c) Slope**.
+
+### Covariables of Barium change {.tabset .tabset-fade}
+
+#### Distance from coast
+
+Firstly, we need to find the distance of each sampling point is from the coastline. Then we can plot a linear model showing barium ratios against distance.    
+
+You will need to import both the sampling area shapefile (sema_litho), and sampling points (c54_impute) into qgis under the same CRS. 
+
+**NOTE**: If under properties it says that it is in the same crs, but it does not appear on the same space, try the following:For csv/excel files, Vector> Data management tool> Reproject layer> Change to desired csv. For DEM and other rasters, Raster> Projections> Warp(reproject)> Change to desired csv. If this still doesn't work, consider using st_transform in R before importing the file into qgis.
+
+When both layers are in QGIS, follow the steps below to get the distance of each point to the coast:
+
+1. New Shapefile Layer (third icon on the left) > Geometry Type: Polygon > Toggle Editting > Add Line feature    
+    Draw a line as accurately as you can around the coastline
+2. Processing toolbox > Vector Analysis > Distance to nearest hub (points) > distance.    
+    Put in Destination layer as the line, and Source point layer as your data points
+3. Exported the data table as an excel file and read that in R (I have read it as cd)
+
+Here is a linear model for Barium concentration and distance:
+
+```{r,echo=F,warning=FALSE}
+
+bd=read_xlsx("/Users/Jasthecoolbean/Desktop/PCA_barium/check_dis.xlsx")
+bd=bd[-146,-c(1,2,15)] #Removing Barium outlier, numbering columns
+colnames(bd)[colnames(bd) == "HubDist"] = "distance"
+
+plot(distance~Ba,data=bd,xlab="Distance (m)", ylab="Barium concentration (ppm)")
+
+```
+
+As mentioned before, we cannot *just* look at barium concentrations. Rather, we need to look at ratios. Let's take into 2 considerations: One, we should remove Na from the data set to reduce the influence of seaspray on the composition. Two, We need Ba to be in ratio with an element that is present in rock, but not present in sea spray. Elements that would be good include Zn, Ca, Fe etc...we will use all the elements in c54_sel.
+
+If we log this Barium ratio, say log(Zn/Ba), log(Ca/Ba) etc..., then this can break down into log(Zn) - log(Ba), log(Ca) - log(Ba) etc... This can help help us reduce dimensionality, and calculate the distances between elements in this isometric space, which can then tell us: do certain elements cluster together? If so, does distance play a role driving this cluster?
+
+Coefficients and p-values for each elemental ratio:
+```{r,echo=F}
+alr_Ba=alr(bd[,c(1:6,8:10)],ivar="Ba")
+dmod = lm(alr_Ba ~ distance,data=bd)
+summary(dmod)
+```
+
+Anova:
+```{r,echo=F}
+anova(dmod)
+```
+
+Only log(Br/Ba) changes significantly with distance (p<0.001). It decreases with increasing distance.
+
+```{r,echo=F,message=FALSE}
+
+ggplot(bd,aes(y=log(Br/Ba),x=distance)) + geom_point() + geom_smooth(method="lm") +labs(x= "Distance from coast (m)")
+
+```
+
+#### Elevation
+
+I have included some code hear needed to change the crs of the shapefiles. These are the steps of what I have done:   
+
+1. Download three map quadrants relevant to nova scotia from Canadian data (use the index file to find out which quadrants are useful) https://open.canada.ca/data/en/dataset/7f245e4d-76c2-4caa-951a-45d1d2051333, https://ftp.maps.canada.ca/pub/nrcan_rncan/elevation/cdem_mnec/doc/CDEM_product_specs.pdf   
+2. Raster>merge in qgis   
+3. import sample area (in the correct crs, crs = 4617)    
+4. Raster>Clip Raster to mask (so only the topography of the sample area is shown)    
+5. Layer properties of newly clipped+merged file>symbols>change it to a continuous color, click classify, and specify the number of classes   
+6. Print layout>Add map>Add legend
+
+Keep in mind, that these elevation values are relative. The real values will be extracted in the next step when plotting linear models.
+
+```{r, echo=F,out.width = '100%'}
+knitr::include_graphics("/Users/Jasthecoolbean/Desktop/PCA_barium/Elevation_Nova_Scotia.png")
+```
+
+To extract the real values, install a plugin in qgis called point sampling tool to obtain attributes from the raster (DEM) for the sample points specified. You will need to add in the sampling points layer (c54_cl) and map DEM. I have saved the extracted elevation points as an excel sheet, which I named ele.
+
+**NOTE**: It will make life much simpler if you select all columns of elements, coordinates, and map data in the input. This will minimize data cleaning later.
+
+Coefficients and p-values for each elemental ratio:
+```{r,echo=F}
+
+ele=read_xlsx("/Users/Jasthecoolbean/Desktop/PCA_barium/check_ele.xlsx")
+
+#cleaning data
+ele=ele[-146,-1]
+colnames(ele)[colnames(ele) == "merged_map"] = "elevation"
+
+#Check that the elevation data is correct using this URL from the canadian gov
+#under "Canadian Digital Elevation Model, 1945-2011">"Elevation API">
+#https://geogratis.gc.ca/services/elevation/cdem/altitude?lat=45.37165&lon=-61.73272 
+#Change the numbers under lat, long so the elevation is obtained. See if it matches the elevation in elevation_d (it does!)
+
+emod=lm(alr_Ba ~ elevation,data=ele)
+summary(emod)
+
+```
+
+Anova:
+```{r,echo=F}
+anova(emod)
+
+```
+
+Br, Ca and Cr ratio decreases significantly with elevation (p<0.001)
+
+#### Slope
+
+1. Import the merged map and data points.    
+
+**NOTE**: CRS must be in UTM when calculating slope. This is because our elevation data is in meters, so crs has to use the same metric system. 
+
+2. Calculate the slope of the DEM using Raster terrain analysis > Slope. Do this for the merged map layer. Keep the terrain as Z-factor as 1.   
+
+3. Extract slopes at the sampling points using Point sampling tool. Save it as a csv file and load it into R. 
+
+```{r,echo=F}
+
+slo=read.csv("/Users/Jasthecoolbean/Desktop/PCA_barium/check_slope.csv")
+slo=slo[-146,-1]
+colnames(slo)[colnames(slo)=="slope_layer"]="slope"
+```
+
+Coefficients and p-values for each elemental ratio:
+```{r,echo=F}
+
+slomod = lm(alr_Ba ~ slope,data=slo)
+summary(slomod)
+
+```
+
+Anova:
+```{r,echo=F}
+
+anova(slomod)
+
+```
+
+Only Ca changes with slope (p<0.001)
+
+### Interactions between co-variables
+
+After seeing how these different co-variables affect the subcompositions, we can study an interaction model of this system. We can look at things like: do the covariables slope and elevation interact? Is the effect of slope on the composition, just a proxy for elevation? 
+
+Firstly, we test the co-variables individually in the model. 
+
+  Distance and barium ratios show a significant correlation (p<0.001).
+
+```{r,echo=F}
+anova(lm(alr_Ba ~ bd$distance))
+```
+  Slope and barium ratios show a significant correlation (p<0.001).
+
+```{r,echo=F}
+anova(lm(alr_Ba ~ slo$slope))
+```
+  Elevation and barium ratios show a significant correlation (p<0.001).
+
+```{r,echo=F}
+anova(lm(alr_Ba ~ ele$elevation))
+```
+Then, we test the individual co-variables together in the model.
+
+  If I pass the data onto distance first, then elevation, ANOVA says that both variables can explain the variance of the Barium ratios. 
+  
+```{r,echo=F}
+anova(lm(alr_Ba ~ bd$distance+ele$elevation))
+```
+
+  However, if I switch up the order of variables, we see that elevation and barium ratios show a significant correlation (p<0.001). Elevation and barium ratios **do not** show a significant correlation (p<0.001).   
+  
+  This implies, that **most of the variance is explained by elevation**. When the remaining variance is passed down onto distance, this co-variable is unable to strongly explain the rest of the data set. Thus distance could be a proxy for elevation. 
+  
+```{r,echo=F}
+anova(lm(alr_Ba ~ ele$elevation+bd$distance))
+```
+  Elevation and barium ratios show a significant correlation (p<0.001). Slope and barium ratios show a significant correlation (p<0.001).
+  
+```{r,echo=F}
+anova(lm(alr_Ba ~ ele$elevation+slo$slope))
+```
+  I obtained the same results even after switching the order around, as seen below. This means that slope can explain some of the variance in our data, but elevation remains the main variable.
+  
+```{r,echo=F}
+anova(lm(alr_Ba ~ slo$slope+ele$elevation))
+```
+
+  Now that I know distance may be a proxy variable, I will only include elevation and slope in my final model. The model should look a little like this at the moment: 
+  
+```{r, echo=FALSE,out.width = '50%'}
+knitr::include_graphics("/Users/Jasthecoolbean/Desktop/PCA_barium/single_elements.png")
+```
+
+Let's test the interaction between elevation and slope on the barium ratios.
+
+  There seems to be a significant interaction between elevation and slope affecting barium ratios (p<0.001).
+
+```{r,echo=F}
+anova(lm(alr_Ba ~ ele$elevation:slo$slope))
+```
+Although I cannot directly infer causality from this interaction, it makes much more sense (in a geochemical way) that elevation influences slope, which influences the barium ratios. So (maybe) the model could look like this:
+
+```{r, echo=F, out.width = '50%'}
+
+knitr::include_graphics("/Users/Jasthecoolbean/Desktop/PCA_barium/interactions.png")
+
+```
+
+  However, when I combine this interaction with elevation and slope as individual variables, it becomes insignificant.    
+  
+```{r,echo=F}
+anova(lm(alr_Ba ~ ele$elevation*slo$slope))
+```
+  We may say here, that the individual components of elevation and slope is much more important in explaining the variation. So, the first diagram more accurately paints the picture. As we are dealing with a lot of elemental ratios, it could be that most variation of the elemental ratios are explained by elevation. Whilst few are explained by slope.
+
+We will run Solveig's Property test to explore this hypothesis:    
+
+```{r,message=F,echo=F,results='hide',fig.show='hide'}
+
+mydata=data.table(c54_sel[-146],bd$distance,slo$slope,ele$elevation)
+
+colnames(mydata)[13] ="Distance"
+colnames(mydata)[14] ="Slope"
+colnames(mydata)[15] ="Elevation"
+
+for(pr in c("Distance","Slope","Elevation")) {
+    aux = property_test(data.table(mydata),property=pr,vars=select.VarsElements(mydata))
+    assign(paste0("res_", pr), aux) # assigns to the object "res_xxx" the result-list from property test
+}
+
+```
+
+```{r,message=F,echo=F,results='hide'}
+
+par(mar=c(1,1,1,1))
+p_values_all_d = res_Distance$logratio_pvalue
+
+```
+
+**PERSONAL NOTE**: Say if Br is pointing to Zn in the distance plot, this means, that with increasing distance, there is a smaller Br/Zn ratio. 
+
+**Distance**: Looking at the bigger picture, we see that Br and Na (relative to most elements) are decreasing with increasing distance. This can be mostly explained by seaspray.
+
+```{r,message=F,echo=F}
+p_values_all_d[, c("Element1", "Element2") := data.frame(str_split(lr, pattern = "[.]", simplify = T))]
+p_values_all_d[slope <0, c("slope", "Element1", "Element2") := list(abs(slope), Element2, Element1)]
+
+trsf =  p_values_all_d[p_value < 0.005]
+trsf = trsf[!is.na(Element1)]
+
+g = graph.data.frame(dplyr::select(trsf, Element2, Element1), directed = T)
+myw = strength(g, weights = 1/trsf$p_value)
+
+V(g)$size = log10(myw)
+myd = degree(g)
+V(g)$degree = myd
+E(g)$p_value = trsf$p_value
+E(g)$slope = trsf$slope
+
+plot(g)
+```
+
+**Elevation**: Many arrows are pointing from sodium, so we can say that Na/x is highly influenced (decreasing) by elevation. Same goes to Bromine. The pattern seen for elevation is similar to what was seen for distance. This allows us to visualise how distance may be a proxy for elevation.
+
+Other elemental ratios like Ba/x and La/x is increasing with elevation. Elevation may play such role, because stronger precipitation over elevated regions may alter the chemical composition drastically.
+
+```{r,message=F,echo=F,results='hide'}
+
+par(mar=c(1,1,1,1))
+p_values_all_e = res_Elevation$logratio_pvalue
+
+```
+
+```{r,message=F,echo=F}
+p_values_all_e[, c("Element1", "Element2") := data.frame(str_split(lr, pattern = "[.]", simplify = T))]
+p_values_all_e[slope <0, c("slope", "Element1", "Element2") := list(abs(slope), Element2, Element1)]
+
+trsf =  p_values_all_e[p_value < 0.005]
+trsf = trsf[!is.na(Element1)]
+
+g = graph.data.frame(dplyr::select(trsf, Element2, Element1), directed = T)
+myw = strength(g, weights = 1/trsf$p_value)
+
+V(g)$size = log10(myw)
+myd = degree(g)
+V(g)$degree = myd
+E(g)$p_value = trsf$p_value
+E(g)$slope = trsf$slope
+
+plot(g)
+```
+
+**Slope**: With increasing slope, there is a smaller Ca/Ba ratio only. This supports what we found previously, such that slope only explains a limited number of elemental ratios, whilst elevation is the main co-variable.    
+
+Steeper slopes are often associated to better drainage. This can promote oxic conditions in the soil. Hence, perhaps more oxic conditions can lead to more barium mobility and uptake into the plant.
+
+```{r,message=F,echo=F,results='hide'}
+
+par(mar=c(1,1,1,1))
+p_values_all_s = res_Slope$logratio_pvalue
+
+```
+
+```{r,message=F,echo=F}
+p_values_all_s[, c("Element1", "Element2") := data.frame(str_split(lr, pattern = "[.]", simplify = T))]
+p_values_all_s[slope <0, c("slope", "Element1", "Element2") := list(abs(slope), Element2, Element1)]
+
+trsf =  p_values_all_s[p_value < 0.005]
+trsf = trsf[!is.na(Element1)]
+
+g = graph.data.frame(dplyr::select(trsf, Element2, Element1), directed = T)
+myw = strength(g, weights = 1/trsf$p_value)
+
+V(g)$size = log10(myw)
+myd = degree(g)
+V(g)$degree = myd
+E(g)$p_value = trsf$p_value
+E(g)$slope = trsf$slope
+
+plot(g)
+
+```
+
+Next steps: It would be interesting to study the subcompositions that are not greatly influenced within the composition. For example in elevation, Ca, Cr and Zn mostly are not strongly influenced by other elements, as they don't have a strong arrow preference. These are the elements won't change as much respective to other elemental uptake. Hence, they will give us a better picture of how the *variables* affect the elements.
