@@ -1,0 +1,35 @@
+# Plotting how the N/C ratio changes between the outerbasin, deep inner basin, and shallow inner basin
+
+%matplotlib inline
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+sab= np.loadtxt("shallow_airds_bay.csv",
+                 delimiter=",")
+
+di= np.loadtxt("deep_inner.csv",
+                 delimiter=",")
+
+si= np.loadtxt("shallow_inner.csv",
+                 delimiter=",")
+
+sab_di_si=[sab,di,si]
+bp2=plt.boxplot(sab_di_si)
+plt.setp(bp2['medians'], color='black')
+plt.xticks([1,2,3],['Outer basin','Deep inner basin','Shallow inner basin'])
+plt.ylabel("N/C ratio")
+
+plt.savefig('N_C.jpeg')
+
+# Run a T-test
+
+import scipy.stats as stats
+b=stats.ttest_ind(sab,di)
+print("C/N ratio between shallow airds bay and deep inner:",b)
+c=stats.ttest_ind(di,si)
+print("C/N ratio between deep inner and shallow inner:",c)
+
+# Because there is a difference between basins, but no difference within a basin
+# It is likely that the difference in N/C ratio is dictated by the sediment deposition
+# and controlled by the lack of sediment exchange across the sill
