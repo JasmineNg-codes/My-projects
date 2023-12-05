@@ -1,4 +1,4 @@
-# Jasmine Ng's programming projects
+# Jasmine Ng's Programming Projects
 
 This repository contains code used for Jasmine's dissertation, summer internship, and classwork. 
 Below is a brief description of each project and the corresponding file name:
@@ -21,7 +21,6 @@ Below is a brief description of each project and the corresponding file name:
 ## Analyzing driver for bottom water hypoxia in Loch Etive
 
 **Full Python Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Year_3_Environmental_Geoscience_LochEtive_Project.ipynb).
-**Full paper available in**:
 
 **Research question**: In my third year, my individual project in Practical geochemistry and data analysis addressed -
   1) Are Mn/Al and FeHR/FeT reliable indicators for sediment redox?
