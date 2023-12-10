@@ -8,7 +8,7 @@ Below is a brief description of each project and the corresponding files:
 **Results available in webpage format** [here](https://jasmineng-codes.github.io/barium_compositional_pca/).
 **Full R Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/HIF_germany_internship_Rcode.Rmd).
 
-**Objective**: The overarching goal of the project is to explore how trace elements in vegetation may serve as indicators for mineral ores. 
+**Objective**: To explore how trace elements in vegetation may serve as indicators for mineral ores. 
 
 **Research question**: As a summer intern at HIF, I tidied the sample data from the Canadian Geological Survey database and addressed three main questions-
   1) From a compositional PCA biplot of vegetation trace elements, what elements are behaving differently from the rest?
