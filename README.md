@@ -1,7 +1,7 @@
 # Jasmine Ng's Programming Projects
 
 This repository contains code used for Jasmine's dissertation, summer internship, and classwork. 
-Below is a brief description of each project and the corresponding file name:
+Below is a brief description of each project and the corresponding files:
 
 ## Using CoDa-PCA and linear models to understand Barium compositions 
 
