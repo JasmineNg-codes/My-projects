@@ -469,48 +469,111 @@ urban_rural_plot<-ggplot.biplot(subset_cl_allsoil, vars = setdiff(select.VarsEle
   ggtitle("cleaned top soil between 2001-2002")
   
 urban_rural_plot
-  
-# Urban biplot
-selected_type<-"Urban"
-urban_subset<- subset_cl_allsoil[subset_cl_allsoil$Type %in% selected_type, ]
 
-par(mfrow = c(1,2))
-urban_plot<-ggplot.biplot(urban_subset, vars = setdiff(select.VarsElements(urban_subset), c(select.VarsREE(urban_subset))),
-              color = "Type",
-              shape = "landuse",
-              Arrow = F, TextRepel = T, arrow.len = 0.04,arrowhead.size = 0.01)
-ggtitle("cleaned top soil between 2001-2002 in URBAN")
+#selected elements
 
-urban_plot
-  
-#Rural biplot 
-selected_type<-"Rural"
-rural_subset<- subset_cl_allsoil[subset_cl_allsoil$Type %in% selected_type, ]
+terms<-c("As", "Cr", "Ni", "Pb", "Zn", "Cu", "Se", "Co", "V", "Type", "landuse","X_COORD","Y_COORD")
+ele<-c("As", "Cr", "Ni", "Pb", "Zn", "Cu", "Se", "Co", "V")
+elements<-subset_cl_allsoil[,ele]
+sel_ele <- subset_cl_allsoil[,terms]
 
-par(mfrow = c(1,2))
-rural_plot<-ggplot.biplot(rural_subset, vars = setdiff(select.VarsElements(rural_subset), c(select.VarsREE(rural_subset))),
-              color = "Type",
-              shape = "landuse",
-              Arrow = F, TextRepel = T, arrow.len = 0.1,arrowhead.size = 0.01)
-ggtitle("cleaned top soil between 2001-2002 in RURAL")
+#Linear model
 
-rural_plot
+ilrtrans<-ilr(elements)
 
-#selected elements 
+#alr always have pairwise ratio
+#ilr 
+linmod<-lm(ilrtrans~Type,data=sel_ele)
+anova(linmod)
 
-elements<-c("As", "Cr", "Ni", "V", "Pb", "Zn", "Cu", "Se", "Co", "V", "Type", "landuse")
-sel_ele <- subset_cl_allsoil[,elements]
+linmod|> coefficients() |> ilr2clr(x=elements)
+
+
+ilrBase(x=elements)
+
 
 par(mfrow = c(1,2))
 sel_ele_biplot<-ggplot.biplot(sel_ele, vars = setdiff(select.VarsElements(sel_ele), c(select.VarsREE(sel_ele))),
-                           color = "Type",
-                           shape = "landuse",
-                           Arrow = F, TextRepel = T)
-ggtitle("cleaned top soil selected elements between 2001-2002")
-
-#Biplot
+                                color = "Type",
+                                shape = "landuse",
+                                Arrow = F, TextRepel = T, arrow.len = 0.04,arrowhead.size = 0.01) 
 
 sel_ele_biplot
+
+clr(elements) |> princomp() |> loadings()
+clr(elements) |> princomp() |> screeplot()
+
+
+
+
+#Essentially, the larger the distance, the smaller the correlation
+
+par(mfrow = c(1, 1), mar = c(5, 5, 2, 2))
+lr<-sel_ele[,..ele]
+
+geom_mean_Pb<-exp(mean(log(lr$Pb)))
+geom_mean_Cu<-exp(mean(log(lr$Cr)))
+geom_mean_Cr<-exp(mean(log(lr$Cr)))
+
+x=plot(log((lr$Pb) / geom_mean_Pb) ~ log((lr$Cu / geom_mean_Cu)), cex = 0.1)
+cor((lr$Pb / geom_mean_Pb),log(lr$Cu / geom_mean_Cu),method = "spearman")
+plot(log((lr$Pb) / geom_mean_Pb) ~ log((lr$Cr / geom_mean_Cr)), cex = 0.1)
+cor((lr$Pb / geom_mean_Pb),log(lr$Cr / geom_mean_Cr),method = "spearman")
+
+#Biplot with Cu, Zn and Pb anomalies + filtering into a csv
+sel_ele_biplot+geom_vline(xintercept = 0.03, linetype = "dashed", color = "black")
+ZnCuPb_anom <- sel_ele_biplot$data[sel_ele_biplot$data$Type == "Urban", ]
+ZnCuPb_anom<- ZnCuPb_anom[ZnCuPb_anom$Comp.1 > 0.03, c("X_COORD", "Y_COORD")]%>%as.data.table
+write.csv(ZnCuPb_anom, file = "ZnCuPb.csv", row.names = FALSE)
+
+#selecting data points for comparison in bar plot + filtering into a csv
+
+ZnCuPb_normal <- sel_ele_biplot$data[sel_ele_biplot$data$Type == "Urban", ]
+ZnCuPb_normal<- ZnCuPb_normal[ZnCuPb_normal$Comp.1 < 0.03, c("X_COORD", "Y_COORD")]%>%as.data.table
+set.seed(123)  # Setting a seed for reproducibility
+# Randomly select 171 points
+ZnCuPb_normal <- ZnCuPb_normal[sample(.N, 165), ]
+write.csv(ZnCuPb_normal, file = "ZnCuPb_normal.csv", row.names = FALSE)
+
+
+#Investigate the outliers in sel_ele_biplot -> what are they?
+
+#Filtering four anomalous points, 1, 2, 3, 4, counting from top
+#sel_ele_biplot+geom_vline(xintercept = 0.05, linetype = "dashed", color = "black")+geom_hline(yintercept = -0.05, linetype = "dashed", color = "black")
+pt_1_anom <- sel_ele_biplot$data[sel_ele_biplot$data$Comp.1 > 0.06 & sel_ele_biplot$data$Comp.2 > 0.05, c("X_COORD", "Y_COORD")]%>%as.data.table
+pt_2_anom <- sel_ele_biplot$data[sel_ele_biplot$data$Comp.1 > 0.082 & sel_ele_biplot$data$Comp.2 > 0.04, c("X_COORD", "Y_COORD")]%>%as.data.table
+pt_3_anom <- sel_ele_biplot$data[sel_ele_biplot$data$Comp.1 > 0.082 & sel_ele_biplot$data$Comp.2 < 0.04, c("X_COORD", "Y_COORD")]%>%as.data.table
+pt_4_anom <- sel_ele_biplot$data[sel_ele_biplot$data$Comp.1 > 0.05 & sel_ele_biplot$data$Comp.2 < -0.05, c("X_COORD", "Y_COORD")]%>%as.data.table
+
+library(data.table)
+anomalous_points <- rbindlist(list(pt_1_anom, pt_2_anom, pt_3_anom, pt_4_anom))
+print(anomalous_points)
+
+# Urban biplot
+selected_type_u<-"Urban"
+urban_subset<- sel_ele[sel_ele$Type %in% selected_type_u,]
+
+par(mfrow = c(1,2))
+urban_plot<-ggplot.biplot(urban_subset, vars = setdiff(select.VarsElements(urban_subset), c(select.VarsREE(urban_subset))),
+                          color="Type",
+                          shape = "landuse",
+                          Arrow = F, TextRepel = T, arrow.len = 0.04,arrowhead.size = 0.01)
+ggtitle("cleaned top soil between 2001-2002 in URBAN")
+
+urban_plot
+
+#Rural biplot 
+selected_type_r<-"Rural"
+rural_subset<- sel_ele[sel_ele$Type %in% selected_type_r, ]
+
+par(mfrow = c(1,2))
+rural_plot<-ggplot.biplot(rural_subset, vars = setdiff(select.VarsElements(rural_subset), c(select.VarsREE(rural_subset))),
+                          color = "Type",
+                          shape = "landuse",
+                          Arrow = F, TextRepel = T, arrow.len = 0.1,arrowhead.size = 0.01)
+ggtitle("cleaned top soil between 2001-2002 in RURAL")
+
+rural_plot
 
 #Heat map for sel_ele
 
@@ -535,20 +598,139 @@ sel_ele[, select.VarsElements(sel_ele), with = F] %>% acomp %>% variation %>% he
 
 #### Next steps:
 
+#In agriculture, what does the biplot look like? [NULL]
+
+selected_landuse_agri<-"agricultural"
+agri_subset<- sel_ele[sel_ele$landuse %in% selected_landuse_agri,]
+
+par(mfrow = c(1,2))
+agri_plot<-ggplot.biplot(agri_subset, vars = setdiff(select.VarsElements(agri_subset), c(select.VarsREE(agri_subset))),
+                          color = "Type",
+                          Arrow = F, TextRepel = T, arrow.len = 0.04,arrowhead.size = 0.01)
+ggtitle("cleaned top soil between 2001-2002 in URBAN")
+
+agri_plot
+
+#how about in industrial? [NULL]
+
+selected_landuse_indus<-"industrial"
+indus_subset<- sel_ele[sel_ele$landuse %in% selected_landuse_indus,]
+
+par(mfrow = c(1,2))
+indus_plot<-ggplot.biplot(indus_subset, vars = setdiff(select.VarsElements(indus_subset), c(select.VarsREE(indus_subset))),
+                         color = "Type",
+                         Arrow = F, TextRepel = T, arrow.len = 0.04,arrowhead.size = 0.01)
+ggtitle("cleaned top soil between 2001-2002 in URBAN")
+
+indus_plot
+
+#What about between landuses? [NULL]
+
+elements<-c("As", "Cr", "Ni", "Pb", "Zn", "Cu", "Se", "Co", "V", "Type", "landuse","X_COORD","Y_COORD")
+sel_ele <- subset_cl_allsoil[,elements]
+
+par(mfrow = c(1,2))
+landuse_biplot<-ggplot.biplot(sel_ele, vars = setdiff(select.VarsElements(sel_ele), c(select.VarsREE(sel_ele))),
+                              color = "landuse",
+                              Arrow = F, TextRepel = T, arrow.len = 0.04,arrowhead.size = 0.01,size=0.4) 
+
+landuse_biplot
+
 # The different spread of data between rural and urban is mostly due to 
   #anthropogenic influences, such that perhaps Pb Zn and Cu source are dominating urban land.
   #How have these elemental concentration changed with time?
 
 # To statistically prove that, How to do ANOVA with compositional data?
-clr<-clr(sel_ele[,-c(11:12)])
-linmod = lm(clr~Type,data=sel_ele)
+
+new_elements<-sel_ele[,..ele]
+hi<-clr(new_elements)
+hi2<-as.data.table(clr2ilr(hi))
+setnames(hi2, colnames(hi))
+#new elements has 10 variables and ilr has 9
+linmod = lm(ilrdata~Type,data=sel_ele)
 anova(linmod)
 
-
+sel_ele
 library(car)
 vif(linmod)
 
-#Investigate the outliers in sel_ele_biplot -> what are they?
+
+pdf("no_comp_pca.pdf", width = 10, height = 15)
+
+#PLotting PCA without transformation
+#Reference: https://www.benjaminbell.co.uk/2018/02/principal-components-analysis-pca-in-r.html
+data<-sel_ele[,1:11]
+ele<-c("As", "Cr", "Ni", "Pb", "Zn", "Cu", "Se", "Co", "V")
+
+# PCA using base function - prcomp()
+p <- prcomp(data[,ele], scale=TRUE)
+# Summary
+s <- summary(p)
+
+# Screeplot
+layout(matrix(1:2, ncol=2))
+screeplot(p)
+screeplot(p, type="lines")
+
+#Create color symbols for urban and rural
+pch.group <- ifelse(data$Type == "Urban", 21, 21)
+col.group <- ifelse(data$Type == "Urban", "darkturquoise", "coral1")
+
+# Plot individuals
+plot(p$x[, 2], p$x[, 3], xlab = paste("PCA 1 (", round(s$importance[2] * 100, 1), "%)", sep = ""), 
+     ylab = paste("PCA 2 (", round(s$importance[5] * 100, 1), "%)", sep = ""), 
+     pch = pch.group, col = col.group, bg = col.group, cex = 0.8, las = 1, asp = 1)
+
+# Add grid lines
+abline(v=0, lty=1, col="black")
+abline(h=0, lty=1, col="black")
+# Add labels
+text(p$x[,2], p$x[,3], labels=row.names(p$x), pos=c(1,3,4,2), font=2)
+
+# Get co-ordinates of variables (loadings), and multiply by 10
+l.x <- p$rotation[,2]*40
+l.y <- p$rotation[,3]*40
+
+# Draw arrows
+arrows(x0=0, x1=l.x, y0=0, y1=l.y, col="black", length=0.15, lwd=1.5)
+
+# Label position
+l.pos <- l.y # Create a vector of y axis coordinates
+lo <- which(l.y < 0) # Get the variables on the bottom half of the plot
+hi <- which(l.y > 0) # Get variables on the top half
+# Replace values in the vector
+l.pos <- replace(l.pos, lo, "1")
+l.pos <- replace(l.pos, hi, "3")
+
+# Variable labels
+text(l.x, l.y, labels=row.names(p$rotation), col="black", pos=l.pos)
+
+# Add the legend with the desired properties
+legend("topleft", legend = c("Urban", "Rural"), col = "black", pt.bg = c("darkturquoise", "coral1"), pch = 21, pt.cex = 1.5)
+
+# Extract scores from the PCA result
+scores <- p$x
+pc1<-scores[,1]
+
+# Display the first few rows of the scores
+head(scores)
+
+dev.off()
+
+# Get PCA loadings
+loadings_table <- as.data.frame(p$rotation)
+colnames(loadings_table) <- paste("PC", 1:ncol(loadings_table), sep = "_")
+
+# Print the loadings table
+print(loadings_table)
+
+#
+
+lm()
+
+#MANOVA
+
+How do I run MANOVA on this?
 
 #--------------------------------------------------------------------------------------------------------#
 
@@ -578,8 +760,39 @@ ggplot(SWglasgow_filtered, aes(x = as.factor(Year), y = Concentration, fill = El
   scale_fill_manual(values = c("Pb" = "red", "Cu" = "blue", "Zn" = "green")) +
   theme_minimal()
 
+# Create a boxplot for compositional changes 
+
+Pbs<-log(SWglasgow$Pb/SWglasgow$Sr)
+Cus<-log(SWglasgow$Cu/SWglasgow$Sr)
+Zns<-log(SWglasgow$Zn/SWglasgow$Sr)
+
+table<-as.data.table(cbind(Pbs,Cus,Zns,Year=SWglasgow$Year))
+
+# Assuming your columns are named Pb, Cu, and Zn
+SWglasgow_longer <- table %>%
+  gather(Element, Concentration, Pbs, Cus, Zns)
+
+ggplot(SWglasgow_filter, aes(x = as.factor(Year), y = Concentration, fill = Element)) +
+  geom_boxplot(position = "dodge") +
+  labs(title = "Time Series Box Plot of log ratio",
+       x = "Year",
+       y = "log(element / Sr)") +
+  scale_fill_manual(values = c("Pbs" = "red", "Cus" = "blue", "Zns" = "green")) +
+  theme_minimal()
+
+# Perform separate ANOVA tests for each element
+anova_result_Pbs <- aov(Pbs~Year,data=table)
+anova_result_Cus <- aov(Cus~Year,data=table)
+anova_result_Zns <- aov(Zns~Year,data=table)
+
+# Display summaries for each ANOVA test
+summary(anova_result_Pbs)
+summary(anova_result_Cus)
+summary(anova_result_Zns)
 
 # 42 data points for 2001, 4 data points from 2011, 47 data points from 2018
+
+#Comment on bad data in, bad data out.
 
 #What are the driving factors? 
 
@@ -616,6 +829,91 @@ ggtitle("cleaned top soil selected elements distance from clyde between 2001-200
 
 sel_ele_dis_biplot
 
+#How about distance to road?
+
+rd_dis<-read_csv("/Users/Jasthecoolbean/Desktop/Year 4/dissertation/Distance_to_nearest_road.csv")
+filtered_rd_dis <- rd_dis %>%
+  filter((Year == 2001 | Year == 2002))
+elements1<-c("As", "Cr", "Ni", "Pb", "Zn", "Cu", "Se", "Co", "V","Sr")
+filtered_rd_dis_1 <- filtered_rd_dis[,elements1]
+alr_dis<-as.data.table(alr(filtered_rd_dis_1))
+alr_dis_bind <- cbind(alr_dis, Distance_to_road=filtered_rd_dis$HubDist)
+
+#Linmod for all alr elements
+
+response_columns <- c("As", "Cr", "Ni", "Pb", "Zn", "Cu", "Se", "Co", "V")
+
+# Create an empty list to store the linear regression models
+linmod_list <- list()
+
+# Loop through each response variable
+for (col in response_columns) {
+  formula <- as.formula(paste(col, "~ Distance_to_road"))
+  linmod <- lm(formula, data = alr_dis_bind)
+  linmod_list[[col]] <- linmod
+}
+
+# Access the summary of each linear regression model
+for (col in response_columns) {
+  print(paste("Summary for", col, ":"))
+  print(summary(linmod_list[[col]]))
+}
+
+
+library(ggplot2)
+
+# Assuming response_columns contains the variable names
+response_columns <- c("As", "Cr", "Ni","Pb", "Zn", "Cu", "Se", "Co", "V")
+
+# Create a list to store ggplot objects
+plot_list <- list()
+
+# Loop through each response variable and create ggplot
+for (col in response_columns) {
+  formula <- as.formula(paste(col, "~ Distance_to_road"))
+  linmod <- lm(formula, data = alr_dis_bind)
+  
+  plot <- ggplot(alr_dis_bind, aes(y = get(col), x = Distance_to_road)) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    labs(x = "Distance from road (m)", y = paste("log(", col, "/Sr)")) +
+    ggtitle(paste("Linear Regression for", col))
+  
+  plot_list[[col]] <- plot
+}
+# Combine all plots into a single panel using facet_wrap
+combined_plot <- do.call(gridExtra::grid.arrange, c(plot_list, ncol = 2))
+
+# Print or display the combined plot
+print(combined_plot)
+
+#Just Pb
+
+PbPlot <- ggplot(alr_dis_bind, aes(y = Pb, x = Distance_to_road)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x = "Distance from road (m)", y = expression(log(Zn/Sr)))
+
+PbPlot
+
+
+test<-lm(Pb~Distance_to_road,data=alr_dis_bind)
+plot(test)
+
+#distributional test: test normality - shapiro wilks test 
+shapiro.test(test$residuals)
+#distribution test have opposite of hypothesis null is: no difference between model residuals and residuals of a normal distribution
+#we want very high p-value, our value is too low 
+(test)
+#Tukey transformation to fix the distribution Nudge pvalue above 0.05
+# if above 0.5 it has high leverage, it is fine (all assumptions are met)
+
+
+
+#equal variance
+#normal distribution
+#little bit of flat red line
+
 #--------------------------------------------------------------------------------------------------------#
 
 #Investigating how Princomp 1 changes on map
@@ -634,6 +932,7 @@ SymbLegend(X,Y,sel_ele_biplot$data$Comp.1,type="percentile",qutiles<-c(0,0.05,0.
 
 # More dense crosses / higher PC1 scores in the middle (urban area)
 # Could this be because more data is collected for the urban area?
+
 
 
 
