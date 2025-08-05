@@ -1,9 +1,10 @@
 # Jasmine Ng's Programming Projects
 
-This repository contains code used for Jasmine's dissertation, summer internship, and classwork. 
-Below is a brief description of each project and the corresponding files:
+Welcome! This repository contains my work in the past years. It is split into three folders, where ***Undergraduate_Projects**, **Postgraduate_projects** and **External_Projects** contain respectively my work done in my undergraduate studies, postgraduate studies, and in my free time. Below is a brief description of each project and the corresponding files:
 
-## Using CoDa-PCA and linear models to understand Barium compositions 
+## Undergraduate Projects
+
+### Using CoDa-PCA and linear models to understand Barium compositions 
 
 **Results available in webpage format** [here](https://jasmineng-codes.github.io/barium_compositional_pca/).
 **Full R Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/HIF_germany_internship_Rcode.Rmd).
@@ -18,7 +19,7 @@ Below is a brief description of each project and the corresponding files:
 **Method**: Compositional data analysis (center log-ratio transformation), Principal component analysis, forward step-wise regression model
 **Language**: R-studio
 
-## Analyzing driver for bottom water hypoxia in Loch Etive
+### Analyzing driver for bottom water hypoxia in Loch Etive
 
 **Full Python Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Year_3_Environmental_Geoscience_LochEtive_Project.ipynb).
 
@@ -29,7 +30,7 @@ Below is a brief description of each project and the corresponding files:
 **Method**: Linear regression, box plots, t-test
 **Language**: Python
 
-## Modelling past climate with oxygen isotopes
+### Modelling past climate with oxygen isotopes
 
 **Full Python Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Year_3_climate_modelling.ipynb)
 
@@ -38,7 +39,7 @@ Below is a brief description of each project and the corresponding files:
 **Method**: Linear regression
 **Language**: Python
 
-## Using CoDa-PCA to analyze the spatiotemporal change in trace metal pollutant in Glasgow top soils
+### Using CoDa-PCA to analyze the spatiotemporal change in trace metal pollutant in Glasgow top soils
 
 **Full R Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Year_4_Dissertation.R)
 
