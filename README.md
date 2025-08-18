@@ -1,6 +1,6 @@
 # Jasmine Ng's Programming Projects
 
-Welcome! This repository contains my work in the past years. It currently only contains my **Undergraduate_Projects**, but will be soon updated to contain my **Postgraduate_projects** and **External_Projects** as well. Below is a brief description of each project and the corresponding files:
+Welcome! This repository contains my work in the past years. It currently only contains my **Undergraduate Projects** and **External Projects**, but will be soon updated to contain my **Postgraduate_projects** as well. Below is a brief description of each project and the corresponding files:
 
 ## Undergraduate Projects
 
