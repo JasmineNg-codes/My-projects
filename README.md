@@ -64,7 +64,7 @@ This coursework explores three topics from the Medical Imaging modules: PET/CT r
 
 This project asks the question: Can I outsmart ChatGPT at heat diffusion? Starting from a simple 2D model built by ChatGPT in C++, the goal is to speed it up by 2x using compiler tricks and parallelization techniques. Various optimization techniques like flattening and cache blocking were implemented and tuned, while parallelization approaches including MPI and OpenMP were explored through 2D Cartesian decomposition and experimentation with different ranks (MPI) and thread numbers (OpenMP). Each folder contains the optimised or parallelised code that yielded the best performance after tuning.
 
-## Undergraduate Projects
+## External Projects
 
 ### Using CoDa-PCA and linear models to understand Barium compositions 
 
@@ -80,6 +80,8 @@ This project asks the question: Can I outsmart ChatGPT at heat diffusion? Starti
     
 **Method**: Compositional data analysis (center log-ratio transformation), Principal component analysis, forward step-wise regression model
 **Language**: R-studio
+
+## Undergraduate Projects
 
 ### Analyzing driver for bottom water hypoxia in Loch Etive
 
