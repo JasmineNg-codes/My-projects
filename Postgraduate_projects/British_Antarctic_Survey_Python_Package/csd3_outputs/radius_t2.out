@@ -1,0 +1,2780 @@
+Obtaining file:///home/jn492/jn492
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: opencv-python in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (4.11.0.86)
+Requirement already satisfied: numpy in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (2.3.0)
+Building wheels for collected packages: DELPHI
+  Building editable for DELPHI (pyproject.toml): started
+  Building editable for DELPHI (pyproject.toml): finished with status 'done'
+  Created wheel for DELPHI: filename=delphi-0.1.0-0.editable-py3-none-any.whl size=2976 sha256=72ee6dbe24412ca9402bb7ad27d961d68b792813ef570d373f72edffefef9ebb
+  Stored in directory: /tmp/pip-ephem-wheel-cache-73zlcbi_/wheels/f5/7c/28/fa37e5f97a8c66c553cf39d179f2f5e40f34db2832c2b100f0
+Successfully built DELPHI
+Installing collected packages: DELPHI
+  Attempting uninstall: DELPHI
+    Found existing installation: DELPHI 0.1.0
+    Uninstalling DELPHI-0.1.0:
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/home/jn492/jn492/delphienv/bin/delphi'
+
+
+[notice] A new release of pip available: 22.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Duplicated annotations: []
+Found 60 images
+Found 99 annotations
+Matched pairs: 60
+Unmatched images: []
+Unmatched annotations: ['0148', '0178', '0188', '0231', '0246', '0266', '0282', '0310', '0315', '0333', '0381', '0455', '0458', '0459', '0470', '0494', '0555', '0590', '0700', '0734', '0738', '0816', '0828', '0853', '0859', '0926', '0942', '0956', '1011', '1023', '1106', '1124', '1134', '1139', '1185', '1195', '1208', '1220', '1224']
+Matched 60 pairs → 36 train, 12 validation, 12 test.
+Number of training images: 36
+Number of validation images: 12
+The selected images for this train set are: ['0001', '0383', '0021', '0253', '0261', '0172', '0480', '0302', '0026', '0358', '0790', '0361', '0607', '0133', '0584', '0857', '0078', '0121', '0055', '0010', '0081', '0154', '0011', '0456', '0204', '0020', '0697', '0190', '0138', '0717', '0363', '0420', '0128', '0804', '0591', '0112']
+Trying radius 1 for laser point color clustering
+Trying radius 10 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp1_bkgd10.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:12<02:19, 12.67s/it] 17%|█▋        | 2/12 [00:21<01:44, 10.43s/it] 25%|██▌       | 3/12 [00:29<01:24,  9.38s/it] 33%|███▎      | 4/12 [00:41<01:22, 10.32s/it] 42%|████▏     | 5/12 [00:51<01:11, 10.21s/it] 50%|█████     | 6/12 [00:59<00:57,  9.61s/it] 58%|█████▊    | 7/12 [01:08<00:45,  9.12s/it] 67%|██████▋   | 8/12 [01:15<00:34,  8.74s/it] 75%|███████▌  | 9/12 [01:24<00:25,  8.55s/it] 83%|████████▎ | 10/12 [01:32<00:16,  8.41s/it] 92%|█████████▏| 11/12 [01:40<00:08,  8.49s/it]100%|██████████| 12/12 [01:48<00:00,  8.36s/it]100%|██████████| 12/12 [01:48<00:00,  9.07s/it]
+[0003] Raw binary pixels before morphology: 605
+[0003] Binary pixels after morphology: 579
+[0127] Raw binary pixels before morphology: 378
+[0127] Binary pixels after morphology: 351
+[0602] Raw binary pixels before morphology: 106
+[0602] Binary pixels after morphology: 99
+[0002] Raw binary pixels before morphology: 467
+[0002] Binary pixels after morphology: 457
+[0104] Raw binary pixels before morphology: 443
+[0104] Binary pixels after morphology: 424
+[0336] Raw binary pixels before morphology: 102
+[0336] Binary pixels after morphology: 73
+[0156] Raw binary pixels before morphology: 118
+[0156] Binary pixels after morphology: 81
+[0225] Raw binary pixels before morphology: 167
+[0225] Binary pixels after morphology: 134
+[0662] Raw binary pixels before morphology: 97
+[0662] Binary pixels after morphology: 87
+[0609] Raw binary pixels before morphology: 125
+[0609] Binary pixels after morphology: 95
+[0268] Raw binary pixels before morphology: 383
+[0268] Binary pixels after morphology: 356
+[0044] Raw binary pixels before morphology: 205
+[0044] Binary pixels after morphology: 170
+[0003] Connected regions found: 2
+[0003] LP candidates found: 2
+[0127] Connected regions found: 1
+[0127] LP candidates found: 1
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+[Warning] Not enough LP candidates for 0003 — storing raw candidates
+[Warning] Not enough LP candidates for 0127 — storing raw candidates
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2673, 3380), (1875, 2069)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1873, 2069)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (2514, 3291), (1208, 3278)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1157, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3264), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3299), (1876, 2170), (1186, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3272), (1876, 2214), (1230, 3264)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1876, 2217), (1226, 3269)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (2419, 3237), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1875, 2232), (1231, 3264)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1040, 3375), (2674, 3381), (1874, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2566, 3320), (1154, 3311), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    0.917
+  Mean F1 Score:  0.942
+Trying radius 20 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp1_bkgd20.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:12<02:20, 12.75s/it] 17%|█▋        | 2/12 [00:21<01:44, 10.48s/it] 25%|██▌       | 3/12 [00:29<01:22,  9.19s/it] 33%|███▎      | 4/12 [00:40<01:20, 10.11s/it] 42%|████▏     | 5/12 [00:50<01:10, 10.09s/it] 50%|█████     | 6/12 [00:58<00:55,  9.24s/it] 58%|█████▊    | 7/12 [01:05<00:43,  8.67s/it] 67%|██████▋   | 8/12 [01:13<00:33,  8.34s/it] 75%|███████▌  | 9/12 [01:21<00:24,  8.12s/it] 83%|████████▎ | 10/12 [01:28<00:15,  7.97s/it] 92%|█████████▏| 11/12 [01:37<00:08,  8.18s/it]100%|██████████| 12/12 [01:45<00:00,  8.02s/it]100%|██████████| 12/12 [01:45<00:00,  8.77s/it]
+[0003] Raw binary pixels before morphology: 1856
+[0003] Binary pixels after morphology: 1580
+[0127] Raw binary pixels before morphology: 1498
+[0127] Binary pixels after morphology: 1094
+[0602] Raw binary pixels before morphology: 424
+[0602] Binary pixels after morphology: 412
+[0002] Raw binary pixels before morphology: 768
+[0002] Binary pixels after morphology: 725
+[0104] Raw binary pixels before morphology: 878
+[0104] Binary pixels after morphology: 854
+[0336] Raw binary pixels before morphology: 359
+[0336] Binary pixels after morphology: 345
+[0156] Raw binary pixels before morphology: 1313
+[0156] Binary pixels after morphology: 1133
+[0225] Raw binary pixels before morphology: 582
+[0225] Binary pixels after morphology: 574
+[0662] Raw binary pixels before morphology: 370
+[0662] Binary pixels after morphology: 359
+[0609] Raw binary pixels before morphology: 447
+[0609] Binary pixels after morphology: 437
+[0268] Raw binary pixels before morphology: 900
+[0268] Binary pixels after morphology: 889
+[0044] Raw binary pixels before morphology: 629
+[0044] Binary pixels after morphology: 614
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2673, 3380), (1874, 2064), (1086, 3346)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1874, 2068), (2630, 3356), (1086, 3347)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3277), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2563, 3319), (1156, 3308), (1874, 2134)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2211)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1185, 3291), (1875, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3271), (1229, 3265), (1875, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2217)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1291, 3229), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2479, 3271), (1230, 3265), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3381), (1040, 3374), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3319), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 25 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp1_bkgd25.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:11<02:06, 11.50s/it] 17%|█▋        | 2/12 [00:25<02:07, 12.78s/it] 25%|██▌       | 3/12 [00:38<01:58, 13.16s/it] 33%|███▎      | 4/12 [00:50<01:41, 12.71s/it] 42%|████▏     | 5/12 [01:03<01:29, 12.78s/it] 50%|█████     | 6/12 [01:16<01:17, 12.94s/it] 58%|█████▊    | 7/12 [01:30<01:05, 13.09s/it] 67%|██████▋   | 8/12 [01:43<00:52, 13.24s/it] 75%|███████▌  | 9/12 [01:57<00:39, 13.26s/it] 83%|████████▎ | 10/12 [02:10<00:26, 13.31s/it] 92%|█████████▏| 11/12 [02:24<00:13, 13.39s/it]100%|██████████| 12/12 [02:38<00:00, 13.51s/it]100%|██████████| 12/12 [02:38<00:00, 13.17s/it]
+[0003] Raw binary pixels before morphology: 4682582
+[0003] Binary pixels after morphology: 4339651
+[0127] Raw binary pixels before morphology: 6889
+[0127] Binary pixels after morphology: 5185
+[0602] Raw binary pixels before morphology: 486
+[0602] Binary pixels after morphology: 241
+[0002] Raw binary pixels before morphology: 127263
+[0002] Binary pixels after morphology: 51478
+[0104] Raw binary pixels before morphology: 9593
+[0104] Binary pixels after morphology: 3862
+[0336] Raw binary pixels before morphology: 442
+[0336] Binary pixels after morphology: 290
+[0156] Raw binary pixels before morphology: 772
+[0156] Binary pixels after morphology: 445
+[0225] Raw binary pixels before morphology: 768
+[0225] Binary pixels after morphology: 358
+[0662] Raw binary pixels before morphology: 365
+[0662] Binary pixels after morphology: 131
+[0609] Raw binary pixels before morphology: 585
+[0609] Binary pixels after morphology: 320
+[0268] Raw binary pixels before morphology: 2763
+[0268] Binary pixels after morphology: 1585
+[0044] Raw binary pixels before morphology: 1166
+[0044] Binary pixels after morphology: 515
+[0003] Connected regions found: 155
+[0003] LP candidates found: 5
+[0127] Connected regions found: 4
+[0127] LP candidates found: 4
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 27
+[0002] LP candidates found: 5
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1875, 2066), (1094, 3347)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1084, 3350), (1874, 2068), (2632, 3359)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (2514, 3291), (1208, 3278)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(1156, 3308), (2564, 3319), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(1234, 3264), (2497, 3281), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3300), (1875, 2170), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1229, 3266), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1875, 2218), (1226, 3268)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (2421, 3238), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1231, 3265), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3381), (1872, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3320), (1153, 3310), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 40 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp1_bkgd40.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:13<02:33, 13.97s/it] 17%|█▋        | 2/12 [00:23<01:54, 11.40s/it] 25%|██▌       | 3/12 [00:31<01:27,  9.74s/it] 33%|███▎      | 4/12 [00:43<01:26, 10.85s/it] 42%|████▏     | 5/12 [00:54<01:16, 10.87s/it] 50%|█████     | 6/12 [01:02<00:59,  9.86s/it] 58%|█████▊    | 7/12 [01:10<00:46,  9.23s/it] 67%|██████▋   | 8/12 [01:18<00:35,  8.76s/it] 75%|███████▌  | 9/12 [01:26<00:25,  8.54s/it] 83%|████████▎ | 10/12 [01:34<00:16,  8.31s/it] 92%|█████████▏| 11/12 [01:43<00:08,  8.66s/it]100%|██████████| 12/12 [01:51<00:00,  8.44s/it]100%|██████████| 12/12 [01:51<00:00,  9.30s/it]
+[0003] Raw binary pixels before morphology: 2950
+[0003] Binary pixels after morphology: 2592
+[0127] Raw binary pixels before morphology: 1653
+[0127] Binary pixels after morphology: 1228
+[0602] Raw binary pixels before morphology: 462
+[0602] Binary pixels after morphology: 440
+[0002] Raw binary pixels before morphology: 813
+[0002] Binary pixels after morphology: 771
+[0104] Raw binary pixels before morphology: 915
+[0104] Binary pixels after morphology: 895
+[0336] Raw binary pixels before morphology: 385
+[0336] Binary pixels after morphology: 371
+[0156] Raw binary pixels before morphology: 1493
+[0156] Binary pixels after morphology: 1337
+[0225] Raw binary pixels before morphology: 633
+[0225] Binary pixels after morphology: 622
+[0662] Raw binary pixels before morphology: 395
+[0662] Binary pixels after morphology: 379
+[0609] Raw binary pixels before morphology: 490
+[0609] Binary pixels after morphology: 477
+[0268] Raw binary pixels before morphology: 959
+[0268] Binary pixels after morphology: 954
+[0044] Raw binary pixels before morphology: 680
+[0044] Binary pixels after morphology: 665
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2673, 3380), (1083, 3350), (1874, 2064)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1083, 3350), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3278), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2563, 3319), (1156, 3308), (1874, 2134)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3282), (1234, 3263), (1875, 2211)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1185, 3291), (1875, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3271), (1229, 3264), (1875, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2217)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1291, 3229), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3381), (1040, 3374), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3320), (1153, 3310), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 60 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp1_bkgd60.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:14<02:34, 14.07s/it] 17%|█▋        | 2/12 [00:23<01:54, 11.50s/it] 25%|██▌       | 3/12 [00:31<01:28,  9.86s/it] 33%|███▎      | 4/12 [00:44<01:27, 10.96s/it] 42%|████▏     | 5/12 [00:55<01:16, 10.95s/it] 50%|█████     | 6/12 [01:03<00:59,  9.92s/it] 58%|█████▊    | 7/12 [01:11<00:46,  9.29s/it] 67%|██████▋   | 8/12 [01:18<00:35,  8.79s/it] 75%|███████▌  | 9/12 [01:26<00:25,  8.56s/it] 83%|████████▎ | 10/12 [01:34<00:16,  8.33s/it] 92%|█████████▏| 11/12 [01:44<00:08,  8.67s/it]100%|██████████| 12/12 [01:52<00:00,  8.43s/it]100%|██████████| 12/12 [01:52<00:00,  9.34s/it]
+[0003] Raw binary pixels before morphology: 3073
+[0003] Binary pixels after morphology: 2717
+[0127] Raw binary pixels before morphology: 1757
+[0127] Binary pixels after morphology: 1306
+[0602] Raw binary pixels before morphology: 462
+[0602] Binary pixels after morphology: 440
+[0002] Raw binary pixels before morphology: 830
+[0002] Binary pixels after morphology: 782
+[0104] Raw binary pixels before morphology: 929
+[0104] Binary pixels after morphology: 905
+[0336] Raw binary pixels before morphology: 391
+[0336] Binary pixels after morphology: 376
+[0156] Raw binary pixels before morphology: 1533
+[0156] Binary pixels after morphology: 1362
+[0225] Raw binary pixels before morphology: 634
+[0225] Binary pixels after morphology: 626
+[0662] Raw binary pixels before morphology: 396
+[0662] Binary pixels after morphology: 382
+[0609] Raw binary pixels before morphology: 491
+[0609] Binary pixels after morphology: 477
+[0268] Raw binary pixels before morphology: 964
+[0268] Binary pixels after morphology: 956
+[0044] Raw binary pixels before morphology: 684
+[0044] Binary pixels after morphology: 668
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 5
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2673, 3380), (1083, 3350), (1874, 2064)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1083, 3350), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3278), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2563, 3319), (1156, 3308), (1874, 2134)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3282), (1234, 3263), (1875, 2211)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1185, 3291), (1875, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3271), (1229, 3264), (1875, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2217)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1292, 3229), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3381), (1040, 3374), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3320), (1153, 3310), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 80 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp1_bkgd80.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:09<01:47,  9.79s/it] 17%|█▋        | 2/12 [00:19<01:34,  9.46s/it] 25%|██▌       | 3/12 [00:29<01:28,  9.80s/it] 33%|███▎      | 4/12 [00:37<01:14,  9.36s/it] 42%|████▏     | 5/12 [00:47<01:05,  9.32s/it] 50%|█████     | 6/12 [00:57<00:57,  9.66s/it] 58%|█████▊    | 7/12 [01:07<00:49,  9.86s/it] 67%|██████▋   | 8/12 [01:17<00:39,  9.90s/it] 75%|███████▌  | 9/12 [01:27<00:29,  9.99s/it] 83%|████████▎ | 10/12 [01:37<00:20, 10.01s/it] 92%|█████████▏| 11/12 [01:47<00:09,  9.86s/it]100%|██████████| 12/12 [01:57<00:00,  9.84s/it]100%|██████████| 12/12 [01:57<00:00,  9.78s/it]
+[0003] Raw binary pixels before morphology: 5719517
+[0003] Binary pixels after morphology: 5395538
+[0127] Raw binary pixels before morphology: 8468
+[0127] Binary pixels after morphology: 5488
+[0602] Raw binary pixels before morphology: 510
+[0602] Binary pixels after morphology: 236
+[0002] Raw binary pixels before morphology: 341055
+[0002] Binary pixels after morphology: 187250
+[0104] Raw binary pixels before morphology: 29113
+[0104] Binary pixels after morphology: 12627
+[0336] Raw binary pixels before morphology: 459
+[0336] Binary pixels after morphology: 290
+[0156] Raw binary pixels before morphology: 694
+[0156] Binary pixels after morphology: 333
+[0225] Raw binary pixels before morphology: 822
+[0225] Binary pixels after morphology: 354
+[0662] Raw binary pixels before morphology: 351
+[0662] Binary pixels after morphology: 93
+[0609] Raw binary pixels before morphology: 602
+[0609] Binary pixels after morphology: 311
+[0268] Raw binary pixels before morphology: 3261
+[0268] Binary pixels after morphology: 1616
+[0044] Raw binary pixels before morphology: 1231
+[0044] Binary pixels after morphology: 432
+[0003] Connected regions found: 604
+[0003] LP candidates found: 5
+[0127] Connected regions found: 8
+[0127] LP candidates found: 5
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 201
+[0002] LP candidates found: 5
+[0104] Connected regions found: 27
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(1383, 3174), (1877, 2402), (2217, 3094)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3351), (1873, 2067), (2632, 3359)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2194), (1208, 3278), (2514, 3291)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(1541, 3034), (1158, 3308), (2564, 3319)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(1235, 3264), (1875, 2212), (2497, 3281)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(1184, 3292), (2530, 3300), (1876, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3272), (1229, 3266), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1875, 2218), (1225, 3269)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (1286, 3234), (2421, 3238)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2480, 3272), (1876, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3382), (1874, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2566, 3320), (1153, 3311), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 0.889
+  Mean Recall:    0.889
+  Mean F1 Score:  0.889
+Trying radius 100 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp1_bkgd100.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:12<02:12, 12.04s/it] 17%|█▋        | 2/12 [00:24<02:04, 12.43s/it] 25%|██▌       | 3/12 [00:37<01:53, 12.60s/it] 33%|███▎      | 4/12 [00:48<01:36, 12.12s/it] 42%|████▏     | 5/12 [01:00<01:24, 12.09s/it] 50%|█████     | 6/12 [01:13<01:13, 12.33s/it] 58%|█████▊    | 7/12 [01:26<01:02, 12.50s/it] 67%|██████▋   | 8/12 [01:39<00:50, 12.63s/it] 75%|███████▌  | 9/12 [01:52<00:38, 12.70s/it] 83%|████████▎ | 10/12 [02:04<00:25, 12.65s/it] 92%|█████████▏| 11/12 [02:16<00:12, 12.44s/it]100%|██████████| 12/12 [02:28<00:00, 12.34s/it]100%|██████████| 12/12 [02:28<00:00, 12.41s/it]
+[0003] Raw binary pixels before morphology: 6908280
+[0003] Binary pixels after morphology: 6611970
+[0127] Raw binary pixels before morphology: 14259
+[0127] Binary pixels after morphology: 6947
+[0602] Raw binary pixels before morphology: 582
+[0602] Binary pixels after morphology: 263
+[0002] Raw binary pixels before morphology: 777189
+[0002] Binary pixels after morphology: 529118
+[0104] Raw binary pixels before morphology: 100079
+[0104] Binary pixels after morphology: 54235
+[0336] Raw binary pixels before morphology: 520
+[0336] Binary pixels after morphology: 356
+[0156] Raw binary pixels before morphology: 875
+[0156] Binary pixels after morphology: 446
+[0225] Raw binary pixels before morphology: 986
+[0225] Binary pixels after morphology: 464
+[0662] Raw binary pixels before morphology: 418
+[0662] Binary pixels after morphology: 160
+[0609] Raw binary pixels before morphology: 711
+[0609] Binary pixels after morphology: 373
+[0268] Raw binary pixels before morphology: 4715
+[0268] Binary pixels after morphology: 2114
+[0044] Raw binary pixels before morphology: 1580
+[0044] Binary pixels after morphology: 635
+[0003] Connected regions found: 740
+[0003] LP candidates found: 5
+[0127] Connected regions found: 14
+[0127] LP candidates found: 5
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 601
+[0002] LP candidates found: 5
+[0104] Connected regions found: 168
+[0104] LP candidates found: 5
+[0336] Connected regions found: 4
+[0336] LP candidates found: 4
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 4
+[0268] LP candidates found: 4
+[0044] Connected regions found: 5
+[0044] LP candidates found: 5
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(1370, 3182), (1877, 2380), (2221, 3107)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3352), (1873, 2067), (2632, 3359)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (1208, 3278), (2514, 3291)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(1543, 3029), (1538, 3149), (1920, 2602)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(1236, 3265), (1876, 2211), (2497, 3281)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3299), (1184, 3292), (1876, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3272), (1229, 3265), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1875, 2217), (1226, 3269)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (2421, 3238), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2480, 3272), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3381), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2566, 3320), (1153, 3311), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 0.833
+  Mean Recall:    0.833
+  Mean F1 Score:  0.833
+Trying radius 3 for laser point color clustering
+Trying radius 10 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp3_bkgd10.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:10<01:57, 10.69s/it] 17%|█▋        | 2/12 [00:23<01:56, 11.67s/it] 25%|██▌       | 3/12 [00:37<01:58, 13.16s/it] 33%|███▎      | 4/12 [00:49<01:41, 12.65s/it] 42%|████▏     | 5/12 [01:01<01:27, 12.43s/it] 50%|█████     | 6/12 [01:16<01:19, 13.31s/it] 58%|█████▊    | 7/12 [01:32<01:09, 13.91s/it] 67%|██████▋   | 8/12 [01:45<00:55, 13.89s/it] 75%|███████▌  | 9/12 [02:00<00:42, 14.25s/it] 83%|████████▎ | 10/12 [02:15<00:28, 14.37s/it] 92%|█████████▏| 11/12 [02:28<00:13, 13.85s/it]100%|██████████| 12/12 [02:41<00:00, 13.65s/it]100%|██████████| 12/12 [02:41<00:00, 13.45s/it]
+[0003] Raw binary pixels before morphology: 732
+[0003] Binary pixels after morphology: 697
+[0127] Raw binary pixels before morphology: 567
+[0127] Binary pixels after morphology: 510
+[0602] Raw binary pixels before morphology: 110
+[0602] Binary pixels after morphology: 100
+[0002] Raw binary pixels before morphology: 587
+[0002] Binary pixels after morphology: 550
+[0104] Raw binary pixels before morphology: 564
+[0104] Binary pixels after morphology: 551
+[0336] Raw binary pixels before morphology: 101
+[0336] Binary pixels after morphology: 67
+[0156] Raw binary pixels before morphology: 151
+[0156] Binary pixels after morphology: 102
+[0225] Raw binary pixels before morphology: 184
+[0225] Binary pixels after morphology: 129
+[0662] Raw binary pixels before morphology: 99
+[0662] Binary pixels after morphology: 88
+[0609] Raw binary pixels before morphology: 138
+[0609] Binary pixels after morphology: 105
+[0268] Raw binary pixels before morphology: 416
+[0268] Binary pixels after morphology: 397
+[0044] Raw binary pixels before morphology: 248
+[0044] Binary pixels after morphology: 215
+[0003] Connected regions found: 2
+[0003] LP candidates found: 2
+[0127] Connected regions found: 1
+[0127] LP candidates found: 1
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 2
+[0336] LP candidates found: 2
+[0156] Connected regions found: 2
+[0156] LP candidates found: 2
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 4
+[0609] LP candidates found: 4
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 4
+[0044] LP candidates found: 4
+[Warning] Not enough LP candidates for 0003 — storing raw candidates
+[Warning] Not enough LP candidates for 0127 — storing raw candidates
+[Warning] Not enough LP candidates for 0336 — storing raw candidates
+[Warning] Not enough LP candidates for 0156 — storing raw candidates
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2673, 3380), (1875, 2069)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1873, 2070)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (2514, 3291), (1208, 3278)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2563, 3319), (1156, 3308), (1875, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3264), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3299), (1876, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3272), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1876, 2217), (1228, 3268)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (1286, 3234), (2419, 3237)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1875, 2232), (1233, 3264)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1040, 3375), (2674, 3381), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2566, 3320), (1153, 3312), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    0.861
+  Mean F1 Score:  0.908
+Trying radius 20 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp3_bkgd20.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:13<02:28, 13.49s/it] 17%|█▋        | 2/12 [00:20<01:39,  9.96s/it] 25%|██▌       | 3/12 [00:28<01:20,  8.93s/it] 33%|███▎      | 4/12 [00:38<01:13,  9.15s/it] 42%|████▏     | 5/12 [00:46<01:01,  8.78s/it] 50%|█████     | 6/12 [00:54<00:52,  8.71s/it] 58%|█████▊    | 7/12 [01:02<00:42,  8.51s/it] 67%|██████▋   | 8/12 [01:10<00:32,  8.14s/it] 75%|███████▌  | 9/12 [01:18<00:24,  8.14s/it] 83%|████████▎ | 10/12 [01:26<00:16,  8.04s/it] 92%|█████████▏| 11/12 [01:33<00:07,  7.85s/it]100%|██████████| 12/12 [01:40<00:00,  7.64s/it]100%|██████████| 12/12 [01:40<00:00,  8.40s/it]
+[0003] Raw binary pixels before morphology: 990
+[0003] Binary pixels after morphology: 952
+[0127] Raw binary pixels before morphology: 1257
+[0127] Binary pixels after morphology: 1120
+[0602] Raw binary pixels before morphology: 115
+[0602] Binary pixels after morphology: 103
+[0002] Raw binary pixels before morphology: 818
+[0002] Binary pixels after morphology: 788
+[0104] Raw binary pixels before morphology: 809
+[0104] Binary pixels after morphology: 791
+[0336] Raw binary pixels before morphology: 109
+[0336] Binary pixels after morphology: 86
+[0156] Raw binary pixels before morphology: 355
+[0156] Binary pixels after morphology: 298
+[0225] Raw binary pixels before morphology: 227
+[0225] Binary pixels after morphology: 178
+[0662] Raw binary pixels before morphology: 108
+[0662] Binary pixels after morphology: 101
+[0609] Raw binary pixels before morphology: 152
+[0609] Binary pixels after morphology: 137
+[0268] Raw binary pixels before morphology: 551
+[0268] Binary pixels after morphology: 510
+[0044] Raw binary pixels before morphology: 335
+[0044] Binary pixels after morphology: 283
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 4
+[0044] LP candidates found: 4
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1874, 2064), (1086, 3346)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1874, 2067), (2630, 3358), (1086, 3347)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (2514, 3291), (1208, 3278)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3300), (1876, 2170), (1186, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1876, 2214), (1229, 3264)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1875, 2217), (1226, 3269)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1875, 2279), (2421, 3238), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1230, 3265), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3375), (2674, 3381), (1872, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1154, 3312), (2566, 3320), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 25 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp3_bkgd25.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:14<02:37, 14.32s/it] 17%|█▋        | 2/12 [00:22<01:47, 10.75s/it] 25%|██▌       | 3/12 [00:30<01:25,  9.53s/it] 33%|███▎      | 4/12 [00:40<01:17,  9.74s/it] 42%|████▏     | 5/12 [00:49<01:05,  9.37s/it] 50%|█████     | 6/12 [00:57<00:53,  8.97s/it] 58%|█████▊    | 7/12 [01:05<00:43,  8.70s/it] 67%|██████▋   | 8/12 [01:13<00:34,  8.52s/it] 75%|███████▌  | 9/12 [01:22<00:25,  8.43s/it] 83%|████████▎ | 10/12 [01:30<00:16,  8.34s/it] 92%|█████████▏| 11/12 [01:38<00:08,  8.27s/it]100%|██████████| 12/12 [01:46<00:00,  8.22s/it]100%|██████████| 12/12 [01:46<00:00,  8.87s/it]
+[0003] Raw binary pixels before morphology: 999
+[0003] Binary pixels after morphology: 949
+[0127] Raw binary pixels before morphology: 1293
+[0127] Binary pixels after morphology: 1152
+[0602] Raw binary pixels before morphology: 112
+[0602] Binary pixels after morphology: 102
+[0002] Raw binary pixels before morphology: 823
+[0002] Binary pixels after morphology: 791
+[0104] Raw binary pixels before morphology: 829
+[0104] Binary pixels after morphology: 811
+[0336] Raw binary pixels before morphology: 105
+[0336] Binary pixels after morphology: 80
+[0156] Raw binary pixels before morphology: 404
+[0156] Binary pixels after morphology: 326
+[0225] Raw binary pixels before morphology: 206
+[0225] Binary pixels after morphology: 178
+[0662] Raw binary pixels before morphology: 107
+[0662] Binary pixels after morphology: 96
+[0609] Raw binary pixels before morphology: 145
+[0609] Binary pixels after morphology: 131
+[0268] Raw binary pixels before morphology: 537
+[0268] Binary pixels after morphology: 502
+[0044] Raw binary pixels before morphology: 323
+[0044] Binary pixels after morphology: 281
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 4
+[0044] LP candidates found: 4
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1874, 2064), (1085, 3348)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1084, 3349), (1874, 2067), (2631, 3359)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (1208, 3278), (2514, 3291)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3299), (1876, 2170), (1186, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1229, 3265), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1875, 2217), (1226, 3269)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (2421, 3238), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1875, 2232), (1230, 3265)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3375), (2674, 3381), (1872, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1154, 3312), (2566, 3320), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 40 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp3_bkgd40.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:14<02:35, 14.11s/it] 17%|█▋        | 2/12 [00:21<01:44, 10.42s/it] 25%|██▌       | 3/12 [00:29<01:22,  9.22s/it] 33%|███▎      | 4/12 [00:39<01:14,  9.37s/it] 42%|████▏     | 5/12 [00:47<01:02,  8.97s/it] 50%|█████     | 6/12 [00:55<00:51,  8.60s/it] 58%|█████▊    | 7/12 [01:03<00:41,  8.33s/it] 67%|██████▋   | 8/12 [01:11<00:32,  8.17s/it] 75%|███████▌  | 9/12 [01:18<00:24,  8.06s/it] 83%|████████▎ | 10/12 [01:26<00:15,  7.97s/it] 92%|█████████▏| 11/12 [01:34<00:07,  7.91s/it]100%|██████████| 12/12 [01:42<00:00,  7.87s/it]100%|██████████| 12/12 [01:42<00:00,  8.52s/it]
+[0003] Raw binary pixels before morphology: 1055
+[0003] Binary pixels after morphology: 994
+[0127] Raw binary pixels before morphology: 1473
+[0127] Binary pixels after morphology: 1276
+[0602] Raw binary pixels before morphology: 112
+[0602] Binary pixels after morphology: 102
+[0002] Raw binary pixels before morphology: 861
+[0002] Binary pixels after morphology: 839
+[0104] Raw binary pixels before morphology: 854
+[0104] Binary pixels after morphology: 834
+[0336] Raw binary pixels before morphology: 107
+[0336] Binary pixels after morphology: 102
+[0156] Raw binary pixels before morphology: 466
+[0156] Binary pixels after morphology: 369
+[0225] Raw binary pixels before morphology: 211
+[0225] Binary pixels after morphology: 180
+[0662] Raw binary pixels before morphology: 106
+[0662] Binary pixels after morphology: 95
+[0609] Raw binary pixels before morphology: 149
+[0609] Binary pixels after morphology: 137
+[0268] Raw binary pixels before morphology: 548
+[0268] Binary pixels after morphology: 510
+[0044] Raw binary pixels before morphology: 333
+[0044] Binary pixels after morphology: 285
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 4
+[0044] LP candidates found: 4
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2673, 3380), (1083, 3350), (1874, 2064)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3351), (1874, 2067), (2631, 3359)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (1208, 3278), (2514, 3291)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3299), (1876, 2170), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1229, 3265), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1875, 2217), (1226, 3269)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (2421, 3238), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1230, 3265), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3381), (1872, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1154, 3312), (2566, 3320), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 60 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp3_bkgd60.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:11<02:06, 11.50s/it] 17%|█▋        | 2/12 [00:22<01:53, 11.35s/it] 25%|██▌       | 3/12 [00:32<01:36, 10.70s/it] 33%|███▎      | 4/12 [00:44<01:29, 11.16s/it] 42%|████▏     | 5/12 [00:56<01:19, 11.31s/it] 50%|█████     | 6/12 [01:06<01:05, 10.99s/it] 58%|█████▊    | 7/12 [01:16<00:54, 10.81s/it] 67%|██████▋   | 8/12 [01:27<00:42, 10.59s/it] 75%|███████▌  | 9/12 [01:37<00:31, 10.49s/it] 83%|████████▎ | 10/12 [01:47<00:20, 10.38s/it] 92%|█████████▏| 11/12 [01:58<00:10, 10.60s/it]100%|██████████| 12/12 [02:08<00:00, 10.52s/it]100%|██████████| 12/12 [02:08<00:00, 10.74s/it]
+[0003] Raw binary pixels before morphology: 11697
+[0003] Binary pixels after morphology: 10865
+[0127] Raw binary pixels before morphology: 4241
+[0127] Binary pixels after morphology: 3403
+[0602] Raw binary pixels before morphology: 610
+[0602] Binary pixels after morphology: 598
+[0002] Raw binary pixels before morphology: 5828
+[0002] Binary pixels after morphology: 5423
+[0104] Raw binary pixels before morphology: 1615
+[0104] Binary pixels after morphology: 1543
+[0336] Raw binary pixels before morphology: 516
+[0336] Binary pixels after morphology: 492
+[0156] Raw binary pixels before morphology: 4005
+[0156] Binary pixels after morphology: 3771
+[0225] Raw binary pixels before morphology: 837
+[0225] Binary pixels after morphology: 816
+[0662] Raw binary pixels before morphology: 533
+[0662] Binary pixels after morphology: 495
+[0609] Raw binary pixels before morphology: 639
+[0609] Binary pixels after morphology: 599
+[0268] Raw binary pixels before morphology: 1317
+[0268] Binary pixels after morphology: 1223
+[0044] Raw binary pixels before morphology: 947
+[0044] Binary pixels after morphology: 877
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3350), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3278), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1185, 3292), (1875, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3271), (1229, 3265), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2217)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1292, 3229), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3381), (1041, 3374), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3319), (1152, 3310), (1877, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 80 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp3_bkgd80.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:16<03:00, 16.42s/it] 17%|█▋        | 2/12 [00:30<02:29, 14.91s/it] 25%|██▌       | 3/12 [00:42<02:01, 13.54s/it] 33%|███▎      | 4/12 [00:58<01:57, 14.69s/it] 42%|████▏     | 5/12 [01:13<01:43, 14.82s/it] 50%|█████     | 6/12 [01:25<01:22, 13.72s/it] 58%|█████▊    | 7/12 [01:37<01:05, 13.15s/it] 67%|██████▋   | 8/12 [01:49<00:50, 12.72s/it] 75%|███████▌  | 9/12 [02:00<00:37, 12.47s/it] 83%|████████▎ | 10/12 [02:12<00:24, 12.28s/it] 92%|█████████▏| 11/12 [02:26<00:12, 12.72s/it]100%|██████████| 12/12 [02:38<00:00, 12.46s/it]100%|██████████| 12/12 [02:38<00:00, 13.20s/it]
+[0003] Raw binary pixels before morphology: 14814
+[0003] Binary pixels after morphology: 12415
+[0127] Raw binary pixels before morphology: 4618
+[0127] Binary pixels after morphology: 3618
+[0602] Raw binary pixels before morphology: 597
+[0602] Binary pixels after morphology: 578
+[0002] Raw binary pixels before morphology: 5634
+[0002] Binary pixels after morphology: 5099
+[0104] Raw binary pixels before morphology: 1647
+[0104] Binary pixels after morphology: 1582
+[0336] Raw binary pixels before morphology: 520
+[0336] Binary pixels after morphology: 488
+[0156] Raw binary pixels before morphology: 4070
+[0156] Binary pixels after morphology: 3823
+[0225] Raw binary pixels before morphology: 847
+[0225] Binary pixels after morphology: 826
+[0662] Raw binary pixels before morphology: 537
+[0662] Binary pixels after morphology: 483
+[0609] Raw binary pixels before morphology: 640
+[0609] Binary pixels after morphology: 606
+[0268] Raw binary pixels before morphology: 1344
+[0268] Binary pixels after morphology: 1249
+[0044] Raw binary pixels before morphology: 978
+[0044] Binary pixels after morphology: 888
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 5
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2064)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2632, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3278), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1185, 3292), (1875, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3271), (1229, 3265), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1292, 3229), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3380), (1041, 3374), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3319), (1152, 3310), (1877, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 100 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp3_bkgd100.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:16<03:00, 16.44s/it] 17%|█▋        | 2/12 [00:29<02:24, 14.50s/it] 25%|██▌       | 3/12 [00:39<01:53, 12.58s/it] 33%|███▎      | 4/12 [00:55<01:51, 13.90s/it] 42%|████▏     | 5/12 [01:10<01:38, 14.08s/it] 50%|█████     | 6/12 [01:20<01:17, 12.95s/it] 58%|█████▊    | 7/12 [01:31<01:01, 12.23s/it] 67%|██████▋   | 8/12 [01:42<00:46, 11.70s/it] 75%|███████▌  | 9/12 [01:52<00:34, 11.38s/it] 83%|████████▎ | 10/12 [02:03<00:22, 11.12s/it] 92%|█████████▏| 11/12 [02:16<00:11, 11.66s/it]100%|██████████| 12/12 [02:27<00:00, 11.46s/it]100%|██████████| 12/12 [02:27<00:00, 12.28s/it]
+[0003] Raw binary pixels before morphology: 15877
+[0003] Binary pixels after morphology: 13300
+[0127] Raw binary pixels before morphology: 4673
+[0127] Binary pixels after morphology: 3643
+[0602] Raw binary pixels before morphology: 618
+[0602] Binary pixels after morphology: 603
+[0002] Raw binary pixels before morphology: 6300
+[0002] Binary pixels after morphology: 5916
+[0104] Raw binary pixels before morphology: 1668
+[0104] Binary pixels after morphology: 1590
+[0336] Raw binary pixels before morphology: 535
+[0336] Binary pixels after morphology: 497
+[0156] Raw binary pixels before morphology: 4137
+[0156] Binary pixels after morphology: 3883
+[0225] Raw binary pixels before morphology: 849
+[0225] Binary pixels after morphology: 831
+[0662] Raw binary pixels before morphology: 558
+[0662] Binary pixels after morphology: 500
+[0609] Raw binary pixels before morphology: 652
+[0609] Binary pixels after morphology: 616
+[0268] Raw binary pixels before morphology: 1361
+[0268] Binary pixels after morphology: 1263
+[0044] Raw binary pixels before morphology: 989
+[0044] Binary pixels after morphology: 900
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 5
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 4
+[0002] LP candidates found: 4
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 4
+[0268] LP candidates found: 4
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2064)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3278), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1185, 3292), (1875, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3271), (1229, 3265), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1292, 3229), (2420, 3238), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3381), (1041, 3374), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3319), (1152, 3310), (1877, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 5 for laser point color clustering
+Trying radius 10 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp5_bkgd10.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:11<02:04, 11.31s/it] 17%|█▋        | 2/12 [00:24<02:02, 12.25s/it] 25%|██▌       | 3/12 [00:36<01:49, 12.13s/it] 33%|███▎      | 4/12 [00:47<01:35, 11.93s/it] 42%|████▏     | 5/12 [01:00<01:24, 12.11s/it] 50%|█████     | 6/12 [01:12<01:12, 12.12s/it] 58%|█████▊    | 7/12 [01:24<01:00, 12.06s/it] 67%|██████▋   | 8/12 [01:36<00:48, 12.15s/it] 75%|███████▌  | 9/12 [01:48<00:36, 12.10s/it] 83%|████████▎ | 10/12 [02:00<00:24, 12.09s/it] 92%|█████████▏| 11/12 [02:13<00:12, 12.30s/it]100%|██████████| 12/12 [02:26<00:00, 12.39s/it]100%|██████████| 12/12 [02:26<00:00, 12.18s/it]
+[0003] Raw binary pixels before morphology: 853
+[0003] Binary pixels after morphology: 819
+[0127] Raw binary pixels before morphology: 851
+[0127] Binary pixels after morphology: 714
+[0602] Raw binary pixels before morphology: 103
+[0602] Binary pixels after morphology: 97
+[0002] Raw binary pixels before morphology: 710
+[0002] Binary pixels after morphology: 683
+[0104] Raw binary pixels before morphology: 663
+[0104] Binary pixels after morphology: 640
+[0336] Raw binary pixels before morphology: 95
+[0336] Binary pixels after morphology: 62
+[0156] Raw binary pixels before morphology: 200
+[0156] Binary pixels after morphology: 151
+[0225] Raw binary pixels before morphology: 166
+[0225] Binary pixels after morphology: 121
+[0662] Raw binary pixels before morphology: 90
+[0662] Binary pixels after morphology: 68
+[0609] Raw binary pixels before morphology: 123
+[0609] Binary pixels after morphology: 84
+[0268] Raw binary pixels before morphology: 405
+[0268] Binary pixels after morphology: 380
+[0044] Raw binary pixels before morphology: 220
+[0044] Binary pixels after morphology: 188
+[0003] Connected regions found: 2
+[0003] LP candidates found: 2
+[0127] Connected regions found: 1
+[0127] LP candidates found: 1
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 2
+[0336] LP candidates found: 2
+[0156] Connected regions found: 2
+[0156] LP candidates found: 2
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+[Warning] Not enough LP candidates for 0003 — storing raw candidates
+[Warning] Not enough LP candidates for 0127 — storing raw candidates
+[Warning] Not enough LP candidates for 0336 — storing raw candidates
+[Warning] Not enough LP candidates for 0156 — storing raw candidates
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2673, 3379), (1874, 2069)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1873, 2070)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1875, 2193), (2514, 3291), (1208, 3278)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2563, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(1234, 3264), (2497, 3282), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3300), (1876, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3272), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3282), (1876, 2217), (1228, 3268)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1876, 2279), (1286, 3234), (2420, 3237)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1876, 2232), (1233, 3264)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1039, 3375), (2674, 3382), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2566, 3320), (1153, 3312), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    0.861
+  Mean F1 Score:  0.908
+Trying radius 20 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp5_bkgd20.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:12<02:15, 12.33s/it] 17%|█▋        | 2/12 [00:27<02:17, 13.77s/it] 25%|██▌       | 3/12 [00:49<02:39, 17.76s/it] 33%|███▎      | 4/12 [01:02<02:06, 15.86s/it] 42%|████▏     | 5/12 [01:16<01:46, 15.21s/it] 50%|█████     | 6/12 [01:41<01:51, 18.54s/it] 58%|█████▊    | 7/12 [02:04<01:39, 19.99s/it] 67%|██████▋   | 8/12 [02:23<01:18, 19.60s/it] 75%|███████▌  | 9/12 [02:46<01:02, 20.81s/it] 83%|████████▎ | 10/12 [03:08<00:41, 20.93s/it] 92%|█████████▏| 11/12 [03:23<00:19, 19.35s/it]100%|██████████| 12/12 [03:40<00:00, 18.54s/it]100%|██████████| 12/12 [03:40<00:00, 18.37s/it]
+[0003] Raw binary pixels before morphology: 1518
+[0003] Binary pixels after morphology: 1138
+[0127] Raw binary pixels before morphology: 928
+[0127] Binary pixels after morphology: 880
+[0602] Raw binary pixels before morphology: 230
+[0602] Binary pixels after morphology: 159
+[0002] Raw binary pixels before morphology: 473
+[0002] Binary pixels after morphology: 329
+[0104] Raw binary pixels before morphology: 520
+[0104] Binary pixels after morphology: 463
+[0336] Raw binary pixels before morphology: 209
+[0336] Binary pixels after morphology: 143
+[0156] Raw binary pixels before morphology: 1461
+[0156] Binary pixels after morphology: 1227
+[0225] Raw binary pixels before morphology: 572
+[0225] Binary pixels after morphology: 560
+[0662] Raw binary pixels before morphology: 212
+[0662] Binary pixels after morphology: 168
+[0609] Raw binary pixels before morphology: 383
+[0609] Binary pixels after morphology: 348
+[0268] Raw binary pixels before morphology: 829
+[0268] Binary pixels after morphology: 816
+[0044] Raw binary pixels before morphology: 590
+[0044] Binary pixels after morphology: 560
+[0003] Connected regions found: 2
+[0003] LP candidates found: 2
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 7
+[0002] LP candidates found: 5
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 5
+[0336] LP candidates found: 5
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 4
+[0609] LP candidates found: 4
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+[Warning] Not enough LP candidates for 0003 — storing raw candidates
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2671, 3372), (2680, 3380)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1874, 2068), (2630, 3355), (1087, 3347)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1207, 3283), (1876, 2197)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2561, 3318), (1870, 2132), (1157, 3315)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1233, 3258), (1870, 2210)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2527, 3299), (1186, 3290), (1875, 2175)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3263), (1875, 2218)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (2496, 3281), (1875, 2217)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1876, 2279), (1291, 3231)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1877, 2229)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3380), (1873, 2023), (1041, 3374)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3319), (1153, 3310), (1876, 2152)]
+Evaluation over 12 images:
+  Mean Precision: 0.958
+  Mean Recall:    0.944
+  Mean F1 Score:  0.950
+Trying radius 25 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp5_bkgd25.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:13<02:27, 13.37s/it] 17%|█▋        | 2/12 [00:26<02:11, 13.12s/it] 25%|██▌       | 3/12 [00:39<01:57, 13.04s/it] 33%|███▎      | 4/12 [00:52<01:46, 13.30s/it] 42%|████▏     | 5/12 [01:06<01:32, 13.26s/it] 50%|█████     | 6/12 [01:19<01:20, 13.41s/it] 58%|█████▊    | 7/12 [01:32<01:06, 13.30s/it] 67%|██████▋   | 8/12 [01:45<00:52, 13.06s/it] 75%|███████▌  | 9/12 [01:58<00:39, 13.11s/it] 83%|████████▎ | 10/12 [02:11<00:26, 13.03s/it] 92%|█████████▏| 11/12 [02:24<00:13, 13.04s/it]100%|██████████| 12/12 [02:37<00:00, 12.85s/it]100%|██████████| 12/12 [02:37<00:00, 13.09s/it]
+[0003] Raw binary pixels before morphology: 1657
+[0003] Binary pixels after morphology: 1426
+[0127] Raw binary pixels before morphology: 2252
+[0127] Binary pixels after morphology: 2049
+[0602] Raw binary pixels before morphology: 170
+[0602] Binary pixels after morphology: 163
+[0002] Raw binary pixels before morphology: 956
+[0002] Binary pixels after morphology: 923
+[0104] Raw binary pixels before morphology: 1019
+[0104] Binary pixels after morphology: 973
+[0336] Raw binary pixels before morphology: 146
+[0336] Binary pixels after morphology: 123
+[0156] Raw binary pixels before morphology: 1021
+[0156] Binary pixels after morphology: 910
+[0225] Raw binary pixels before morphology: 466
+[0225] Binary pixels after morphology: 429
+[0662] Raw binary pixels before morphology: 158
+[0662] Binary pixels after morphology: 139
+[0609] Raw binary pixels before morphology: 245
+[0609] Binary pixels after morphology: 215
+[0268] Raw binary pixels before morphology: 782
+[0268] Binary pixels after morphology: 741
+[0044] Raw binary pixels before morphology: 522
+[0044] Binary pixels after morphology: 485
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 4
+[0336] LP candidates found: 4
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1874, 2063), (1085, 3348)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2632, 3358), (1874, 2068), (1085, 3349)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2171), (1185, 3290)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1875, 2214), (1230, 3264)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2495, 3281), (1875, 2217), (1226, 3268)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1231, 3266), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3379), (1873, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1153, 3310), (2567, 3319), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 40 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp5_bkgd40.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:19<03:32, 19.29s/it] 17%|█▋        | 2/12 [00:32<02:34, 15.43s/it] 25%|██▌       | 3/12 [00:43<02:02, 13.60s/it] 33%|███▎      | 4/12 [00:59<01:57, 14.71s/it] 42%|████▏     | 5/12 [01:13<01:41, 14.50s/it] 50%|█████     | 6/12 [01:26<01:23, 13.86s/it] 58%|█████▊    | 7/12 [01:38<01:05, 13.15s/it] 67%|██████▋   | 8/12 [01:48<00:49, 12.36s/it] 75%|███████▌  | 9/12 [02:00<00:36, 12.18s/it] 83%|████████▎ | 10/12 [02:11<00:23, 11.86s/it] 92%|█████████▏| 11/12 [02:24<00:12, 12.08s/it]100%|██████████| 12/12 [02:35<00:00, 11.63s/it]100%|██████████| 12/12 [02:35<00:00, 12.92s/it]
+[0003] Raw binary pixels before morphology: 2205
+[0003] Binary pixels after morphology: 1776
+[0127] Raw binary pixels before morphology: 2686
+[0127] Binary pixels after morphology: 2377
+[0602] Raw binary pixels before morphology: 165
+[0602] Binary pixels after morphology: 155
+[0002] Raw binary pixels before morphology: 1078
+[0002] Binary pixels after morphology: 1041
+[0104] Raw binary pixels before morphology: 1095
+[0104] Binary pixels after morphology: 1034
+[0336] Raw binary pixels before morphology: 146
+[0336] Binary pixels after morphology: 125
+[0156] Raw binary pixels before morphology: 1057
+[0156] Binary pixels after morphology: 939
+[0225] Raw binary pixels before morphology: 470
+[0225] Binary pixels after morphology: 438
+[0662] Raw binary pixels before morphology: 158
+[0662] Binary pixels after morphology: 138
+[0609] Raw binary pixels before morphology: 237
+[0609] Binary pixels after morphology: 209
+[0268] Raw binary pixels before morphology: 791
+[0268] Binary pixels after morphology: 743
+[0044] Raw binary pixels before morphology: 527
+[0044] Binary pixels after morphology: 489
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 4
+[0336] LP candidates found: 4
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3350), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3351), (2633, 3358), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3278), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3290)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1875, 2214), (1230, 3264)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2495, 3281), (1875, 2217), (1226, 3268)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1231, 3266), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3319), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 60 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp5_bkgd60.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:18<03:24, 18.57s/it] 17%|█▋        | 2/12 [00:36<03:03, 18.33s/it] 25%|██▌       | 3/12 [00:55<02:48, 18.74s/it] 33%|███▎      | 4/12 [01:13<02:25, 18.24s/it] 42%|████▏     | 5/12 [01:31<02:06, 18.03s/it] 50%|█████     | 6/12 [01:49<01:48, 18.13s/it] 58%|█████▊    | 7/12 [02:08<01:31, 18.33s/it] 67%|██████▋   | 8/12 [02:28<01:15, 18.86s/it] 75%|███████▌  | 9/12 [02:46<00:56, 18.82s/it] 83%|████████▎ | 10/12 [03:06<00:37, 18.93s/it] 92%|█████████▏| 11/12 [03:24<00:18, 18.68s/it]100%|██████████| 12/12 [03:43<00:00, 18.89s/it]100%|██████████| 12/12 [03:43<00:00, 18.63s/it]
+[0003] Raw binary pixels before morphology: 26440
+[0003] Binary pixels after morphology: 25168
+[0127] Raw binary pixels before morphology: 5951
+[0127] Binary pixels after morphology: 4580
+[0602] Raw binary pixels before morphology: 931
+[0602] Binary pixels after morphology: 839
+[0002] Raw binary pixels before morphology: 10988
+[0002] Binary pixels after morphology: 10749
+[0104] Raw binary pixels before morphology: 2587
+[0104] Binary pixels after morphology: 2392
+[0336] Raw binary pixels before morphology: 3760
+[0336] Binary pixels after morphology: 3579
+[0156] Raw binary pixels before morphology: 8804
+[0156] Binary pixels after morphology: 8350
+[0225] Raw binary pixels before morphology: 1202
+[0225] Binary pixels after morphology: 1176
+[0662] Raw binary pixels before morphology: 865
+[0662] Binary pixels after morphology: 773
+[0609] Raw binary pixels before morphology: 972
+[0609] Binary pixels after morphology: 932
+[0268] Raw binary pixels before morphology: 2942
+[0268] Binary pixels after morphology: 2668
+[0044] Raw binary pixels before morphology: 5846
+[0044] Binary pixels after morphology: 5391
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 8
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 5
+[0002] LP candidates found: 5
+[0104] Connected regions found: 6
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2632, 3357), (1081, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2514, 3290), (1208, 3278), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2132)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3263), (1874, 2211)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1184, 3292), (1874, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3271), (1229, 3265), (1876, 2213)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1227, 3267), (1876, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1291, 3230), (2420, 3238), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3381), (1043, 3375), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3318), (1153, 3309), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 80 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp5_bkgd80.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:15<02:50, 15.54s/it] 17%|█▋        | 2/12 [00:27<02:11, 13.15s/it] 25%|██▌       | 3/12 [00:37<01:47, 11.98s/it] 33%|███▎      | 4/12 [00:51<01:41, 12.73s/it] 42%|████▏     | 5/12 [01:03<01:27, 12.56s/it] 50%|█████     | 6/12 [01:15<01:13, 12.25s/it] 58%|█████▊    | 7/12 [01:26<00:58, 11.76s/it] 67%|██████▋   | 8/12 [01:36<00:44, 11.21s/it] 75%|███████▌  | 9/12 [01:47<00:33, 11.11s/it] 83%|████████▎ | 10/12 [01:57<00:21, 10.88s/it] 92%|█████████▏| 11/12 [02:08<00:11, 11.05s/it]100%|██████████| 12/12 [02:18<00:00, 10.72s/it]100%|██████████| 12/12 [02:18<00:00, 11.57s/it]
+[0003] Raw binary pixels before morphology: 3612
+[0003] Binary pixels after morphology: 2960
+[0127] Raw binary pixels before morphology: 3365
+[0127] Binary pixels after morphology: 2674
+[0602] Raw binary pixels before morphology: 165
+[0602] Binary pixels after morphology: 155
+[0002] Raw binary pixels before morphology: 1227
+[0002] Binary pixels after morphology: 1148
+[0104] Raw binary pixels before morphology: 1242
+[0104] Binary pixels after morphology: 1186
+[0336] Raw binary pixels before morphology: 147
+[0336] Binary pixels after morphology: 130
+[0156] Raw binary pixels before morphology: 1186
+[0156] Binary pixels after morphology: 1055
+[0225] Raw binary pixels before morphology: 480
+[0225] Binary pixels after morphology: 444
+[0662] Raw binary pixels before morphology: 167
+[0662] Binary pixels after morphology: 138
+[0609] Raw binary pixels before morphology: 240
+[0609] Binary pixels after morphology: 216
+[0268] Raw binary pixels before morphology: 833
+[0268] Binary pixels after morphology: 780
+[0044] Raw binary pixels before morphology: 549
+[0044] Binary pixels after morphology: 493
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3351), (1874, 2068), (2633, 3358)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3278), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1875, 2214), (1229, 3265)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2495, 3281), (1875, 2217), (1226, 3268)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1231, 3266), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1153, 3310), (2567, 3319), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 100 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp5_bkgd100.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:15<02:53, 15.76s/it] 17%|█▋        | 2/12 [00:27<02:11, 13.12s/it] 25%|██▌       | 3/12 [00:37<01:47, 11.97s/it] 33%|███▎      | 4/12 [00:51<01:42, 12.80s/it] 42%|████▏     | 5/12 [01:04<01:28, 12.63s/it] 50%|█████     | 6/12 [01:15<01:13, 12.24s/it] 58%|█████▊    | 7/12 [01:26<00:58, 11.74s/it] 67%|██████▋   | 8/12 [01:35<00:44, 11.09s/it] 75%|███████▌  | 9/12 [01:46<00:33, 11.01s/it] 83%|████████▎ | 10/12 [01:57<00:21, 10.79s/it] 92%|█████████▏| 11/12 [02:08<00:10, 10.91s/it]100%|██████████| 12/12 [02:17<00:00, 10.55s/it]100%|██████████| 12/12 [02:17<00:00, 11.50s/it]
+[0003] Raw binary pixels before morphology: 3542
+[0003] Binary pixels after morphology: 2845
+[0127] Raw binary pixels before morphology: 3373
+[0127] Binary pixels after morphology: 2675
+[0602] Raw binary pixels before morphology: 162
+[0602] Binary pixels after morphology: 153
+[0002] Raw binary pixels before morphology: 1201
+[0002] Binary pixels after morphology: 1130
+[0104] Raw binary pixels before morphology: 1223
+[0104] Binary pixels after morphology: 1173
+[0336] Raw binary pixels before morphology: 146
+[0336] Binary pixels after morphology: 129
+[0156] Raw binary pixels before morphology: 1190
+[0156] Binary pixels after morphology: 1067
+[0225] Raw binary pixels before morphology: 477
+[0225] Binary pixels after morphology: 436
+[0662] Raw binary pixels before morphology: 165
+[0662] Binary pixels after morphology: 137
+[0609] Raw binary pixels before morphology: 238
+[0609] Binary pixels after morphology: 211
+[0268] Raw binary pixels before morphology: 828
+[0268] Binary pixels after morphology: 773
+[0044] Raw binary pixels before morphology: 545
+[0044] Binary pixels after morphology: 487
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3351), (1874, 2068), (2633, 3358)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3278), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1229, 3265), (1875, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2495, 3281), (1875, 2217), (1226, 3268)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1231, 3266), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1153, 3310), (2567, 3319), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 10 for laser point color clustering
+Trying radius 20 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp10_bkgd20.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:17<03:09, 17.22s/it] 17%|█▋        | 2/12 [00:40<03:27, 20.76s/it] 25%|██▌       | 3/12 [00:59<02:57, 19.76s/it] 33%|███▎      | 4/12 [01:20<02:44, 20.60s/it] 42%|████▏     | 5/12 [01:44<02:30, 21.57s/it] 50%|█████     | 6/12 [02:04<02:06, 21.00s/it] 58%|█████▊    | 7/12 [02:23<01:41, 20.33s/it] 67%|██████▋   | 8/12 [02:42<01:19, 19.94s/it] 75%|███████▌  | 9/12 [03:01<00:58, 19.66s/it] 83%|████████▎ | 10/12 [03:19<00:38, 19.31s/it] 92%|█████████▏| 11/12 [03:42<00:20, 20.37s/it]100%|██████████| 12/12 [04:02<00:00, 20.25s/it]100%|██████████| 12/12 [04:02<00:00, 20.21s/it]
+[0003] Raw binary pixels before morphology: 288875
+[0003] Binary pixels after morphology: 223896
+[0127] Raw binary pixels before morphology: 4181
+[0127] Binary pixels after morphology: 2846
+[0602] Raw binary pixels before morphology: 139
+[0602] Binary pixels after morphology: 118
+[0002] Raw binary pixels before morphology: 11427
+[0002] Binary pixels after morphology: 3399
+[0104] Raw binary pixels before morphology: 1610
+[0104] Binary pixels after morphology: 1167
+[0336] Raw binary pixels before morphology: 122
+[0336] Binary pixels after morphology: 81
+[0156] Raw binary pixels before morphology: 808
+[0156] Binary pixels after morphology: 657
+[0225] Raw binary pixels before morphology: 314
+[0225] Binary pixels after morphology: 232
+[0662] Raw binary pixels before morphology: 164
+[0662] Binary pixels after morphology: 105
+[0609] Raw binary pixels before morphology: 187
+[0609] Binary pixels after morphology: 167
+[0268] Raw binary pixels before morphology: 802
+[0268] Binary pixels after morphology: 612
+[0044] Raw binary pixels before morphology: 529
+[0044] Binary pixels after morphology: 371
+[0003] Connected regions found: 6
+[0003] LP candidates found: 5
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 5
+[0002] LP candidates found: 5
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 2
+[0336] LP candidates found: 2
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 4
+[0225] LP candidates found: 4
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+[Warning] Not enough LP candidates for 0336 — storing raw candidates
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1874, 2068), (1100, 3338)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1874, 2068), (2630, 3358), (1086, 3347)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1208, 3278), (1875, 2193), (2514, 3291)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(1156, 3308), (2564, 3319), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(1234, 3264), (2497, 3281), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2529, 3300), (1875, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3272), (1876, 2214), (1231, 3264)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2495, 3281), (1875, 2219), (1227, 3269)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1875, 2279), (2421, 3238), (1286, 3234)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3272), (1231, 3265), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (1873, 2024), (2674, 3381)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1153, 3310), (2567, 3319), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    0.972
+  Mean F1 Score:  0.983
+Trying radius 25 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp10_bkgd25.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:37<06:50, 37.36s/it] 17%|█▋        | 2/12 [01:13<06:05, 36.60s/it] 25%|██▌       | 3/12 [02:09<06:48, 45.43s/it] 33%|███▎      | 4/12 [02:46<05:36, 42.08s/it] 42%|████▏     | 5/12 [03:23<04:41, 40.16s/it] 50%|█████     | 6/12 [04:21<04:38, 46.46s/it] 58%|█████▊    | 7/12 [05:21<04:13, 50.78s/it] 67%|██████▋   | 8/12 [06:07<03:17, 49.43s/it] 75%|███████▌  | 9/12 [07:08<02:38, 52.84s/it] 83%|████████▎ | 10/12 [08:01<01:46, 53.07s/it] 92%|█████████▏| 11/12 [08:41<00:48, 48.86s/it]100%|██████████| 12/12 [09:20<00:00, 46.02s/it]100%|██████████| 12/12 [09:20<00:00, 46.73s/it]
+[0003] Raw binary pixels before morphology: 4513
+[0003] Binary pixels after morphology: 4182
+[0127] Raw binary pixels before morphology: 793
+[0127] Binary pixels after morphology: 736
+[0602] Raw binary pixels before morphology: 431
+[0602] Binary pixels after morphology: 396
+[0002] Raw binary pixels before morphology: 1943
+[0002] Binary pixels after morphology: 1519
+[0104] Raw binary pixels before morphology: 304
+[0104] Binary pixels after morphology: 203
+[0336] Raw binary pixels before morphology: 336
+[0336] Binary pixels after morphology: 297
+[0156] Raw binary pixels before morphology: 2707
+[0156] Binary pixels after morphology: 2475
+[0225] Raw binary pixels before morphology: 664
+[0225] Binary pixels after morphology: 656
+[0662] Raw binary pixels before morphology: 379
+[0662] Binary pixels after morphology: 338
+[0609] Raw binary pixels before morphology: 496
+[0609] Binary pixels after morphology: 444
+[0268] Raw binary pixels before morphology: 844
+[0268] Binary pixels after morphology: 784
+[0044] Raw binary pixels before morphology: 682
+[0044] Binary pixels after morphology: 647
+[0003] Connected regions found: 2
+[0003] LP candidates found: 2
+[0127] Connected regions found: 4
+[0127] LP candidates found: 4
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 2
+[0002] LP candidates found: 2
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 4
+[0156] LP candidates found: 4
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 4
+[0609] LP candidates found: 4
+[0268] Connected regions found: 5
+[0268] LP candidates found: 5
+[0044] Connected regions found: 4
+[0044] LP candidates found: 4
+[Warning] Not enough LP candidates for 0003 — storing raw candidates
+[Warning] Not enough LP candidates for 0002 — storing raw candidates
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2669, 3372), (2681, 3381)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2631, 3357), (1874, 2068), (1088, 3351)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3278), (1874, 2190)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(1153, 3303), (1872, 2130)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2500, 3277), (2492, 3276), (1229, 3261)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1874, 2169), (1185, 3291)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3271), (1229, 3264), (1875, 2218)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2217)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1293, 3229), (2419, 3237), (1877, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1875, 2227)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3380), (1873, 2023), (1035, 3373)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3319), (1153, 3310), (1875, 2146)]
+Evaluation over 12 images:
+  Mean Precision: 0.931
+  Mean Recall:    0.889
+  Mean F1 Score:  0.906
+Trying radius 40 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp10_bkgd40.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:36<06:40, 36.40s/it] 17%|█▋        | 2/12 [01:19<06:42, 40.29s/it] 25%|██▌       | 3/12 [02:17<07:16, 48.50s/it] 33%|███▎      | 4/12 [02:57<05:59, 44.93s/it] 42%|████▏     | 5/12 [03:38<05:05, 43.70s/it] 50%|█████     | 6/12 [04:39<04:56, 49.39s/it] 58%|█████▊    | 7/12 [05:39<04:25, 53.06s/it] 67%|██████▋   | 8/12 [06:30<03:29, 52.34s/it] 75%|███████▌  | 9/12 [07:31<02:45, 55.02s/it] 83%|████████▎ | 10/12 [08:26<01:50, 55.15s/it] 92%|█████████▏| 11/12 [09:12<00:52, 52.10s/it]100%|██████████| 12/12 [09:57<00:00, 50.07s/it]100%|██████████| 12/12 [09:57<00:00, 49.79s/it]
+[0003] Raw binary pixels before morphology: 5476
+[0003] Binary pixels after morphology: 5149
+[0127] Raw binary pixels before morphology: 913
+[0127] Binary pixels after morphology: 863
+[0602] Raw binary pixels before morphology: 454
+[0602] Binary pixels after morphology: 413
+[0002] Raw binary pixels before morphology: 2969
+[0002] Binary pixels after morphology: 2619
+[0104] Raw binary pixels before morphology: 433
+[0104] Binary pixels after morphology: 342
+[0336] Raw binary pixels before morphology: 341
+[0336] Binary pixels after morphology: 303
+[0156] Raw binary pixels before morphology: 3325
+[0156] Binary pixels after morphology: 3113
+[0225] Raw binary pixels before morphology: 723
+[0225] Binary pixels after morphology: 708
+[0662] Raw binary pixels before morphology: 383
+[0662] Binary pixels after morphology: 344
+[0609] Raw binary pixels before morphology: 528
+[0609] Binary pixels after morphology: 474
+[0268] Raw binary pixels before morphology: 943
+[0268] Binary pixels after morphology: 903
+[0044] Raw binary pixels before morphology: 738
+[0044] Binary pixels after morphology: 700
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 4
+[0127] LP candidates found: 4
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 5
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 4
+[0156] LP candidates found: 4
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 4
+[0609] LP candidates found: 4
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 4
+[0044] LP candidates found: 4
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2669, 3372), (2680, 3380), (1079, 3357)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1874, 2068), (1085, 3348)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3290), (1208, 3278), (1874, 2190)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(1153, 3302), (1871, 2130), (1158, 3317)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2498, 3276), (1229, 3261), (1870, 2210)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2527, 3298), (1186, 3291), (1874, 2169)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1875, 2218)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3267), (1875, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1292, 3229), (2419, 3237), (1877, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3270), (1875, 2227)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2674, 3380), (1873, 2024), (1040, 3375)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3319), (1152, 3310), (1875, 2146)]
+Evaluation over 12 images:
+  Mean Precision: 0.944
+  Mean Recall:    0.944
+  Mean F1 Score:  0.944
+Trying radius 60 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp10_bkgd60.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:26<04:54, 26.75s/it] 17%|█▋        | 2/12 [00:56<04:43, 28.38s/it] 25%|██▌       | 3/12 [01:22<04:06, 27.43s/it] 33%|███▎      | 4/12 [01:51<03:44, 28.02s/it] 42%|████▏     | 5/12 [02:20<03:19, 28.50s/it] 50%|█████     | 6/12 [02:52<02:57, 29.61s/it] 58%|█████▊    | 7/12 [03:19<02:24, 28.80s/it] 67%|██████▋   | 8/12 [03:43<01:48, 27.13s/it] 75%|███████▌  | 9/12 [04:11<01:22, 27.34s/it] 83%|████████▎ | 10/12 [04:36<00:53, 26.60s/it] 92%|█████████▏| 11/12 [05:05<00:27, 27.47s/it]100%|██████████| 12/12 [05:29<00:00, 26.41s/it]100%|██████████| 12/12 [05:29<00:00, 27.45s/it]
+[0003] Raw binary pixels before morphology: 51909
+[0003] Binary pixels after morphology: 27597
+[0127] Raw binary pixels before morphology: 5694
+[0127] Binary pixels after morphology: 4173
+[0602] Raw binary pixels before morphology: 305
+[0602] Binary pixels after morphology: 251
+[0002] Raw binary pixels before morphology: 9209
+[0002] Binary pixels after morphology: 4486
+[0104] Raw binary pixels before morphology: 3496
+[0104] Binary pixels after morphology: 2573
+[0336] Raw binary pixels before morphology: 254
+[0336] Binary pixels after morphology: 238
+[0156] Raw binary pixels before morphology: 3537
+[0156] Binary pixels after morphology: 3171
+[0225] Raw binary pixels before morphology: 767
+[0225] Binary pixels after morphology: 745
+[0662] Raw binary pixels before morphology: 312
+[0662] Binary pixels after morphology: 240
+[0609] Raw binary pixels before morphology: 471
+[0609] Binary pixels after morphology: 441
+[0268] Raw binary pixels before morphology: 1601
+[0268] Binary pixels after morphology: 1375
+[0044] Raw binary pixels before morphology: 1447
+[0044] Binary pixels after morphology: 1062
+[0003] Connected regions found: 10
+[0003] LP candidates found: 5
+[0127] Connected regions found: 7
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 12
+[0002] LP candidates found: 5
+[0104] Connected regions found: 12
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(1874, 2064), (1097, 3352), (2666, 3361)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3358), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3278), (1876, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3320), (1158, 3307), (1874, 2135)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(1234, 3265), (2496, 3280), (1874, 2210)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1230, 3263), (1875, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (2496, 3281), (1875, 2217)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1291, 3229), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3373), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1877, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 80 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp10_bkgd80.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:32<06:00, 32.78s/it] 17%|█▋        | 2/12 [01:06<05:35, 33.54s/it] 25%|██▌       | 3/12 [01:37<04:48, 32.04s/it] 33%|███▎      | 4/12 [02:15<04:36, 34.56s/it] 42%|████▏     | 5/12 [02:51<04:06, 35.21s/it] 50%|█████     | 6/12 [03:27<03:32, 35.46s/it] 58%|█████▊    | 7/12 [03:59<02:51, 34.23s/it] 67%|██████▋   | 8/12 [04:27<02:08, 32.16s/it] 75%|███████▌  | 9/12 [04:59<01:36, 32.20s/it] 83%|████████▎ | 10/12 [05:28<01:02, 31.31s/it] 92%|█████████▏| 11/12 [06:02<00:32, 32.13s/it]100%|██████████| 12/12 [06:30<00:00, 30.87s/it]100%|██████████| 12/12 [06:30<00:00, 32.57s/it]
+[0003] Raw binary pixels before morphology: 6429
+[0003] Binary pixels after morphology: 5627
+[0127] Raw binary pixels before morphology: 3879
+[0127] Binary pixels after morphology: 3094
+[0602] Raw binary pixels before morphology: 254
+[0602] Binary pixels after morphology: 230
+[0002] Raw binary pixels before morphology: 1583
+[0002] Binary pixels after morphology: 1373
+[0104] Raw binary pixels before morphology: 1467
+[0104] Binary pixels after morphology: 1406
+[0336] Raw binary pixels before morphology: 226
+[0336] Binary pixels after morphology: 217
+[0156] Raw binary pixels before morphology: 2912
+[0156] Binary pixels after morphology: 2717
+[0225] Raw binary pixels before morphology: 729
+[0225] Binary pixels after morphology: 703
+[0662] Raw binary pixels before morphology: 232
+[0662] Binary pixels after morphology: 197
+[0609] Raw binary pixels before morphology: 430
+[0609] Binary pixels after morphology: 401
+[0268] Raw binary pixels before morphology: 1141
+[0268] Binary pixels after morphology: 1072
+[0044] Raw binary pixels before morphology: 800
+[0044] Binary pixels after morphology: 749
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3350), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1040, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 100 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp10_bkgd100.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:33<06:13, 33.92s/it] 17%|█▋        | 2/12 [01:09<05:49, 34.98s/it] 25%|██▌       | 3/12 [01:42<05:05, 33.92s/it] 33%|███▎      | 4/12 [02:22<04:51, 36.47s/it] 42%|████▏     | 5/12 [03:00<04:19, 37.01s/it] 50%|█████     | 6/12 [03:37<03:41, 36.85s/it] 58%|█████▊    | 7/12 [04:11<02:59, 35.97s/it] 67%|██████▋   | 8/12 [04:41<02:16, 34.01s/it] 75%|███████▌  | 9/12 [05:15<01:42, 34.04s/it] 83%|████████▎ | 10/12 [05:46<01:06, 33.26s/it] 92%|█████████▏| 11/12 [06:22<00:33, 33.88s/it]100%|██████████| 12/12 [06:51<00:00, 32.52s/it]100%|██████████| 12/12 [06:51<00:00, 34.29s/it]
+[0003] Raw binary pixels before morphology: 7864
+[0003] Binary pixels after morphology: 6598
+[0127] Raw binary pixels before morphology: 4200
+[0127] Binary pixels after morphology: 3269
+[0602] Raw binary pixels before morphology: 247
+[0602] Binary pixels after morphology: 227
+[0002] Raw binary pixels before morphology: 1655
+[0002] Binary pixels after morphology: 1446
+[0104] Raw binary pixels before morphology: 1549
+[0104] Binary pixels after morphology: 1489
+[0336] Raw binary pixels before morphology: 222
+[0336] Binary pixels after morphology: 207
+[0156] Raw binary pixels before morphology: 2883
+[0156] Binary pixels after morphology: 2679
+[0225] Raw binary pixels before morphology: 724
+[0225] Binary pixels after morphology: 687
+[0662] Raw binary pixels before morphology: 239
+[0662] Binary pixels after morphology: 192
+[0609] Raw binary pixels before morphology: 425
+[0609] Binary pixels after morphology: 390
+[0268] Raw binary pixels before morphology: 1179
+[0268] Binary pixels after morphology: 1110
+[0044] Raw binary pixels before morphology: 835
+[0044] Binary pixels after morphology: 749
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 4
+[0127] LP candidates found: 4
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 4
+[0002] LP candidates found: 4
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 4
+[0268] LP candidates found: 4
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 15 for laser point color clustering
+Trying radius 20 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp15_bkgd20.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:31<05:51, 31.94s/it] 17%|█▋        | 2/12 [01:05<05:26, 32.62s/it] 25%|██▌       | 3/12 [01:35<04:44, 31.60s/it] 33%|███▎      | 4/12 [02:12<04:30, 33.77s/it] 42%|████▏     | 5/12 [02:47<03:59, 34.23s/it] 50%|█████     | 6/12 [03:21<03:25, 34.24s/it] 58%|█████▊    | 7/12 [03:53<02:46, 33.35s/it] 67%|██████▋   | 8/12 [04:21<02:06, 31.57s/it] 75%|███████▌  | 9/12 [04:53<01:35, 31.73s/it] 83%|████████▎ | 10/12 [05:22<01:02, 31.03s/it] 92%|█████████▏| 11/12 [05:55<00:31, 31.68s/it]100%|██████████| 12/12 [06:23<00:00, 30.38s/it]100%|██████████| 12/12 [06:23<00:00, 31.93s/it]
+[0003] Raw binary pixels before morphology: 3234
+[0003] Binary pixels after morphology: 2817
+[0127] Raw binary pixels before morphology: 2856
+[0127] Binary pixels after morphology: 2469
+[0602] Raw binary pixels before morphology: 230
+[0602] Binary pixels after morphology: 222
+[0002] Raw binary pixels before morphology: 1065
+[0002] Binary pixels after morphology: 1014
+[0104] Raw binary pixels before morphology: 1161
+[0104] Binary pixels after morphology: 1125
+[0336] Raw binary pixels before morphology: 207
+[0336] Binary pixels after morphology: 177
+[0156] Raw binary pixels before morphology: 2082
+[0156] Binary pixels after morphology: 1934
+[0225] Raw binary pixels before morphology: 622
+[0225] Binary pixels after morphology: 600
+[0662] Raw binary pixels before morphology: 206
+[0662] Binary pixels after morphology: 186
+[0609] Raw binary pixels before morphology: 391
+[0609] Binary pixels after morphology: 352
+[0268] Raw binary pixels before morphology: 951
+[0268] Binary pixels after morphology: 919
+[0044] Raw binary pixels before morphology: 653
+[0044] Binary pixels after morphology: 630
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1874, 2064), (1087, 3346)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1874, 2068), (2630, 3356), (1087, 3347)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3281)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1876, 2150)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 25 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp15_bkgd25.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:45<08:24, 45.86s/it] 17%|█▋        | 2/12 [01:46<09:04, 54.46s/it] 25%|██▌       | 3/12 [02:27<07:14, 48.23s/it] 33%|███▎      | 4/12 [03:20<06:42, 50.26s/it] 42%|████▏     | 5/12 [04:18<06:11, 53.05s/it] 50%|█████     | 6/12 [04:50<04:35, 45.92s/it] 58%|█████▊    | 7/12 [05:28<03:37, 43.42s/it] 67%|██████▋   | 8/12 [06:19<03:02, 45.74s/it] 75%|███████▌  | 9/12 [06:58<02:10, 43.58s/it] 83%|████████▎ | 10/12 [07:41<01:26, 43.43s/it] 92%|█████████▏| 11/12 [08:41<00:48, 48.43s/it]100%|██████████| 12/12 [09:36<00:00, 50.63s/it]100%|██████████| 12/12 [09:36<00:00, 48.08s/it]
+[0003] Raw binary pixels before morphology: 27752
+[0003] Binary pixels after morphology: 27393
+[0127] Raw binary pixels before morphology: 1547
+[0127] Binary pixels after morphology: 1214
+[0602] Raw binary pixels before morphology: 4650
+[0602] Binary pixels after morphology: 3859
+[0002] Raw binary pixels before morphology: 8960
+[0002] Binary pixels after morphology: 8865
+[0104] Raw binary pixels before morphology: 436
+[0104] Binary pixels after morphology: 315
+[0336] Raw binary pixels before morphology: 13691
+[0336] Binary pixels after morphology: 13260
+[0156] Raw binary pixels before morphology: 11971
+[0156] Binary pixels after morphology: 11365
+[0225] Raw binary pixels before morphology: 2004
+[0225] Binary pixels after morphology: 1783
+[0662] Raw binary pixels before morphology: 1295
+[0662] Binary pixels after morphology: 1170
+[0609] Raw binary pixels before morphology: 1336
+[0609] Binary pixels after morphology: 1239
+[0268] Raw binary pixels before morphology: 2099
+[0268] Binary pixels after morphology: 1861
+[0044] Raw binary pixels before morphology: 4093
+[0044] Binary pixels after morphology: 3534
+[0003] Connected regions found: 1
+[0003] LP candidates found: 1
+[0127] Connected regions found: 5
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 0
+[0002] LP candidates found: 0
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 4
+[0156] LP candidates found: 4
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 4
+[0268] LP candidates found: 4
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+[Warning] Not enough LP candidates for 0003 — storing raw candidates
+[Warning] Not enough LP candidates for 0002 — storing raw candidates
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2669, 3372)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2630, 3356), (1874, 2068), (1090, 3348)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2514, 3290), (1208, 3278), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and []
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2503, 3278), (2491, 3276), (2489, 3281)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3298), (1185, 3291), (1873, 2170)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3271), (1229, 3265), (1875, 2213)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1227, 3267), (1876, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1289, 3230), (2420, 3237), (1876, 2278)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3271), (1231, 3265), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(2673, 3382), (1873, 2023), (1033, 3377)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(2567, 3318), (1875, 2151), (1152, 3310)]
+Evaluation over 12 images:
+  Mean Precision: 0.861
+  Mean Recall:    0.806
+  Mean F1 Score:  0.819
+Trying radius 40 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp15_bkgd40.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:34<06:14, 34.03s/it] 17%|█▋        | 2/12 [01:07<05:34, 33.47s/it] 25%|██▌       | 3/12 [01:37<04:49, 32.12s/it] 33%|███▎      | 4/12 [02:17<04:40, 35.07s/it] 42%|████▏     | 5/12 [02:52<04:07, 35.30s/it] 50%|█████     | 6/12 [03:29<03:33, 35.61s/it] 58%|█████▊    | 7/12 [04:01<02:52, 34.60s/it] 67%|██████▋   | 8/12 [04:28<02:08, 32.20s/it] 75%|███████▌  | 9/12 [05:02<01:37, 32.54s/it] 83%|████████▎ | 10/12 [05:31<01:03, 31.62s/it] 92%|█████████▏| 11/12 [06:05<00:32, 32.30s/it]100%|██████████| 12/12 [06:31<00:00, 30.51s/it]100%|██████████| 12/12 [06:31<00:00, 32.65s/it]
+[0003] Raw binary pixels before morphology: 4365
+[0003] Binary pixels after morphology: 3816
+[0127] Raw binary pixels before morphology: 3308
+[0127] Binary pixels after morphology: 2740
+[0602] Raw binary pixels before morphology: 242
+[0602] Binary pixels after morphology: 226
+[0002] Raw binary pixels before morphology: 1214
+[0002] Binary pixels after morphology: 1135
+[0104] Raw binary pixels before morphology: 1273
+[0104] Binary pixels after morphology: 1222
+[0336] Raw binary pixels before morphology: 218
+[0336] Binary pixels after morphology: 201
+[0156] Raw binary pixels before morphology: 2474
+[0156] Binary pixels after morphology: 2316
+[0225] Raw binary pixels before morphology: 660
+[0225] Binary pixels after morphology: 639
+[0662] Raw binary pixels before morphology: 222
+[0662] Binary pixels after morphology: 192
+[0609] Raw binary pixels before morphology: 413
+[0609] Binary pixels after morphology: 377
+[0268] Raw binary pixels before morphology: 1006
+[0268] Binary pixels after morphology: 956
+[0044] Raw binary pixels before morphology: 697
+[0044] Binary pixels after morphology: 659
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3350), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3264), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1184, 3291)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3375), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3319), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 60 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp15_bkgd60.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:33<06:12, 33.83s/it] 17%|█▋        | 2/12 [01:08<05:44, 34.41s/it] 25%|██▌       | 3/12 [01:41<05:01, 33.54s/it] 33%|███▎      | 4/12 [02:20<04:47, 35.91s/it] 42%|████▏     | 5/12 [02:56<04:10, 35.80s/it] 50%|█████     | 6/12 [03:32<03:34, 35.81s/it] 58%|█████▊    | 7/12 [04:04<02:53, 34.75s/it] 67%|██████▋   | 8/12 [04:31<02:08, 32.22s/it] 75%|███████▌  | 9/12 [05:04<01:37, 32.49s/it] 83%|████████▎ | 10/12 [05:34<01:03, 31.66s/it] 92%|█████████▏| 11/12 [06:07<00:32, 32.03s/it]100%|██████████| 12/12 [06:33<00:00, 30.21s/it]100%|██████████| 12/12 [06:33<00:00, 32.78s/it]
+[0003] Raw binary pixels before morphology: 5802
+[0003] Binary pixels after morphology: 4837
+[0127] Raw binary pixels before morphology: 3744
+[0127] Binary pixels after morphology: 2945
+[0602] Raw binary pixels before morphology: 243
+[0602] Binary pixels after morphology: 226
+[0002] Raw binary pixels before morphology: 1353
+[0002] Binary pixels after morphology: 1235
+[0104] Raw binary pixels before morphology: 1394
+[0104] Binary pixels after morphology: 1332
+[0336] Raw binary pixels before morphology: 219
+[0336] Binary pixels after morphology: 202
+[0156] Raw binary pixels before morphology: 2556
+[0156] Binary pixels after morphology: 2364
+[0225] Raw binary pixels before morphology: 654
+[0225] Binary pixels after morphology: 630
+[0662] Raw binary pixels before morphology: 232
+[0662] Binary pixels after morphology: 192
+[0609] Raw binary pixels before morphology: 410
+[0609] Binary pixels after morphology: 373
+[0268] Raw binary pixels before morphology: 1038
+[0268] Binary pixels after morphology: 983
+[0044] Raw binary pixels before morphology: 717
+[0044] Binary pixels after morphology: 668
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 3
+[0127] LP candidates found: 3
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1184, 3291)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 80 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp15_bkgd80.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:34<06:21, 34.71s/it] 17%|█▋        | 2/12 [01:10<05:51, 35.18s/it] 25%|██▌       | 3/12 [01:41<05:01, 33.45s/it] 33%|███▎      | 4/12 [02:22<04:51, 36.41s/it] 42%|████▏     | 5/12 [03:00<04:18, 36.97s/it] 50%|█████     | 6/12 [03:35<03:38, 36.36s/it] 58%|█████▊    | 7/12 [04:08<02:55, 35.05s/it] 67%|██████▋   | 8/12 [04:36<02:12, 33.10s/it] 75%|███████▌  | 9/12 [05:09<01:39, 33.01s/it] 83%|████████▎ | 10/12 [05:40<01:04, 32.26s/it] 92%|█████████▏| 11/12 [06:15<00:33, 33.17s/it]100%|██████████| 12/12 [06:44<00:00, 31.85s/it]100%|██████████| 12/12 [06:44<00:00, 33.70s/it]
+[0003] Raw binary pixels before morphology: 6861
+[0003] Binary pixels after morphology: 5689
+[0127] Raw binary pixels before morphology: 3984
+[0127] Binary pixels after morphology: 3116
+[0602] Raw binary pixels before morphology: 243
+[0602] Binary pixels after morphology: 226
+[0002] Raw binary pixels before morphology: 1441
+[0002] Binary pixels after morphology: 1297
+[0104] Raw binary pixels before morphology: 1461
+[0104] Binary pixels after morphology: 1390
+[0336] Raw binary pixels before morphology: 219
+[0336] Binary pixels after morphology: 202
+[0156] Raw binary pixels before morphology: 2639
+[0156] Binary pixels after morphology: 2447
+[0225] Raw binary pixels before morphology: 677
+[0225] Binary pixels after morphology: 647
+[0662] Raw binary pixels before morphology: 235
+[0662] Binary pixels after morphology: 192
+[0609] Raw binary pixels before morphology: 416
+[0609] Binary pixels after morphology: 380
+[0268] Raw binary pixels before morphology: 1102
+[0268] Binary pixels after morphology: 1018
+[0044] Raw binary pixels before morphology: 758
+[0044] Binary pixels after morphology: 692
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 4
+[0127] LP candidates found: 4
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 3
+[0002] LP candidates found: 3
+[0104] Connected regions found: 3
+[0104] LP candidates found: 3
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3349), (1874, 2064)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1184, 3291)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1875, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3265), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1040, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3319), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 100 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp15_bkgd100.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:37<06:47, 37.09s/it] 17%|█▋        | 2/12 [01:14<06:12, 37.25s/it] 25%|██▌       | 3/12 [01:49<05:27, 36.38s/it] 33%|███▎      | 4/12 [02:32<05:12, 39.05s/it] 42%|████▏     | 5/12 [03:12<04:35, 39.36s/it] 50%|█████     | 6/12 [03:51<03:54, 39.14s/it] 58%|█████▊    | 7/12 [04:27<03:11, 38.24s/it] 67%|██████▋   | 8/12 [04:59<02:24, 36.13s/it] 75%|███████▌  | 9/12 [05:36<01:48, 36.33s/it] 83%|████████▎ | 10/12 [06:10<01:11, 35.63s/it] 92%|█████████▏| 11/12 [06:48<00:36, 36.40s/it]100%|██████████| 12/12 [07:19<00:00, 34.89s/it]100%|██████████| 12/12 [07:19<00:00, 36.66s/it]
+[0003] Raw binary pixels before morphology: 8157
+[0003] Binary pixels after morphology: 6822
+[0127] Raw binary pixels before morphology: 4242
+[0127] Binary pixels after morphology: 3303
+[0602] Raw binary pixels before morphology: 248
+[0602] Binary pixels after morphology: 227
+[0002] Raw binary pixels before morphology: 1660
+[0002] Binary pixels after morphology: 1453
+[0104] Raw binary pixels before morphology: 1536
+[0104] Binary pixels after morphology: 1473
+[0336] Raw binary pixels before morphology: 222
+[0336] Binary pixels after morphology: 207
+[0156] Raw binary pixels before morphology: 2851
+[0156] Binary pixels after morphology: 2661
+[0225] Raw binary pixels before morphology: 725
+[0225] Binary pixels after morphology: 691
+[0662] Raw binary pixels before morphology: 242
+[0662] Binary pixels after morphology: 193
+[0609] Raw binary pixels before morphology: 426
+[0609] Binary pixels after morphology: 392
+[0268] Raw binary pixels before morphology: 1155
+[0268] Binary pixels after morphology: 1090
+[0044] Raw binary pixels before morphology: 824
+[0044] Binary pixels after morphology: 741
+[0003] Connected regions found: 3
+[0003] LP candidates found: 3
+[0127] Connected regions found: 4
+[0127] LP candidates found: 4
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 4
+[0002] LP candidates found: 4
+[0104] Connected regions found: 4
+[0104] LP candidates found: 4
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 4
+[0268] LP candidates found: 4
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3380), (1083, 3350), (1874, 2064)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2633, 3357), (1082, 3351), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3308), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3263), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1876, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1040, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 30 for laser point color clustering
+Trying radius 40 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp30_bkgd40.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:35<06:35, 35.92s/it] 17%|█▋        | 2/12 [01:14<06:14, 37.49s/it] 25%|██▌       | 3/12 [01:51<05:36, 37.44s/it] 33%|███▎      | 4/12 [02:35<05:19, 39.89s/it] 42%|████▏     | 5/12 [03:16<04:41, 40.24s/it] 50%|█████     | 6/12 [03:58<04:05, 40.94s/it] 58%|█████▊    | 7/12 [04:37<03:21, 40.36s/it] 67%|██████▋   | 8/12 [05:10<02:31, 37.92s/it] 75%|███████▌  | 9/12 [05:50<01:55, 38.52s/it] 83%|████████▎ | 10/12 [06:26<01:15, 37.68s/it] 92%|█████████▏| 11/12 [07:05<00:38, 38.16s/it]100%|██████████| 12/12 [07:37<00:00, 36.22s/it]100%|██████████| 12/12 [07:37<00:00, 38.10s/it]
+[0003] Raw binary pixels before morphology: 122368
+[0003] Binary pixels after morphology: 84406
+[0127] Raw binary pixels before morphology: 5383
+[0127] Binary pixels after morphology: 4057
+[0602] Raw binary pixels before morphology: 270
+[0602] Binary pixels after morphology: 236
+[0002] Raw binary pixels before morphology: 3184
+[0002] Binary pixels after morphology: 2346
+[0104] Raw binary pixels before morphology: 1994
+[0104] Binary pixels after morphology: 1820
+[0336] Raw binary pixels before morphology: 232
+[0336] Binary pixels after morphology: 220
+[0156] Raw binary pixels before morphology: 3427
+[0156] Binary pixels after morphology: 3073
+[0225] Raw binary pixels before morphology: 784
+[0225] Binary pixels after morphology: 750
+[0662] Raw binary pixels before morphology: 288
+[0662] Binary pixels after morphology: 204
+[0609] Raw binary pixels before morphology: 441
+[0609] Binary pixels after morphology: 409
+[0268] Raw binary pixels before morphology: 1503
+[0268] Binary pixels after morphology: 1310
+[0044] Raw binary pixels before morphology: 1316
+[0044] Binary pixels after morphology: 975
+[0003] Connected regions found: 5
+[0003] LP candidates found: 5
+[0127] Connected regions found: 7
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 4
+[0002] LP candidates found: 4
+[0104] Connected regions found: 5
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 3
+[0268] LP candidates found: 3
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3381), (1874, 2065), (1098, 3358)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3351), (2633, 3357), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(1208, 3277), (2513, 3291), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3307), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3264), (1875, 2212)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1876, 2279), (1286, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 60 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp30_bkgd60.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [01:08<12:35, 68.70s/it] 17%|█▋        | 2/12 [01:57<09:30, 57.08s/it] 25%|██▌       | 3/12 [02:31<06:59, 46.57s/it] 33%|███▎      | 4/12 [03:23<06:29, 48.71s/it] 42%|████▏     | 5/12 [04:12<05:40, 48.66s/it] 50%|█████     | 6/12 [04:41<04:12, 42.04s/it] 58%|█████▊    | 7/12 [05:14<03:14, 38.97s/it] 67%|██████▋   | 8/12 [05:58<02:42, 40.63s/it] 75%|███████▌  | 9/12 [06:30<01:54, 38.07s/it] 83%|████████▎ | 10/12 [07:07<01:15, 37.58s/it] 92%|█████████▏| 11/12 [07:53<00:40, 40.31s/it]100%|██████████| 12/12 [08:42<00:00, 42.76s/it]100%|██████████| 12/12 [08:42<00:00, 43.50s/it]
+[0003] Raw binary pixels before morphology: 109166
+[0003] Binary pixels after morphology: 60497
+[0127] Raw binary pixels before morphology: 680028
+[0127] Binary pixels after morphology: 474234
+[0602] Raw binary pixels before morphology: 1972
+[0602] Binary pixels after morphology: 1435
+[0002] Raw binary pixels before morphology: 443736
+[0002] Binary pixels after morphology: 287916
+[0104] Raw binary pixels before morphology: 166380
+[0104] Binary pixels after morphology: 113244
+[0336] Raw binary pixels before morphology: 10182
+[0336] Binary pixels after morphology: 9661
+[0156] Raw binary pixels before morphology: 13248
+[0156] Binary pixels after morphology: 12241
+[0225] Raw binary pixels before morphology: 2714
+[0225] Binary pixels after morphology: 1777
+[0662] Raw binary pixels before morphology: 1169
+[0662] Binary pixels after morphology: 987
+[0609] Raw binary pixels before morphology: 1599
+[0609] Binary pixels after morphology: 1365
+[0268] Raw binary pixels before morphology: 525445
+[0268] Binary pixels after morphology: 319411
+[0044] Raw binary pixels before morphology: 80493
+[0044] Binary pixels after morphology: 48377
+[0003] Connected regions found: 10
+[0003] LP candidates found: 5
+[0127] Connected regions found: 101
+[0127] LP candidates found: 5
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 72
+[0002] LP candidates found: 5
+[0104] Connected regions found: 35
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 6
+[0225] LP candidates found: 5
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 5
+[0609] LP candidates found: 5
+[0268] Connected regions found: 184
+[0268] LP candidates found: 5
+[0044] Connected regions found: 39
+[0044] LP candidates found: 5
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(1083, 3349), (1874, 2063), (2638, 3401)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2632, 3357), (1081, 3350), (1873, 2067)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2514, 3290), (1208, 3279), (1874, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2566, 3323), (1155, 3307), (1875, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3262), (1872, 2210)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1874, 2169), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3265), (1875, 2213)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3269), (1876, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1291, 3230), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3271), (1875, 2232), (1245, 3257)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1040, 3383), (2673, 3380), (1873, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1154, 3308), (2568, 3319), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 0.972
+  Mean Recall:    0.972
+  Mean F1 Score:  0.972
+Trying radius 80 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp30_bkgd80.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [01:04<11:47, 64.29s/it] 17%|█▋        | 2/12 [01:47<08:36, 51.69s/it] 25%|██▌       | 3/12 [02:09<05:46, 38.50s/it] 33%|███▎      | 4/12 [02:58<05:39, 42.40s/it] 42%|████▏     | 5/12 [03:41<04:59, 42.81s/it] 50%|█████     | 6/12 [04:02<03:32, 35.39s/it] 58%|█████▊    | 7/12 [04:25<02:35, 31.11s/it] 67%|██████▋   | 8/12 [04:58<02:07, 31.85s/it] 75%|███████▌  | 9/12 [05:20<01:26, 28.76s/it] 83%|████████▎ | 10/12 [05:46<00:55, 27.77s/it] 92%|█████████▏| 11/12 [06:25<00:31, 31.19s/it]100%|██████████| 12/12 [07:03<00:00, 33.28s/it]100%|██████████| 12/12 [07:03<00:00, 35.26s/it]
+[0003] Raw binary pixels before morphology: 251963
+[0003] Binary pixels after morphology: 119266
+[0127] Raw binary pixels before morphology: 1430033
+[0127] Binary pixels after morphology: 1025419
+[0602] Raw binary pixels before morphology: 1994
+[0602] Binary pixels after morphology: 1393
+[0002] Raw binary pixels before morphology: 1046504
+[0002] Binary pixels after morphology: 608806
+[0104] Raw binary pixels before morphology: 743622
+[0104] Binary pixels after morphology: 411064
+[0336] Raw binary pixels before morphology: 10717
+[0336] Binary pixels after morphology: 10044
+[0156] Raw binary pixels before morphology: 13316
+[0156] Binary pixels after morphology: 12215
+[0225] Raw binary pixels before morphology: 5205
+[0225] Binary pixels after morphology: 2123
+[0662] Raw binary pixels before morphology: 1210
+[0662] Binary pixels after morphology: 990
+[0609] Raw binary pixels before morphology: 1647
+[0609] Binary pixels after morphology: 1330
+[0268] Raw binary pixels before morphology: 1217758
+[0268] Binary pixels after morphology: 843277
+[0044] Raw binary pixels before morphology: 225237
+[0044] Binary pixels after morphology: 118723
+[0003] Connected regions found: 32
+[0003] LP candidates found: 5
+[0127] Connected regions found: 326
+[0127] LP candidates found: 5
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 264
+[0002] LP candidates found: 5
+[0104] Connected regions found: 162
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 6
+[0225] LP candidates found: 5
+[0662] Connected regions found: 3
+[0662] LP candidates found: 3
+[0609] Connected regions found: 4
+[0609] LP candidates found: 4
+[0268] Connected regions found: 544
+[0268] LP candidates found: 5
+[0044] Connected regions found: 211
+[0044] LP candidates found: 5
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2674, 3379), (1084, 3349), (1873, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(2632, 3357), (1084, 3346), (1875, 2067)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2514, 3290), (1208, 3279), (1874, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2567, 3323), (1155, 3307), (1875, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3281), (1234, 3262), (1872, 2210)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1874, 2169), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3265), (1875, 2213)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(2496, 3281), (1226, 3268), (1876, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1291, 3230), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(2480, 3271), (1875, 2232), (1246, 3257)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1024, 3387), (2673, 3380), (1873, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1154, 3310), (2568, 3319), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 100 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp30_bkgd100.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [00:34<06:20, 34.61s/it] 17%|█▋        | 2/12 [01:09<05:49, 34.97s/it] 25%|██▌       | 3/12 [01:42<05:04, 33.80s/it] 33%|███▎      | 4/12 [02:22<04:52, 36.54s/it] 42%|████▏     | 5/12 [03:00<04:18, 36.92s/it] 50%|█████     | 6/12 [03:38<03:43, 37.26s/it] 58%|█████▊    | 7/12 [04:12<03:01, 36.21s/it] 67%|██████▋   | 8/12 [04:40<02:14, 33.63s/it] 75%|███████▌  | 9/12 [05:15<01:41, 33.94s/it] 83%|████████▎ | 10/12 [05:46<01:06, 33.05s/it] 92%|█████████▏| 11/12 [06:21<00:33, 33.71s/it]100%|██████████| 12/12 [06:49<00:00, 31.86s/it]100%|██████████| 12/12 [06:49<00:00, 34.10s/it]
+[0003] Raw binary pixels before morphology: 157695
+[0003] Binary pixels after morphology: 122049
+[0127] Raw binary pixels before morphology: 5549
+[0127] Binary pixels after morphology: 4241
+[0602] Raw binary pixels before morphology: 278
+[0602] Binary pixels after morphology: 239
+[0002] Raw binary pixels before morphology: 3478
+[0002] Binary pixels after morphology: 2462
+[0104] Raw binary pixels before morphology: 2070
+[0104] Binary pixels after morphology: 1893
+[0336] Raw binary pixels before morphology: 233
+[0336] Binary pixels after morphology: 220
+[0156] Raw binary pixels before morphology: 3463
+[0156] Binary pixels after morphology: 3099
+[0225] Raw binary pixels before morphology: 789
+[0225] Binary pixels after morphology: 755
+[0662] Raw binary pixels before morphology: 292
+[0662] Binary pixels after morphology: 207
+[0609] Raw binary pixels before morphology: 443
+[0609] Binary pixels after morphology: 411
+[0268] Raw binary pixels before morphology: 1549
+[0268] Binary pixels after morphology: 1351
+[0044] Raw binary pixels before morphology: 1410
+[0044] Binary pixels after morphology: 1097
+[0003] Connected regions found: 5
+[0003] LP candidates found: 5
+[0127] Connected regions found: 6
+[0127] LP candidates found: 5
+[0602] Connected regions found: 3
+[0602] LP candidates found: 3
+[0002] Connected regions found: 7
+[0002] LP candidates found: 5
+[0104] Connected regions found: 6
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 3
+[0225] LP candidates found: 3
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 3
+[0609] LP candidates found: 3
+[0268] Connected regions found: 5
+[0268] LP candidates found: 5
+[0044] Connected regions found: 3
+[0044] LP candidates found: 3
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2672, 3381), (1874, 2065), (1098, 3359)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1082, 3351), (2633, 3358), (1874, 2068)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2513, 3291), (1208, 3277), (1875, 2194)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2564, 3319), (1156, 3307), (1874, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2496, 3281), (1234, 3264), (1875, 2211)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1875, 2170), (1185, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2480, 3270), (1229, 3264), (1876, 2214)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1226, 3267), (1875, 2217), (2496, 3282)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(2420, 3238), (1876, 2279), (1285, 3233)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1230, 3264), (2479, 3271), (1875, 2233)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1041, 3374), (2674, 3380), (1873, 2023)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1152, 3310), (2567, 3320), (1876, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 1.000
+  Mean Recall:    1.000
+  Mean F1 Score:  1.000
+Trying radius 50 for laser point color clustering
+Trying radius 60 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp50_bkgd60.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [01:12<13:18, 72.55s/it] 17%|█▋        | 2/12 [01:56<09:17, 55.77s/it] 25%|██▌       | 3/12 [02:19<06:07, 40.82s/it] 33%|███▎      | 4/12 [03:10<05:58, 44.84s/it] 42%|████▏     | 5/12 [03:55<05:14, 44.86s/it] 50%|█████     | 6/12 [04:17<03:42, 37.06s/it] 58%|█████▊    | 7/12 [04:39<02:41, 32.26s/it] 67%|██████▋   | 8/12 [05:15<02:12, 33.23s/it] 75%|███████▌  | 9/12 [05:37<01:29, 29.86s/it] 83%|████████▎ | 10/12 [06:05<00:58, 29.13s/it] 92%|█████████▏| 11/12 [06:46<00:32, 32.86s/it]100%|██████████| 12/12 [07:28<00:00, 35.71s/it]100%|██████████| 12/12 [07:28<00:00, 37.38s/it]
+[0003] Raw binary pixels before morphology: 1763783
+[0003] Binary pixels after morphology: 1357284
+[0127] Raw binary pixels before morphology: 5777263
+[0127] Binary pixels after morphology: 5421268
+[0602] Raw binary pixels before morphology: 4073
+[0602] Binary pixels after morphology: 2438
+[0002] Raw binary pixels before morphology: 5530132
+[0002] Binary pixels after morphology: 4928953
+[0104] Raw binary pixels before morphology: 4866618
+[0104] Binary pixels after morphology: 4460990
+[0336] Raw binary pixels before morphology: 18008
+[0336] Binary pixels after morphology: 16406
+[0156] Raw binary pixels before morphology: 19348
+[0156] Binary pixels after morphology: 17703
+[0225] Raw binary pixels before morphology: 378976
+[0225] Binary pixels after morphology: 289805
+[0662] Raw binary pixels before morphology: 1846
+[0662] Binary pixels after morphology: 1251
+[0609] Raw binary pixels before morphology: 6218
+[0609] Binary pixels after morphology: 2801
+[0268] Raw binary pixels before morphology: 5422690
+[0268] Binary pixels after morphology: 5110628
+[0044] Raw binary pixels before morphology: 1515995
+[0044] Binary pixels after morphology: 1320814
+[0003] Connected regions found: 244
+[0003] LP candidates found: 5
+[0127] Connected regions found: 373
+[0127] LP candidates found: 5
+[0602] Connected regions found: 4
+[0602] LP candidates found: 4
+[0002] Connected regions found: 838
+[0002] LP candidates found: 5
+[0104] Connected regions found: 667
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 223
+[0225] LP candidates found: 5
+[0662] Connected regions found: 4
+[0662] LP candidates found: 4
+[0609] Connected regions found: 13
+[0609] LP candidates found: 5
+[0268] Connected regions found: 304
+[0268] LP candidates found: 5
+[0044] Connected regions found: 281
+[0044] LP candidates found: 5
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(1083, 3349), (1874, 2063), (2643, 3400)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1877, 2180), (1167, 3304), (2634, 3360)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2514, 3290), (1207, 3279), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2664, 3377), (1155, 3302), (1875, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2497, 3286), (1231, 3264), (1867, 2218)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1874, 2170), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3270), (1228, 3265), (1875, 2213)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1227, 3266), (2496, 3281), (1876, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1290, 3230), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1232, 3265), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1190, 3287), (1878, 2297), (2673, 3380)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1261, 3241), (2567, 3319), (1877, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 0.806
+  Mean Recall:    0.806
+  Mean F1 Score:  0.806
+Trying radius 80 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp50_bkgd80.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [01:10<12:50, 70.04s/it] 17%|█▋        | 2/12 [01:52<08:58, 53.85s/it] 25%|██▌       | 3/12 [02:14<05:55, 39.46s/it] 33%|███▎      | 4/12 [03:03<05:45, 43.19s/it] 42%|████▏     | 5/12 [03:48<05:05, 43.59s/it] 50%|█████     | 6/12 [04:09<03:35, 35.91s/it] 58%|█████▊    | 7/12 [04:30<02:35, 31.12s/it] 67%|██████▋   | 8/12 [05:04<02:07, 31.95s/it] 75%|███████▌  | 9/12 [05:26<01:26, 28.84s/it] 83%|████████▎ | 10/12 [05:52<00:56, 28.07s/it] 92%|█████████▏| 11/12 [06:32<00:31, 31.66s/it]100%|██████████| 12/12 [07:11<00:00, 34.10s/it]100%|██████████| 12/12 [07:11<00:00, 35.99s/it]
+[0003] Raw binary pixels before morphology: 1799165
+[0003] Binary pixels after morphology: 1379997
+[0127] Raw binary pixels before morphology: 5564667
+[0127] Binary pixels after morphology: 5205364
+[0602] Raw binary pixels before morphology: 4269
+[0602] Binary pixels after morphology: 2698
+[0002] Raw binary pixels before morphology: 5532032
+[0002] Binary pixels after morphology: 4925373
+[0104] Raw binary pixels before morphology: 4699115
+[0104] Binary pixels after morphology: 4294712
+[0336] Raw binary pixels before morphology: 18247
+[0336] Binary pixels after morphology: 16627
+[0156] Raw binary pixels before morphology: 19622
+[0156] Binary pixels after morphology: 17979
+[0225] Raw binary pixels before morphology: 306721
+[0225] Binary pixels after morphology: 224956
+[0662] Raw binary pixels before morphology: 1819
+[0662] Binary pixels after morphology: 1236
+[0609] Raw binary pixels before morphology: 5818
+[0609] Binary pixels after morphology: 2864
+[0268] Raw binary pixels before morphology: 5235029
+[0268] Binary pixels after morphology: 4921924
+[0044] Raw binary pixels before morphology: 1409342
+[0044] Binary pixels after morphology: 1219639
+[0003] Connected regions found: 350
+[0003] LP candidates found: 5
+[0127] Connected regions found: 520
+[0127] LP candidates found: 5
+[0602] Connected regions found: 6
+[0602] LP candidates found: 5
+[0002] Connected regions found: 1152
+[0002] LP candidates found: 5
+[0104] Connected regions found: 909
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 275
+[0225] LP candidates found: 5
+[0662] Connected regions found: 5
+[0662] LP candidates found: 5
+[0609] Connected regions found: 17
+[0609] LP candidates found: 5
+[0268] Connected regions found: 480
+[0268] LP candidates found: 5
+[0044] Connected regions found: 405
+[0044] LP candidates found: 5
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(1083, 3349), (1874, 2063), (2643, 3400)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1874, 2183), (1148, 3319), (2634, 3360)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2514, 3290), (1207, 3279), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(1155, 3302), (1875, 2133), (2467, 3331)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2634, 3356), (1861, 1991), (989, 3421)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1874, 2170), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3270), (1228, 3265), (1875, 2213)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1227, 3267), (2496, 3281), (1877, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1290, 3230), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1232, 3265), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1260, 3246), (2673, 3379), (1879, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1343, 3192), (2567, 3319), (1877, 2152)]
+Evaluation over 12 images:
+  Mean Precision: 0.750
+  Mean Recall:    0.750
+  Mean F1 Score:  0.750
+Trying radius 100 for background color clustering
+Saved interactive k-means plot to /home/jn492/jn492/results/radius_t2/kmeans_plots/t2_kmean_lp50_bkgd100.html
+The selected images for this test set are: ['0003', '0127', '0602', '0002', '0104', '0336', '0156', '0225', '0662', '0609', '0268', '0044']
+  0%|          | 0/12 [00:00<?, ?it/s]  8%|▊         | 1/12 [01:10<12:51, 70.14s/it] 17%|█▋        | 2/12 [01:53<09:03, 54.35s/it] 25%|██▌       | 3/12 [02:16<06:02, 40.28s/it] 33%|███▎      | 4/12 [03:06<05:51, 43.95s/it] 42%|████▏     | 5/12 [03:51<05:09, 44.16s/it] 50%|█████     | 6/12 [04:12<03:39, 36.53s/it] 58%|█████▊    | 7/12 [04:34<02:39, 31.81s/it] 67%|██████▋   | 8/12 [05:10<02:11, 32.94s/it] 75%|███████▌  | 9/12 [05:32<01:29, 29.70s/it] 83%|████████▎ | 10/12 [06:00<00:58, 29.04s/it] 92%|█████████▏| 11/12 [06:40<00:32, 32.42s/it]100%|██████████| 12/12 [07:20<00:00, 34.75s/it]100%|██████████| 12/12 [07:20<00:00, 36.71s/it]
+[0003] Raw binary pixels before morphology: 1788133
+[0003] Binary pixels after morphology: 1368308
+[0127] Raw binary pixels before morphology: 5527655
+[0127] Binary pixels after morphology: 5166743
+[0602] Raw binary pixels before morphology: 4243
+[0602] Binary pixels after morphology: 2670
+[0002] Raw binary pixels before morphology: 5526148
+[0002] Binary pixels after morphology: 4919164
+[0104] Raw binary pixels before morphology: 4690997
+[0104] Binary pixels after morphology: 4284994
+[0336] Raw binary pixels before morphology: 18154
+[0336] Binary pixels after morphology: 16564
+[0156] Raw binary pixels before morphology: 19412
+[0156] Binary pixels after morphology: 17775
+[0225] Raw binary pixels before morphology: 297406
+[0225] Binary pixels after morphology: 217495
+[0662] Raw binary pixels before morphology: 1811
+[0662] Binary pixels after morphology: 1236
+[0609] Raw binary pixels before morphology: 5614
+[0609] Binary pixels after morphology: 2837
+[0268] Raw binary pixels before morphology: 5189953
+[0268] Binary pixels after morphology: 4875468
+[0044] Raw binary pixels before morphology: 1402236
+[0044] Binary pixels after morphology: 1213063
+[0003] Connected regions found: 434
+[0003] LP candidates found: 5
+[0127] Connected regions found: 702
+[0127] LP candidates found: 5
+[0602] Connected regions found: 5
+[0602] LP candidates found: 5
+[0002] Connected regions found: 1491
+[0002] LP candidates found: 5
+[0104] Connected regions found: 1172
+[0104] LP candidates found: 5
+[0336] Connected regions found: 3
+[0336] LP candidates found: 3
+[0156] Connected regions found: 3
+[0156] LP candidates found: 3
+[0225] Connected regions found: 340
+[0225] LP candidates found: 5
+[0662] Connected regions found: 5
+[0662] LP candidates found: 5
+[0609] Connected regions found: 18
+[0609] LP candidates found: 5
+[0268] Connected regions found: 602
+[0268] LP candidates found: 5
+[0044] Connected regions found: 553
+[0044] LP candidates found: 5
+ground truth and predicted points for 0003 is [(1873, 2064), (1084, 3351), (2676, 3381)] and [(2675, 3379), (1083, 3349), (1874, 2063)]
+ground truth and predicted points for 0127 is [(1875, 2069), (1083, 3350), (2634, 3357)] and [(1870, 2183), (1144, 3330), (2634, 3360)]
+ground truth and predicted points for 0602 is [(1875, 2194), (1210, 3280), (2513, 3291)] and [(2514, 3290), (1207, 3279), (1875, 2193)]
+ground truth and predicted points for 0002 is [(1875, 2135), (1154, 3306), (2565, 3322)] and [(2655, 3378), (1155, 3302), (1875, 2133)]
+ground truth and predicted points for 0104 is [(1877, 2212), (1234, 3265), (2499, 3284)] and [(2649, 3362), (1852, 1986), (984, 3428)]
+ground truth and predicted points for 0336 is [(1875, 2170), (1185, 3291), (2528, 3300)] and [(2528, 3299), (1874, 2170), (1184, 3292)]
+ground truth and predicted points for 0156 is [(1876, 2214), (1229, 3266), (2481, 3272)] and [(2481, 3270), (1228, 3265), (1875, 2213)]
+ground truth and predicted points for 0225 is [(1875, 2216), (1225, 3269), (2497, 3281)] and [(1227, 3267), (2496, 3281), (1877, 2218)]
+ground truth and predicted points for 0662 is [(1877, 2279), (1290, 3227), (2419, 3239)] and [(1290, 3230), (2420, 3237), (1876, 2279)]
+ground truth and predicted points for 0609 is [(1876, 2233), (1231, 3264), (2482, 3272)] and [(1232, 3265), (2480, 3271), (1875, 2232)]
+ground truth and predicted points for 0268 is [(1874, 2025), (1041, 3375), (2675, 3380)] and [(1260, 3240), (2673, 3379), (1879, 2024)]
+ground truth and predicted points for 0044 is [(1874, 2149), (1152, 3311), (2568, 3319)] and [(1358, 3182), (2567, 3319), (1877, 2151)]
+Evaluation over 12 images:
+  Mean Precision: 0.778
+  Mean Recall:    0.778
+  Mean F1 Score:  0.778
+Saved to: /home/jn492/jn492/results/radius_t2/radius_t2.csv

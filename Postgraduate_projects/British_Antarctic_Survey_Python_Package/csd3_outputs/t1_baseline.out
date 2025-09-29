@@ -1,0 +1,1114 @@
+Obtaining file:///home/jn492/jn492
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: opencv-python in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (4.11.0.86)
+Requirement already satisfied: numpy in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (2.3.0)
+Building wheels for collected packages: DELPHI
+  Building editable for DELPHI (pyproject.toml): started
+  Building editable for DELPHI (pyproject.toml): finished with status 'done'
+  Created wheel for DELPHI: filename=delphi-0.1.0-0.editable-py3-none-any.whl size=2976 sha256=ad2c9ff024af5694409baa940cdbea5f9624c954a6829f5bae7cc77857a18891
+  Stored in directory: /tmp/pip-ephem-wheel-cache-um0wxj27/wheels/f5/7c/28/fa37e5f97a8c66c553cf39d179f2f5e40f34db2832c2b100f0
+Successfully built DELPHI
+Installing collected packages: DELPHI
+  Attempting uninstall: DELPHI
+    Found existing installation: DELPHI 0.1.0
+    Uninstalling DELPHI-0.1.0:
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/home/jn492/jn492/delphienv/bin/delphi'
+
+WARNING: Skipping /home/jn492/jn492/delphienv/lib64/python3.11/site-packages/delphi-0.1.0.dist-info due to invalid metadata entry 'name'
+WARNING: Ignoring invalid distribution ~elphi (/home/jn492/jn492/delphienv/lib64/python3.11/site-packages)
+
+[notice] A new release of pip available: 22.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Duplicated annotations: []
+Found 38 images
+Found 98 annotations
+Matched pairs: 38
+Unmatched images: []
+Unmatched annotations: ['0001', '0002', '0003', '0010', '0011', '0020', '0021', '0024', '0026', '0027', '0044', '0052', '0055', '0078', '0081', '0104', '0112', '0121', '0127', '0128', '0133', '0138', '0144', '0154', '0156', '0167', '0172', '0187', '0190', '0196', '0204', '0225', '0232', '0253', '0261', '0268', '0302', '0336', '0358', '0361', '0363', '0383', '0420', '0456', '0480', '0514', '0531', '0584', '0591', '0592', '0602', '0607', '0609', '0662', '0697', '0717', '0790', '0804', '0834', '0857']
+Matched 38 pairs → 30 train, 0 validation, 8 test.
+The selected images for this train set are: ['0942']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_1.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:05<00:38,  5.46s/it] 25%|██▌       | 2/8 [00:10<00:32,  5.44s/it] 38%|███▊      | 3/8 [00:16<00:26,  5.37s/it] 50%|█████     | 4/8 [00:21<00:21,  5.33s/it] 62%|██████▎   | 5/8 [00:26<00:16,  5.36s/it] 75%|███████▌  | 6/8 [00:32<00:10,  5.34s/it] 88%|████████▊ | 7/8 [00:37<00:05,  5.34s/it]100%|██████████| 8/8 [00:42<00:00,  5.33s/it]100%|██████████| 8/8 [00:42<00:00,  5.35s/it]
+[0282] Raw binary pixels before morphology: 254
+[0282] Binary pixels after morphology: 86
+[0859] Raw binary pixels before morphology: 89
+[0859] Binary pixels after morphology: 50
+[1220] Raw binary pixels before morphology: 11
+[1220] Binary pixels after morphology: 0
+[1124] Raw binary pixels before morphology: 6
+[1124] Binary pixels after morphology: 0
+[0555] Raw binary pixels before morphology: 708
+[0555] Binary pixels after morphology: 529
+[1134] Raw binary pixels before morphology: 38
+[1134] Binary pixels after morphology: 9
+[0828] Raw binary pixels before morphology: 771
+[0828] Binary pixels after morphology: 323
+[0700] Raw binary pixels before morphology: 322
+[0700] Binary pixels after morphology: 193
+[0282] Connected regions found: 2
+[0282] LP candidates found: 2
+[0859] Connected regions found: 0
+[0859] LP candidates found: 0
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 0
+[0555] LP candidates found: 0
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 0
+[0828] LP candidates found: 0
+[0700] Connected regions found: 0
+[0700] LP candidates found: 0
+[Warning] Not enough LP candidates for 0282 — storing raw candidates
+[Warning] Not enough LP candidates for 0859 — storing raw candidates
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2196, 3100), (1880, 2531)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and []
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and []
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and []
+Evaluation over 8 images:
+  Mean Precision: 0.125
+  Mean Recall:    0.083
+  Mean F1 Score:  0.100
+
+These test images failed to predict three laser points (8 total):
+['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (8 total):
+['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_1.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_1.png
+The selected images for this train set are: ['0942', '0381']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_2.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:46,  6.65s/it] 25%|██▌       | 2/8 [00:13<00:39,  6.65s/it] 38%|███▊      | 3/8 [00:19<00:32,  6.51s/it] 50%|█████     | 4/8 [00:25<00:25,  6.43s/it] 62%|██████▎   | 5/8 [00:32<00:19,  6.47s/it] 75%|███████▌  | 6/8 [00:38<00:12,  6.41s/it] 88%|████████▊ | 7/8 [00:45<00:06,  6.47s/it]100%|██████████| 8/8 [00:51<00:00,  6.41s/it]100%|██████████| 8/8 [00:51<00:00,  6.45s/it]
+[0282] Raw binary pixels before morphology: 28821
+[0282] Binary pixels after morphology: 18076
+[0859] Raw binary pixels before morphology: 49318
+[0859] Binary pixels after morphology: 29547
+[1220] Raw binary pixels before morphology: 797
+[1220] Binary pixels after morphology: 194
+[1124] Raw binary pixels before morphology: 427
+[1124] Binary pixels after morphology: 224
+[0555] Raw binary pixels before morphology: 144235
+[0555] Binary pixels after morphology: 120761
+[1134] Raw binary pixels before morphology: 329
+[1134] Binary pixels after morphology: 168
+[0828] Raw binary pixels before morphology: 169761
+[0828] Binary pixels after morphology: 103103
+[0700] Raw binary pixels before morphology: 24420
+[0700] Binary pixels after morphology: 18894
+[0282] Connected regions found: 4
+[0282] LP candidates found: 4
+[0859] Connected regions found: 3
+[0859] LP candidates found: 3
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 2
+[0555] LP candidates found: 2
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 2
+[0828] LP candidates found: 2
+[0700] Connected regions found: 1
+[0700] LP candidates found: 1
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2194, 3104), (1880, 2535), (1486, 3106)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3088), (1878, 2568), (1553, 3068)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1871, 2566), (1570, 3061)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1491, 3113), (1484, 3104)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568)]
+Evaluation over 8 images:
+  Mean Precision: 0.438
+  Mean Recall:    0.333
+  Mean F1 Score:  0.362
+
+These test images failed to predict three laser points (6 total):
+['1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (6 total):
+['1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_2.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_2.png
+The selected images for this train set are: ['0942', '0381', '0956']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_3.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:46,  6.66s/it] 25%|██▌       | 2/8 [00:13<00:40,  6.67s/it] 38%|███▊      | 3/8 [00:20<00:33,  6.70s/it] 50%|█████     | 4/8 [00:26<00:26,  6.68s/it] 62%|██████▎   | 5/8 [00:33<00:19,  6.64s/it] 75%|███████▌  | 6/8 [00:39<00:13,  6.65s/it] 88%|████████▊ | 7/8 [00:46<00:06,  6.66s/it]100%|██████████| 8/8 [00:53<00:00,  6.65s/it]100%|██████████| 8/8 [00:53<00:00,  6.66s/it]
+[0282] Raw binary pixels before morphology: 1412
+[0282] Binary pixels after morphology: 719
+[0859] Raw binary pixels before morphology: 1590
+[0859] Binary pixels after morphology: 584
+[1220] Raw binary pixels before morphology: 8
+[1220] Binary pixels after morphology: 0
+[1124] Raw binary pixels before morphology: 1
+[1124] Binary pixels after morphology: 0
+[0555] Raw binary pixels before morphology: 45507
+[0555] Binary pixels after morphology: 42227
+[1134] Raw binary pixels before morphology: 30
+[1134] Binary pixels after morphology: 20
+[0828] Raw binary pixels before morphology: 14449
+[0828] Binary pixels after morphology: 7255
+[0700] Raw binary pixels before morphology: 3687
+[0700] Binary pixels after morphology: 3297
+[0282] Connected regions found: 3
+[0282] LP candidates found: 3
+[0859] Connected regions found: 0
+[0859] LP candidates found: 0
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 0
+[0555] LP candidates found: 0
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 0
+[0828] LP candidates found: 0
+[0700] Connected regions found: 1
+[0700] LP candidates found: 1
+[Warning] Not enough LP candidates for 0859 — storing raw candidates
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1488, 3106)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and []
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and []
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1879, 2568)]
+Evaluation over 8 images:
+  Mean Precision: 0.250
+  Mean Recall:    0.167
+  Mean F1 Score:  0.188
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_3.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_3.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_4.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:42,  6.09s/it] 25%|██▌       | 2/8 [00:12<00:36,  6.01s/it] 38%|███▊      | 3/8 [00:17<00:29,  5.92s/it] 50%|█████     | 4/8 [00:23<00:23,  5.81s/it] 62%|██████▎   | 5/8 [00:29<00:17,  5.82s/it] 75%|███████▌  | 6/8 [00:34<00:11,  5.77s/it] 88%|████████▊ | 7/8 [00:41<00:05,  5.97s/it]100%|██████████| 8/8 [00:47<00:00,  5.86s/it]100%|██████████| 8/8 [00:47<00:00,  5.88s/it]
+[0282] Raw binary pixels before morphology: 7127
+[0282] Binary pixels after morphology: 5177
+[0859] Raw binary pixels before morphology: 13899
+[0859] Binary pixels after morphology: 8589
+[1220] Raw binary pixels before morphology: 67
+[1220] Binary pixels after morphology: 18
+[1124] Raw binary pixels before morphology: 131
+[1124] Binary pixels after morphology: 27
+[0555] Raw binary pixels before morphology: 41428
+[0555] Binary pixels after morphology: 35393
+[1134] Raw binary pixels before morphology: 150
+[1134] Binary pixels after morphology: 71
+[0828] Raw binary pixels before morphology: 62773
+[0828] Binary pixels after morphology: 40934
+[0700] Raw binary pixels before morphology: 8750
+[0700] Binary pixels after morphology: 6487
+[0282] Connected regions found: 2
+[0282] LP candidates found: 2
+[0859] Connected regions found: 3
+[0859] LP candidates found: 3
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 2
+[0555] LP candidates found: 2
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 1
+[0828] LP candidates found: 1
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 0282 — storing raw candidates
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3103), (1880, 2534)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2163, 3088), (1879, 2568), (1553, 3069)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1569, 3062), (1871, 2566)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1493, 3115)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1882, 2568), (1876, 2566)]
+Evaluation over 8 images:
+  Mean Precision: 0.375
+  Mean Recall:    0.292
+  Mean F1 Score:  0.325
+
+These test images failed to predict three laser points (7 total):
+['0282', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0282', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_4.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_4.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_5.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:44,  6.31s/it] 25%|██▌       | 2/8 [00:12<00:38,  6.37s/it] 38%|███▊      | 3/8 [00:18<00:31,  6.29s/it] 50%|█████     | 4/8 [00:25<00:24,  6.24s/it] 62%|██████▎   | 5/8 [00:31<00:18,  6.23s/it] 75%|███████▌  | 6/8 [00:37<00:12,  6.19s/it] 88%|████████▊ | 7/8 [00:43<00:06,  6.20s/it]100%|██████████| 8/8 [00:49<00:00,  6.17s/it]100%|██████████| 8/8 [00:49<00:00,  6.22s/it]
+[0282] Raw binary pixels before morphology: 5770
+[0282] Binary pixels after morphology: 4002
+[0859] Raw binary pixels before morphology: 11932
+[0859] Binary pixels after morphology: 6792
+[1220] Raw binary pixels before morphology: 25
+[1220] Binary pixels after morphology: 9
+[1124] Raw binary pixels before morphology: 50
+[1124] Binary pixels after morphology: 9
+[0555] Raw binary pixels before morphology: 77238
+[0555] Binary pixels after morphology: 71588
+[1134] Raw binary pixels before morphology: 72
+[1134] Binary pixels after morphology: 45
+[0828] Raw binary pixels before morphology: 44991
+[0828] Binary pixels after morphology: 28733
+[0700] Raw binary pixels before morphology: 8552
+[0700] Binary pixels after morphology: 7262
+[0282] Connected regions found: 3
+[0282] LP candidates found: 3
+[0859] Connected regions found: 1
+[0859] LP candidates found: 1
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 2
+[0555] LP candidates found: 2
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 0
+[0828] LP candidates found: 0
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 0859 — storing raw candidates
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1487, 3106)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2167, 3089)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1570, 3062), (1872, 2566)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1544, 3072)]
+Evaluation over 8 images:
+  Mean Precision: 0.438
+  Mean Recall:    0.292
+  Mean F1 Score:  0.338
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_5.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_5.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_6.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:43,  6.18s/it] 25%|██▌       | 2/8 [00:12<00:37,  6.24s/it] 38%|███▊      | 3/8 [00:18<00:31,  6.20s/it] 50%|█████     | 4/8 [00:24<00:24,  6.19s/it] 62%|██████▎   | 5/8 [00:31<00:18,  6.21s/it] 75%|███████▌  | 6/8 [00:37<00:12,  6.19s/it] 88%|████████▊ | 7/8 [00:43<00:06,  6.20s/it]100%|██████████| 8/8 [00:49<00:00,  6.18s/it]100%|██████████| 8/8 [00:49<00:00,  6.19s/it]
+[0282] Raw binary pixels before morphology: 5770
+[0282] Binary pixels after morphology: 4002
+[0859] Raw binary pixels before morphology: 11932
+[0859] Binary pixels after morphology: 6792
+[1220] Raw binary pixels before morphology: 25
+[1220] Binary pixels after morphology: 9
+[1124] Raw binary pixels before morphology: 50
+[1124] Binary pixels after morphology: 9
+[0555] Raw binary pixels before morphology: 77238
+[0555] Binary pixels after morphology: 71588
+[1134] Raw binary pixels before morphology: 72
+[1134] Binary pixels after morphology: 45
+[0828] Raw binary pixels before morphology: 44991
+[0828] Binary pixels after morphology: 28733
+[0700] Raw binary pixels before morphology: 8552
+[0700] Binary pixels after morphology: 7262
+[0282] Connected regions found: 3
+[0282] LP candidates found: 3
+[0859] Connected regions found: 1
+[0859] LP candidates found: 1
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 2
+[0555] LP candidates found: 2
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 0
+[0828] LP candidates found: 0
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 0859 — storing raw candidates
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1487, 3106)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2167, 3089)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1570, 3062), (1872, 2566)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1542, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.438
+  Mean Recall:    0.292
+  Mean F1 Score:  0.338
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_6.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_6.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_7.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:51,  7.37s/it] 25%|██▌       | 2/8 [00:14<00:43,  7.32s/it] 38%|███▊      | 3/8 [00:21<00:35,  7.20s/it] 50%|█████     | 4/8 [00:28<00:28,  7.18s/it] 62%|██████▎   | 5/8 [00:36<00:21,  7.24s/it] 75%|███████▌  | 6/8 [00:43<00:14,  7.18s/it] 88%|████████▊ | 7/8 [00:50<00:07,  7.14s/it]100%|██████████| 8/8 [00:57<00:00,  7.16s/it]100%|██████████| 8/8 [00:57<00:00,  7.19s/it]
+[0282] Raw binary pixels before morphology: 10211
+[0282] Binary pixels after morphology: 7664
+[0859] Raw binary pixels before morphology: 24327
+[0859] Binary pixels after morphology: 14322
+[1220] Raw binary pixels before morphology: 29
+[1220] Binary pixels after morphology: 9
+[1124] Raw binary pixels before morphology: 267
+[1124] Binary pixels after morphology: 227
+[0555] Raw binary pixels before morphology: 98477
+[0555] Binary pixels after morphology: 91260
+[1134] Raw binary pixels before morphology: 57
+[1134] Binary pixels after morphology: 30
+[0828] Raw binary pixels before morphology: 65177
+[0828] Binary pixels after morphology: 46543
+[0700] Raw binary pixels before morphology: 9667
+[0700] Binary pixels after morphology: 8237
+[0282] Connected regions found: 5
+[0282] LP candidates found: 5
+[0859] Connected regions found: 2
+[0859] LP candidates found: 2
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 2
+[0555] LP candidates found: 2
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 0
+[0828] LP candidates found: 0
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 0859 — storing raw candidates
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1486, 3103)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2362, 3212), (2166, 3086)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1571, 3062), (1872, 2566)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1879, 2568), (1542, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.375
+  Mean Recall:    0.292
+  Mean F1 Score:  0.325
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_7.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_7.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_8.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:53,  7.63s/it] 25%|██▌       | 2/8 [00:15<00:46,  7.71s/it] 38%|███▊      | 3/8 [00:23<00:38,  7.66s/it] 50%|█████     | 4/8 [00:30<00:30,  7.67s/it] 62%|██████▎   | 5/8 [00:38<00:23,  7.69s/it] 75%|███████▌  | 6/8 [00:46<00:15,  7.67s/it] 88%|████████▊ | 7/8 [00:53<00:07,  7.60s/it]100%|██████████| 8/8 [01:01<00:00,  7.62s/it]100%|██████████| 8/8 [01:01<00:00,  7.65s/it]
+[0282] Raw binary pixels before morphology: 19641
+[0282] Binary pixels after morphology: 13007
+[0859] Raw binary pixels before morphology: 43437
+[0859] Binary pixels after morphology: 27502
+[1220] Raw binary pixels before morphology: 111
+[1220] Binary pixels after morphology: 35
+[1124] Raw binary pixels before morphology: 398
+[1124] Binary pixels after morphology: 321
+[0555] Raw binary pixels before morphology: 125905
+[0555] Binary pixels after morphology: 112443
+[1134] Raw binary pixels before morphology: 99
+[1134] Binary pixels after morphology: 55
+[0828] Raw binary pixels before morphology: 106048
+[0828] Binary pixels after morphology: 69232
+[0700] Raw binary pixels before morphology: 15135
+[0700] Binary pixels after morphology: 12895
+[0282] Connected regions found: 6
+[0282] LP candidates found: 5
+[0859] Connected regions found: 5
+[0859] LP candidates found: 5
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 2
+[0555] LP candidates found: 2
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 1
+[0828] LP candidates found: 1
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1486, 3103)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2362, 3211), (2168, 3084), (2404, 3211)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1871, 2566), (1570, 3062)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(2199, 3124)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1542, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.354
+  Mean Recall:    0.292
+  Mean F1 Score:  0.317
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_8.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_8.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_9.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:49,  7.08s/it] 25%|██▌       | 2/8 [00:14<00:43,  7.18s/it] 38%|███▊      | 3/8 [00:21<00:36,  7.31s/it] 50%|█████     | 4/8 [00:29<00:29,  7.34s/it] 62%|██████▎   | 5/8 [00:36<00:21,  7.30s/it] 75%|███████▌  | 6/8 [00:43<00:14,  7.34s/it] 88%|████████▊ | 7/8 [00:51<00:07,  7.38s/it]100%|██████████| 8/8 [00:58<00:00,  7.32s/it]100%|██████████| 8/8 [00:58<00:00,  7.31s/it]
+[0282] Raw binary pixels before morphology: 17088
+[0282] Binary pixels after morphology: 11163
+[0859] Raw binary pixels before morphology: 40044
+[0859] Binary pixels after morphology: 23506
+[1220] Raw binary pixels before morphology: 121
+[1220] Binary pixels after morphology: 44
+[1124] Raw binary pixels before morphology: 410
+[1124] Binary pixels after morphology: 323
+[0555] Raw binary pixels before morphology: 119009
+[0555] Binary pixels after morphology: 105295
+[1134] Raw binary pixels before morphology: 86
+[1134] Binary pixels after morphology: 45
+[0828] Raw binary pixels before morphology: 93848
+[0828] Binary pixels after morphology: 59330
+[0700] Raw binary pixels before morphology: 14106
+[0700] Binary pixels after morphology: 11464
+[0282] Connected regions found: 5
+[0282] LP candidates found: 5
+[0859] Connected regions found: 5
+[0859] LP candidates found: 5
+[1220] Connected regions found: 0
+[1220] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 2
+[0555] LP candidates found: 2
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 2
+[0828] LP candidates found: 2
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0555 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1486, 3104)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2361, 3211), (2168, 3084), (2405, 3210)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1872, 2566), (1571, 3061)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(2199, 3124), (1329, 3174)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1542, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.354
+  Mean Recall:    0.292
+  Mean F1 Score:  0.317
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_9.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_9.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_10.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:09<01:04,  9.22s/it] 25%|██▌       | 2/8 [00:17<00:53,  8.83s/it] 38%|███▊      | 3/8 [00:25<00:42,  8.52s/it] 50%|█████     | 4/8 [00:34<00:33,  8.37s/it] 62%|██████▎   | 5/8 [00:42<00:25,  8.42s/it] 75%|███████▌  | 6/8 [00:50<00:16,  8.34s/it] 88%|████████▊ | 7/8 [00:59<00:08,  8.38s/it]100%|██████████| 8/8 [01:07<00:00,  8.32s/it]100%|██████████| 8/8 [01:07<00:00,  8.43s/it]
+[0282] Raw binary pixels before morphology: 75364
+[0282] Binary pixels after morphology: 50624
+[0859] Raw binary pixels before morphology: 111279
+[0859] Binary pixels after morphology: 75254
+[1220] Raw binary pixels before morphology: 2533
+[1220] Binary pixels after morphology: 1212
+[1124] Raw binary pixels before morphology: 1336
+[1124] Binary pixels after morphology: 1073
+[0555] Raw binary pixels before morphology: 292194
+[0555] Binary pixels after morphology: 252353
+[1134] Raw binary pixels before morphology: 1022
+[1134] Binary pixels after morphology: 465
+[0828] Raw binary pixels before morphology: 374198
+[0828] Binary pixels after morphology: 260717
+[0700] Raw binary pixels before morphology: 45388
+[0700] Binary pixels after morphology: 36571
+[0282] Connected regions found: 12
+[0282] LP candidates found: 5
+[0859] Connected regions found: 8
+[0859] LP candidates found: 5
+[1220] Connected regions found: 1
+[1220] LP candidates found: 1
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 4
+[0555] LP candidates found: 4
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 18
+[0828] LP candidates found: 5
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2194, 3103), (1880, 2535), (1486, 3106)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3088), (1551, 3070), (1878, 2568)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1881, 2634)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1880, 2623), (1871, 2567), (1570, 3062)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1492, 3110), (1603, 3032), (1551, 3079)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1543, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.583
+  Mean Recall:    0.458
+  Mean F1 Score:  0.496
+
+These test images failed to predict three laser points (6 total):
+['1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (6 total):
+['1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_10.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_10.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139', '0853', '1023', '0458']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_13.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:12<01:26, 12.32s/it] 25%|██▌       | 2/8 [00:24<01:14, 12.36s/it] 38%|███▊      | 3/8 [00:37<01:03, 12.66s/it] 50%|█████     | 4/8 [00:50<00:51, 12.79s/it] 62%|██████▎   | 5/8 [01:02<00:37, 12.60s/it] 75%|███████▌  | 6/8 [01:15<00:25, 12.74s/it] 88%|████████▊ | 7/8 [01:28<00:12, 12.79s/it]100%|██████████| 8/8 [01:41<00:00, 12.83s/it]100%|██████████| 8/8 [01:41<00:00, 12.73s/it]
+[0282] Raw binary pixels before morphology: 11710
+[0282] Binary pixels after morphology: 8210
+[0859] Raw binary pixels before morphology: 26675
+[0859] Binary pixels after morphology: 14935
+[1220] Raw binary pixels before morphology: 44
+[1220] Binary pixels after morphology: 9
+[1124] Raw binary pixels before morphology: 308
+[1124] Binary pixels after morphology: 260
+[0555] Raw binary pixels before morphology: 99363
+[0555] Binary pixels after morphology: 90244
+[1134] Raw binary pixels before morphology: 67
+[1134] Binary pixels after morphology: 41
+[0828] Raw binary pixels before morphology: 69590
+[0828] Binary pixels after morphology: 46250
+[0700] Raw binary pixels before morphology: 10591
+[0700] Binary pixels after morphology: 8864
+[0282] Connected regions found: 4
+[0282] LP candidates found: 4
+[0859] Connected regions found: 3
+[0859] LP candidates found: 3
+[1220] Connected regions found: 1
+[1220] LP candidates found: 1
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 3
+[0555] LP candidates found: 3
+[1134] Connected regions found: 0
+[1134] LP candidates found: 0
+[0828] Connected regions found: 2
+[0828] LP candidates found: 2
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 1134 — storing raw candidates
+[Warning] Not enough LP candidates for 0828 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1486, 3104)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2394, 3209), (2361, 3211), (2419, 3209)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1882, 2634)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1879, 2623), (1872, 2566), (1571, 3062)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and []
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(2295, 3159), (1465, 3120)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1879, 2568), (1542, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.583
+  Mean Recall:    0.417
+  Mean F1 Score:  0.471
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+
+These test images failed to predict three laser points (7 total):
+['0859', '1220', '1124', '0555', '1134', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_13.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_13.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139', '0853', '1023', '0458', '0148', '1224', '1195']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_16.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:09<01:04,  9.25s/it] 25%|██▌       | 2/8 [00:17<00:53,  8.84s/it] 38%|███▊      | 3/8 [00:25<00:41,  8.21s/it] 50%|█████     | 4/8 [00:33<00:32,  8.03s/it] 62%|██████▎   | 5/8 [00:41<00:24,  8.29s/it] 75%|███████▌  | 6/8 [00:49<00:16,  8.03s/it] 88%|████████▊ | 7/8 [00:57<00:08,  8.02s/it]100%|██████████| 8/8 [01:05<00:00,  8.03s/it]100%|██████████| 8/8 [01:05<00:00,  8.17s/it]
+[0282] Raw binary pixels before morphology: 135070
+[0282] Binary pixels after morphology: 83294
+[0859] Raw binary pixels before morphology: 152829
+[0859] Binary pixels after morphology: 95483
+[1220] Raw binary pixels before morphology: 6022
+[1220] Binary pixels after morphology: 2985
+[1124] Raw binary pixels before morphology: 2274
+[1124] Binary pixels after morphology: 1343
+[0555] Raw binary pixels before morphology: 327662
+[0555] Binary pixels after morphology: 258666
+[1134] Raw binary pixels before morphology: 4373
+[1134] Binary pixels after morphology: 1789
+[0828] Raw binary pixels before morphology: 822921
+[0828] Binary pixels after morphology: 561229
+[0700] Raw binary pixels before morphology: 89472
+[0700] Binary pixels after morphology: 68886
+[0282] Connected regions found: 20
+[0282] LP candidates found: 5
+[0859] Connected regions found: 12
+[0859] LP candidates found: 5
+[1220] Connected regions found: 2
+[1220] LP candidates found: 2
+[1124] Connected regions found: 1
+[1124] LP candidates found: 1
+[0555] Connected regions found: 5
+[0555] LP candidates found: 5
+[1134] Connected regions found: 4
+[1134] LP candidates found: 4
+[0828] Connected regions found: 61
+[0828] LP candidates found: 5
+[0700] Connected regions found: 11
+[0700] LP candidates found: 5
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2194, 3103), (1879, 2534), (1485, 3108)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2163, 3088), (1550, 3069), (1879, 2568)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1880, 2633), (2102, 3046)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and [(1659, 3005)]
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1871, 2567), (1881, 2622), (1570, 3062)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and [(1633, 3022), (2087, 3046), (1881, 2652)]
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(2294, 3159), (1464, 3120), (1883, 2362)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1544, 3073), (2164, 3085)]
+Evaluation over 8 images:
+  Mean Precision: 0.917
+  Mean Recall:    0.792
+  Mean F1 Score:  0.829
+
+These test images failed to predict three laser points (4 total):
+['1220', '1124', '0555', '0828']
+
+
+These test images failed to predict three laser points (4 total):
+['1220', '1124', '0555', '0828']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_16.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_16.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139', '0853', '1023', '0458', '0148', '1224', '1195', '0188', '0926', '0816']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_19.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:10<01:13, 10.44s/it] 25%|██▌       | 2/8 [00:21<01:04, 10.68s/it] 38%|███▊      | 3/8 [00:32<00:53, 10.75s/it] 50%|█████     | 4/8 [00:42<00:42, 10.73s/it] 62%|██████▎   | 5/8 [00:53<00:32, 10.70s/it] 75%|███████▌  | 6/8 [01:04<00:21, 10.75s/it] 88%|████████▊ | 7/8 [01:15<00:10, 10.76s/it]100%|██████████| 8/8 [01:25<00:00, 10.75s/it]100%|██████████| 8/8 [01:25<00:00, 10.73s/it]
+[0282] Raw binary pixels before morphology: 15145
+[0282] Binary pixels after morphology: 11879
+[0859] Raw binary pixels before morphology: 33589
+[0859] Binary pixels after morphology: 23955
+[1220] Raw binary pixels before morphology: 86
+[1220] Binary pixels after morphology: 21
+[1124] Raw binary pixels before morphology: 350
+[1124] Binary pixels after morphology: 258
+[0555] Raw binary pixels before morphology: 109657
+[0555] Binary pixels after morphology: 101516
+[1134] Raw binary pixels before morphology: 101
+[1134] Binary pixels after morphology: 68
+[0828] Raw binary pixels before morphology: 92714
+[0828] Binary pixels after morphology: 65712
+[0700] Raw binary pixels before morphology: 14364
+[0700] Binary pixels after morphology: 12572
+[0282] Connected regions found: 8
+[0282] LP candidates found: 5
+[0859] Connected regions found: 6
+[0859] LP candidates found: 5
+[1220] Connected regions found: 1
+[1220] LP candidates found: 1
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 3
+[0555] LP candidates found: 3
+[1134] Connected regions found: 3
+[1134] LP candidates found: 3
+[0828] Connected regions found: 4
+[0828] LP candidates found: 4
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1486, 3104)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2393, 3210), (2362, 3211), (2168, 3083)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1882, 2633)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1880, 2623), (1871, 2567), (1571, 3061)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and [(1633, 3021), (1880, 2655), (2086, 3044)]
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1464, 3120), (1598, 3026), (1552, 3079)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1879, 2568), (1542, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.667
+  Mean Recall:    0.542
+  Mean F1 Score:  0.579
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_19.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_19.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139', '0853', '1023', '0458', '0148', '1224', '1195', '0188', '0926', '0816', '0231', '0738', '0494']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_22.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:09<01:05,  9.32s/it] 25%|██▌       | 2/8 [00:18<00:57,  9.51s/it] 38%|███▊      | 3/8 [00:28<00:48,  9.64s/it] 50%|█████     | 4/8 [00:38<00:38,  9.66s/it] 62%|██████▎   | 5/8 [00:47<00:28,  9.60s/it] 75%|███████▌  | 6/8 [00:57<00:19,  9.66s/it] 88%|████████▊ | 7/8 [01:07<00:09,  9.71s/it]100%|██████████| 8/8 [01:16<00:00,  9.61s/it]100%|██████████| 8/8 [01:16<00:00,  9.61s/it]
+[0282] Raw binary pixels before morphology: 28010
+[0282] Binary pixels after morphology: 19505
+[0859] Raw binary pixels before morphology: 54543
+[0859] Binary pixels after morphology: 36513
+[1220] Raw binary pixels before morphology: 202
+[1220] Binary pixels after morphology: 65
+[1124] Raw binary pixels before morphology: 536
+[1124] Binary pixels after morphology: 452
+[0555] Raw binary pixels before morphology: 146670
+[0555] Binary pixels after morphology: 129660
+[1134] Raw binary pixels before morphology: 116
+[1134] Binary pixels after morphology: 71
+[0828] Raw binary pixels before morphology: 153244
+[0828] Binary pixels after morphology: 107002
+[0700] Raw binary pixels before morphology: 18252
+[0700] Binary pixels after morphology: 15548
+[0282] Connected regions found: 12
+[0282] LP candidates found: 5
+[0859] Connected regions found: 6
+[0859] LP candidates found: 5
+[1220] Connected regions found: 1
+[1220] LP candidates found: 1
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 3
+[0555] LP candidates found: 3
+[1134] Connected regions found: 3
+[1134] LP candidates found: 3
+[0828] Connected regions found: 16
+[0828] LP candidates found: 5
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1486, 3103)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2395, 3211), (2362, 3211), (2388, 3226)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1881, 2633)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1880, 2623), (1871, 2567), (1571, 3061)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and [(1633, 3021), (1879, 2655), (2086, 3044)]
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1496, 3105), (1551, 3079), (1598, 3026)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1879, 2568), (1542, 3074)]
+Evaluation over 8 images:
+  Mean Precision: 0.583
+  Mean Recall:    0.458
+  Mean F1 Score:  0.496
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_22.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_22.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139', '0853', '1023', '0458', '0148', '1224', '1195', '0188', '0926', '0816', '0231', '0738', '0494', '0459', '0470', '1011']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_25.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:10<01:15, 10.84s/it] 25%|██▌       | 2/8 [00:22<01:06, 11.15s/it] 38%|███▊      | 3/8 [00:34<00:58, 11.62s/it] 50%|█████     | 4/8 [00:46<00:47, 11.77s/it] 62%|██████▎   | 5/8 [00:57<00:35, 11.69s/it] 75%|███████▌  | 6/8 [01:10<00:23, 11.83s/it] 88%|████████▊ | 7/8 [01:22<00:11, 11.92s/it]100%|██████████| 8/8 [01:33<00:00, 11.75s/it]100%|██████████| 8/8 [01:33<00:00, 11.69s/it]
+[0282] Raw binary pixels before morphology: 43886
+[0282] Binary pixels after morphology: 26840
+[0859] Raw binary pixels before morphology: 67369
+[0859] Binary pixels after morphology: 41237
+[1220] Raw binary pixels before morphology: 502
+[1220] Binary pixels after morphology: 90
+[1124] Raw binary pixels before morphology: 612
+[1124] Binary pixels after morphology: 513
+[0555] Raw binary pixels before morphology: 195724
+[0555] Binary pixels after morphology: 164489
+[1134] Raw binary pixels before morphology: 168
+[1134] Binary pixels after morphology: 71
+[0828] Raw binary pixels before morphology: 195486
+[0828] Binary pixels after morphology: 131192
+[0700] Raw binary pixels before morphology: 24106
+[0700] Binary pixels after morphology: 18394
+[0282] Connected regions found: 8
+[0282] LP candidates found: 5
+[0859] Connected regions found: 7
+[0859] LP candidates found: 5
+[1220] Connected regions found: 1
+[1220] LP candidates found: 1
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 4
+[0555] LP candidates found: 4
+[1134] Connected regions found: 3
+[1134] LP candidates found: 3
+[0828] Connected regions found: 17
+[0828] LP candidates found: 5
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1485, 3103)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2395, 3211), (2362, 3210), (2166, 3089)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1881, 2633)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1880, 2623), (1871, 2567), (1571, 3061)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and [(1633, 3021), (1880, 2655), (2086, 3044)]
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1551, 3079), (1496, 3105), (1464, 3120)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1879, 2568), (1542, 3074)]
+Evaluation over 8 images:
+  Mean Precision: 0.667
+  Mean Recall:    0.542
+  Mean F1 Score:  0.579
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_25.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_25.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139', '0853', '1023', '0458', '0148', '1224', '1195', '0188', '0926', '0816', '0231', '0738', '0494', '0459', '0470', '1011', '0310', '1106']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_27.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:14<01:40, 14.32s/it] 25%|██▌       | 2/8 [00:29<01:27, 14.56s/it] 38%|███▊      | 3/8 [00:43<01:13, 14.73s/it] 50%|█████     | 4/8 [00:58<00:59, 14.80s/it] 62%|██████▎   | 5/8 [01:13<00:44, 14.71s/it] 75%|███████▌  | 6/8 [01:28<00:29, 14.78s/it] 88%|████████▊ | 7/8 [01:43<00:14, 14.78s/it]100%|██████████| 8/8 [01:58<00:00, 14.85s/it]100%|██████████| 8/8 [01:58<00:00, 14.77s/it]
+[0282] Raw binary pixels before morphology: 30813
+[0282] Binary pixels after morphology: 21963
+[0859] Raw binary pixels before morphology: 59302
+[0859] Binary pixels after morphology: 40852
+[1220] Raw binary pixels before morphology: 265
+[1220] Binary pixels after morphology: 72
+[1124] Raw binary pixels before morphology: 592
+[1124] Binary pixels after morphology: 521
+[0555] Raw binary pixels before morphology: 155887
+[0555] Binary pixels after morphology: 138596
+[1134] Raw binary pixels before morphology: 126
+[1134] Binary pixels after morphology: 71
+[0828] Raw binary pixels before morphology: 163127
+[0828] Binary pixels after morphology: 115379
+[0700] Raw binary pixels before morphology: 19498
+[0700] Binary pixels after morphology: 16683
+[0282] Connected regions found: 9
+[0282] LP candidates found: 5
+[0859] Connected regions found: 6
+[0859] LP candidates found: 5
+[1220] Connected regions found: 1
+[1220] LP candidates found: 1
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 3
+[0555] LP candidates found: 3
+[1134] Connected regions found: 3
+[1134] LP candidates found: 3
+[0828] Connected regions found: 17
+[0828] LP candidates found: 5
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3105), (1880, 2535), (1486, 3103)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2395, 3211), (2362, 3211), (2389, 3225)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1881, 2633)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1880, 2623), (1871, 2567), (1571, 3061)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and [(1633, 3021), (1879, 2655), (2086, 3044)]
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1464, 3119), (1496, 3105), (1551, 3079)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1879, 2568), (1542, 3074)]
+Evaluation over 8 images:
+  Mean Precision: 0.625
+  Mean Recall:    0.500
+  Mean F1 Score:  0.537
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_27.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_27.png
+The selected images for this train set are: ['0942', '0381', '0956', '0333', '0455', '0178', '0315', '0734', '1185', '1139', '0853', '1023', '0458', '0148', '1224', '1195', '0188', '0926', '0816', '0231', '0738', '0494', '0459', '0470', '1011', '0310', '1106', '1208', '0590', '0266']
+Saved interactive k-means plot to /home/jn492/jn492/results/baseline_t1/kmeans_plots/t1_kmeans_iter_30.html
+The selected images for this test set are: ['0282', '0859', '1220', '1124', '0555', '1134', '0828', '0700']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:14<01:43, 14.79s/it] 25%|██▌       | 2/8 [00:29<01:29, 14.90s/it] 38%|███▊      | 3/8 [00:45<01:15, 15.17s/it] 50%|█████     | 4/8 [01:00<01:00, 15.23s/it] 62%|██████▎   | 5/8 [01:15<00:45, 15.07s/it] 75%|███████▌  | 6/8 [01:30<00:30, 15.20s/it] 88%|████████▊ | 7/8 [01:46<00:15, 15.47s/it]100%|██████████| 8/8 [02:02<00:00, 15.38s/it]100%|██████████| 8/8 [02:02<00:00, 15.25s/it]
+[0282] Raw binary pixels before morphology: 52321
+[0282] Binary pixels after morphology: 31329
+[0859] Raw binary pixels before morphology: 79716
+[0859] Binary pixels after morphology: 48205
+[1220] Raw binary pixels before morphology: 719
+[1220] Binary pixels after morphology: 158
+[1124] Raw binary pixels before morphology: 726
+[1124] Binary pixels after morphology: 620
+[0555] Raw binary pixels before morphology: 216372
+[0555] Binary pixels after morphology: 181049
+[1134] Raw binary pixels before morphology: 248
+[1134] Binary pixels after morphology: 76
+[0828] Raw binary pixels before morphology: 222463
+[0828] Binary pixels after morphology: 149687
+[0700] Raw binary pixels before morphology: 27599
+[0700] Binary pixels after morphology: 20962
+[0282] Connected regions found: 9
+[0282] LP candidates found: 5
+[0859] Connected regions found: 9
+[0859] LP candidates found: 5
+[1220] Connected regions found: 1
+[1220] LP candidates found: 1
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0555] Connected regions found: 4
+[0555] LP candidates found: 4
+[1134] Connected regions found: 3
+[1134] LP candidates found: 3
+[0828] Connected regions found: 24
+[0828] LP candidates found: 5
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0282 is [(1881, 2534), (1489, 3107), (2197, 3106)] and [(2195, 3104), (1880, 2535), (1485, 3103)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2395, 3211), (2164, 3088), (2362, 3210)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1882, 2633)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0555 is [(1878, 2622), (1571, 3062), (2118, 3062)] and [(1880, 2623), (1871, 2567), (1570, 3061)]
+ground truth and predicted points for 1134 is [(1880, 2654), (1632, 3022), (2087, 3042)] and [(1633, 3021), (1880, 2655), (2086, 3044)]
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1498, 3106), (1464, 3120), (1551, 3079)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1543, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.667
+  Mean Recall:    0.542
+  Mean F1 Score:  0.579
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+
+These test images failed to predict three laser points (6 total):
+['0859', '1220', '1124', '0555', '0828', '0700']
+
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_30.png
+Saved failed prediction plot to /home/jn492/jn492/results/baseline_t1/failed_plots/t1_failed_iter_30.png
+
+Top 6 successful image IDs (successes ≥ 3):
+['0282', '1134', '0859']
+
+Saved successful prediction plot to /home/jn492/jn492/results/baseline_t1/t1_successful_top6.png
+Saved to: /home/jn492/jn492/results/baseline_t1/baseline_t1.csv

@@ -1,0 +1,1532 @@
+Obtaining file:///home/jn492/jn492
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: opencv-python in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (4.11.0.86)
+Requirement already satisfied: numpy in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (2.3.0)
+Building wheels for collected packages: DELPHI
+  Building editable for DELPHI (pyproject.toml): started
+  Building editable for DELPHI (pyproject.toml): finished with status 'done'
+  Created wheel for DELPHI: filename=delphi-0.1.0-0.editable-py3-none-any.whl size=2976 sha256=677cab4897868467c670f14c869d3d9dad277db04b09ce745145c98e0e9cc5d0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-f0xivq_9/wheels/f5/7c/28/fa37e5f97a8c66c553cf39d179f2f5e40f34db2832c2b100f0
+Successfully built DELPHI
+Installing collected packages: DELPHI
+  Attempting uninstall: DELPHI
+    Found existing installation: DELPHI 0.1.0
+    Uninstalling DELPHI-0.1.0:
+      Successfully uninstalled DELPHI-0.1.0
+Successfully installed DELPHI-0.1.0
+
+[notice] A new release of pip available: 22.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Duplicated annotations: []
+Found 39 images
+Found 99 annotations
+Matched pairs: 39
+Unmatched images: []
+Unmatched annotations: ['0001', '0002', '0003', '0010', '0011', '0020', '0021', '0024', '0026', '0027', '0044', '0052', '0055', '0078', '0081', '0104', '0112', '0121', '0127', '0128', '0133', '0138', '0144', '0154', '0156', '0167', '0172', '0187', '0190', '0196', '0204', '0225', '0232', '0253', '0261', '0268', '0302', '0336', '0358', '0361', '0363', '0383', '0420', '0456', '0480', '0514', '0531', '0584', '0591', '0592', '0602', '0607', '0609', '0662', '0697', '0717', '0790', '0804', '0834', '0857']
+Matched 39 pairs → 24 train, 7 validation, 8 test.
+The selected images for this train set are: ['0555', '0470', '1195', '1139', '0315', '1134', '0231', '0853', '0178', '1224', '0381', '1124', '1106', '0188', '0459', '0246', '0942', '0738', '0590', '0734', '0282', '1208', '0816', '0266']
+Trying radius 1 for laser point color clustering
+Trying radius 1 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:07<00:44,  7.44s/it] 29%|██▊       | 2/7 [00:14<00:37,  7.49s/it] 43%|████▎     | 3/7 [00:22<00:30,  7.51s/it] 57%|█████▋    | 4/7 [00:30<00:22,  7.51s/it] 71%|███████▏  | 5/7 [00:37<00:14,  7.47s/it] 86%|████████▌ | 6/7 [00:44<00:07,  7.44s/it]100%|██████████| 7/7 [00:52<00:00,  7.40s/it]100%|██████████| 7/7 [00:52<00:00,  7.44s/it]
+[0148] Raw binary pixels before morphology: 0
+[0148] Binary pixels after morphology: 0
+[0859] Raw binary pixels before morphology: 5099
+[0859] Binary pixels after morphology: 1683
+[0494] Raw binary pixels before morphology: 17116
+[0494] Binary pixels after morphology: 6860
+[1185] Raw binary pixels before morphology: 18059
+[1185] Binary pixels after morphology: 7217
+[1011] Raw binary pixels before morphology: 8150
+[1011] Binary pixels after morphology: 6626
+[0700] Raw binary pixels before morphology: 568
+[0700] Binary pixels after morphology: 392
+[0458] Raw binary pixels before morphology: 178479
+[0458] Binary pixels after morphology: 150983
+[0148] Connected regions found: 0
+[0148] LP candidates found: 0
+[0859] Connected regions found: 1
+[0859] LP candidates found: 1
+[0494] Connected regions found: 0
+[0494] LP candidates found: 0
+[1185] Connected regions found: 0
+[1185] LP candidates found: 0
+[1011] Connected regions found: 0
+[1011] LP candidates found: 0
+[0700] Connected regions found: 0
+[0700] LP candidates found: 0
+[0458] Connected regions found: 2
+[0458] LP candidates found: 2
+[Warning] Not enough LP candidates for 0148 — storing raw candidates
+[Warning] Not enough LP candidates for 0859 — storing raw candidates
+[Warning] Not enough LP candidates for 0494 — storing raw candidates
+[Warning] Not enough LP candidates for 1185 — storing raw candidates
+[Warning] Not enough LP candidates for 1011 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+[Warning] Not enough LP candidates for 0458 — storing raw candidates
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and []
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2169, 3088)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and []
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and []
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and []
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1878, 2555), (1879, 2550)]
+Evaluation over 7 images:
+  Mean Precision: 0.214
+  Mean Recall:    0.095
+  Mean F1 Score:  0.129
+Trying radius 10 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:08<00:53,  8.98s/it] 29%|██▊       | 2/7 [00:17<00:42,  8.58s/it] 43%|████▎     | 3/7 [00:25<00:34,  8.62s/it] 57%|█████▋    | 4/7 [00:34<00:25,  8.66s/it] 71%|███████▏  | 5/7 [00:43<00:17,  8.86s/it] 86%|████████▌ | 6/7 [00:51<00:08,  8.55s/it]100%|██████████| 7/7 [01:00<00:00,  8.61s/it]100%|██████████| 7/7 [01:00<00:00,  8.65s/it]
+[0148] Raw binary pixels before morphology: 1165
+[0148] Binary pixels after morphology: 593
+[0859] Raw binary pixels before morphology: 28457
+[0859] Binary pixels after morphology: 19238
+[0494] Raw binary pixels before morphology: 72144
+[0494] Binary pixels after morphology: 52763
+[1185] Raw binary pixels before morphology: 88172
+[1185] Binary pixels after morphology: 53028
+[1011] Raw binary pixels before morphology: 157882
+[1011] Binary pixels after morphology: 143045
+[0700] Raw binary pixels before morphology: 15237
+[0700] Binary pixels after morphology: 12975
+[0458] Raw binary pixels before morphology: 363726
+[0458] Binary pixels after morphology: 320030
+[0148] Connected regions found: 0
+[0148] LP candidates found: 0
+[0859] Connected regions found: 3
+[0859] LP candidates found: 3
+[0494] Connected regions found: 7
+[0494] LP candidates found: 5
+[1185] Connected regions found: 9
+[1185] LP candidates found: 5
+[1011] Connected regions found: 3
+[1011] LP candidates found: 3
+[0700] Connected regions found: 3
+[0700] LP candidates found: 3
+[0458] Connected regions found: 4
+[0458] LP candidates found: 4
+[Warning] Not enough LP candidates for 0148 — storing raw candidates
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and []
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3088), (1551, 3070), (1878, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1558, 3068), (1879, 2562)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2220, 3115), (1523, 3085), (1877, 2525)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(1880, 2443), (2858, 4951), (1410, 3150)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1543, 3073), (2857, 4952)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1880, 2556), (2207, 3114), (2213, 3115)]
+Evaluation over 7 images:
+  Mean Precision: 0.714
+  Mean Recall:    0.714
+  Mean F1 Score:  0.714
+Trying radius 25 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:08<00:52,  8.69s/it] 29%|██▊       | 2/7 [00:17<00:42,  8.58s/it] 43%|████▎     | 3/7 [00:26<00:35,  8.83s/it] 57%|█████▋    | 4/7 [00:35<00:26,  8.85s/it] 71%|███████▏  | 5/7 [00:43<00:17,  8.83s/it] 86%|████████▌ | 6/7 [00:52<00:08,  8.66s/it]100%|██████████| 7/7 [01:01<00:00,  8.82s/it]100%|██████████| 7/7 [01:01<00:00,  8.78s/it]
+[0148] Raw binary pixels before morphology: 15973
+[0148] Binary pixels after morphology: 2637
+[0859] Raw binary pixels before morphology: 104438
+[0859] Binary pixels after morphology: 68969
+[0494] Raw binary pixels before morphology: 233901
+[0494] Binary pixels after morphology: 165945
+[1185] Raw binary pixels before morphology: 700486
+[1185] Binary pixels after morphology: 349475
+[1011] Raw binary pixels before morphology: 370433
+[1011] Binary pixels after morphology: 322394
+[0700] Raw binary pixels before morphology: 42208
+[0700] Binary pixels after morphology: 32566
+[0458] Raw binary pixels before morphology: 798908
+[0458] Binary pixels after morphology: 657819
+[0148] Connected regions found: 4
+[0148] LP candidates found: 4
+[0859] Connected regions found: 10
+[0859] LP candidates found: 5
+[0494] Connected regions found: 15
+[0494] LP candidates found: 5
+[1185] Connected regions found: 98
+[1185] LP candidates found: 5
+[1011] Connected regions found: 7
+[1011] LP candidates found: 5
+[0700] Connected regions found: 4
+[0700] LP candidates found: 4
+[0458] Connected regions found: 10
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1398, 3157)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3087), (1551, 3070), (2362, 3210)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2173, 3096), (1558, 3068), (1471, 3100)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2222, 3113), (1884, 2521), (1520, 3088)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(1880, 2443), (1409, 3152), (2369, 3210)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2567), (1543, 3073), (1885, 2460)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2210, 3115), (1517, 3093), (1881, 2556)]
+Evaluation over 7 images:
+  Mean Precision: 0.857
+  Mean Recall:    0.857
+  Mean F1 Score:  0.857
+Trying radius 40 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:07<00:47,  7.98s/it] 29%|██▊       | 2/7 [00:15<00:40,  8.00s/it] 43%|████▎     | 3/7 [00:24<00:32,  8.02s/it] 57%|█████▋    | 4/7 [00:32<00:24,  8.06s/it] 71%|███████▏  | 5/7 [00:40<00:16,  8.07s/it] 86%|████████▌ | 6/7 [00:48<00:08,  8.07s/it]100%|██████████| 7/7 [00:56<00:00,  8.05s/it]100%|██████████| 7/7 [00:56<00:00,  8.04s/it]
+[0148] Raw binary pixels before morphology: 160806
+[0148] Binary pixels after morphology: 111748
+[0859] Raw binary pixels before morphology: 4653848
+[0859] Binary pixels after morphology: 4200477
+[0494] Raw binary pixels before morphology: 6970090
+[0494] Binary pixels after morphology: 6322317
+[1185] Raw binary pixels before morphology: 7657868
+[1185] Binary pixels after morphology: 7205802
+[1011] Raw binary pixels before morphology: 1581504
+[1011] Binary pixels after morphology: 1509486
+[0700] Raw binary pixels before morphology: 1710188
+[0700] Binary pixels after morphology: 1421211
+[0458] Raw binary pixels before morphology: 7451394
+[0458] Binary pixels after morphology: 7016104
+[0148] Connected regions found: 32
+[0148] LP candidates found: 5
+[0859] Connected regions found: 338
+[0859] LP candidates found: 5
+[0494] Connected regions found: 391
+[0494] LP candidates found: 5
+[1185] Connected regions found: 122
+[1185] LP candidates found: 5
+[1011] Connected regions found: 38
+[1011] LP candidates found: 5
+[0700] Connected regions found: 233
+[0700] LP candidates found: 5
+[0458] Connected regions found: 219
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1844, 2580), (2333, 3185), (1609, 3019)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2395, 3216), (1891, 2294), (1383, 3188)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1873, 2297), (1296, 3216), (2190, 3097)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2163, 3083), (1881, 2573), (1583, 3044)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2319, 3198), (2380, 3211), (2273, 3165)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1889, 2688), (1880, 2460), (1466, 3121)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2139, 3075), (1630, 3019), (1879, 2636)]
+Evaluation over 7 images:
+  Mean Precision: 0.143
+  Mean Recall:    0.143
+  Mean F1 Score:  0.143
+Trying radius 60 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:09<00:55,  9.17s/it] 29%|██▊       | 2/7 [00:17<00:44,  8.95s/it] 43%|████▎     | 3/7 [00:26<00:35,  8.82s/it] 57%|█████▋    | 4/7 [00:35<00:26,  8.79s/it] 71%|███████▏  | 5/7 [00:44<00:17,  8.87s/it] 86%|████████▌ | 6/7 [00:53<00:08,  8.90s/it]100%|██████████| 7/7 [01:02<00:00,  8.84s/it]100%|██████████| 7/7 [01:02<00:00,  8.87s/it]
+[0148] Raw binary pixels before morphology: 174934
+[0148] Binary pixels after morphology: 123686
+[0859] Raw binary pixels before morphology: 4836350
+[0859] Binary pixels after morphology: 4379941
+[0494] Raw binary pixels before morphology: 7236377
+[0494] Binary pixels after morphology: 6577959
+[1185] Raw binary pixels before morphology: 7929541
+[1185] Binary pixels after morphology: 7461696
+[1011] Raw binary pixels before morphology: 1638468
+[1011] Binary pixels after morphology: 1563959
+[0700] Raw binary pixels before morphology: 1833435
+[0700] Binary pixels after morphology: 1535640
+[0458] Raw binary pixels before morphology: 7671558
+[0458] Binary pixels after morphology: 7221662
+[0148] Connected regions found: 38
+[0148] LP candidates found: 5
+[0859] Connected regions found: 531
+[0859] LP candidates found: 5
+[0494] Connected regions found: 601
+[0494] LP candidates found: 5
+[1185] Connected regions found: 179
+[1185] LP candidates found: 5
+[1011] Connected regions found: 64
+[1011] LP candidates found: 5
+[0700] Connected regions found: 410
+[0700] LP candidates found: 5
+[0458] Connected regions found: 349
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1831, 2595), (1622, 3015), (2404, 3185)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2396, 3220), (1903, 2299), (1438, 3158)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1874, 2642), (1305, 3221), (2056, 3015)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1882, 2515), (2167, 3083), (1587, 3041)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2310, 3210), (1276, 3268), (2411, 3253)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1899, 2699), (1905, 2281), (1291, 3157)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2130, 3072), (1882, 2661), (1629, 3019)]
+Evaluation over 7 images:
+  Mean Precision: 0.048
+  Mean Recall:    0.048
+  Mean F1 Score:  0.048
+Trying radius 80 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:09<00:54,  9.03s/it] 29%|██▊       | 2/7 [00:17<00:44,  8.83s/it] 43%|████▎     | 3/7 [00:26<00:34,  8.63s/it] 57%|█████▋    | 4/7 [00:34<00:25,  8.67s/it] 71%|███████▏  | 5/7 [00:43<00:17,  8.76s/it] 86%|████████▌ | 6/7 [00:52<00:08,  8.84s/it]100%|██████████| 7/7 [01:01<00:00,  8.80s/it]100%|██████████| 7/7 [01:01<00:00,  8.78s/it]
+[0148] Raw binary pixels before morphology: 169520
+[0148] Binary pixels after morphology: 119092
+[0859] Raw binary pixels before morphology: 4850247
+[0859] Binary pixels after morphology: 4464634
+[0494] Raw binary pixels before morphology: 7265195
+[0494] Binary pixels after morphology: 6681858
+[1185] Raw binary pixels before morphology: 7917324
+[1185] Binary pixels after morphology: 7510177
+[1011] Raw binary pixels before morphology: 1628878
+[1011] Binary pixels after morphology: 1556769
+[0700] Raw binary pixels before morphology: 1795964
+[0700] Binary pixels after morphology: 1508410
+[0458] Raw binary pixels before morphology: 7780290
+[0458] Binary pixels after morphology: 7381287
+[0148] Connected regions found: 58
+[0148] LP candidates found: 5
+[0859] Connected regions found: 649
+[0859] LP candidates found: 5
+[0494] Connected regions found: 725
+[0494] LP candidates found: 5
+[1185] Connected regions found: 205
+[1185] LP candidates found: 5
+[1011] Connected regions found: 85
+[1011] LP candidates found: 5
+[0700] Connected regions found: 564
+[0700] LP candidates found: 5
+[0458] Connected regions found: 488
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1830, 2596), (1623, 3015), (2404, 3185)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2351, 3214), (1274, 3159), (1902, 2298)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1869, 2286), (1308, 3221), (2348, 3226)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1882, 2504), (2177, 3088), (1585, 3044)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2308, 3223), (1273, 3269), (2380, 3211)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1905, 2701), (1454, 3055), (1906, 2281)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2123, 3065), (1637, 3018), (1886, 2666)]
+Evaluation over 7 images:
+  Mean Precision: 0.095
+  Mean Recall:    0.095
+  Mean F1 Score:  0.095
+Trying radius 200 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:08<00:51,  8.50s/it] 29%|██▊       | 2/7 [00:16<00:42,  8.45s/it] 43%|████▎     | 3/7 [00:25<00:33,  8.41s/it] 57%|█████▋    | 4/7 [00:33<00:25,  8.44s/it] 71%|███████▏  | 5/7 [00:42<00:16,  8.49s/it] 86%|████████▌ | 6/7 [00:50<00:08,  8.53s/it]100%|██████████| 7/7 [00:59<00:00,  8.48s/it]100%|██████████| 7/7 [00:59<00:00,  8.48s/it]
+[0148] Raw binary pixels before morphology: 198636
+[0148] Binary pixels after morphology: 144133
+[0859] Raw binary pixels before morphology: 5189685
+[0859] Binary pixels after morphology: 4780750
+[0494] Raw binary pixels before morphology: 7800282
+[0494] Binary pixels after morphology: 7211720
+[1185] Raw binary pixels before morphology: 8511776
+[1185] Binary pixels after morphology: 8114543
+[1011] Raw binary pixels before morphology: 1748438
+[1011] Binary pixels after morphology: 1673180
+[0700] Raw binary pixels before morphology: 2052806
+[0700] Binary pixels after morphology: 1750590
+[0458] Raw binary pixels before morphology: 8395224
+[0458] Binary pixels after morphology: 7999907
+[0148] Connected regions found: 231
+[0148] LP candidates found: 5
+[0859] Connected regions found: 2166
+[0859] LP candidates found: 5
+[0494] Connected regions found: 2301
+[0494] LP candidates found: 5
+[1185] Connected regions found: 776
+[1185] LP candidates found: 5
+[1011] Connected regions found: 378
+[1011] LP candidates found: 5
+[0700] Connected regions found: 2104
+[0700] LP candidates found: 5
+[0458] Connected regions found: 1495
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1614, 2958), (1626, 3173), (2079, 3257)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2326, 3227), (1521, 3220), (1750, 2327)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2425, 3264), (1905, 2288), (1276, 3185)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2057, 2838), (1482, 3116), (2576, 3260)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2307, 3230), (2533, 3298), (2375, 3080)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2146, 2913), (1907, 2700), (1921, 3031)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1313, 3184), (1797, 2459), (2452, 3251)]
+Evaluation over 7 images:
+  Mean Precision: 0.000
+  Mean Recall:    0.000
+  Mean F1 Score:  0.000
+Trying radius 5 for laser point color clustering
+Trying radius 1 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:10<01:00, 10.04s/it] 29%|██▊       | 2/7 [00:27<01:12, 14.52s/it] 43%|████▎     | 3/7 [00:48<01:09, 17.39s/it] 57%|█████▋    | 4/7 [01:10<00:58, 19.39s/it] 71%|███████▏  | 5/7 [01:24<00:34, 17.22s/it] 86%|████████▌ | 6/7 [01:38<00:16, 16.07s/it]100%|██████████| 7/7 [02:00<00:00, 17.99s/it]100%|██████████| 7/7 [02:00<00:00, 17.16s/it]
+[0148] Raw binary pixels before morphology: 21743962
+[0148] Binary pixels after morphology: 21728275
+[0859] Raw binary pixels before morphology: 14427544
+[0859] Binary pixels after morphology: 14095505
+[0494] Raw binary pixels before morphology: 10460453
+[0494] Binary pixels after morphology: 9746911
+[1185] Raw binary pixels before morphology: 10570782
+[1185] Binary pixels after morphology: 10085497
+[1011] Raw binary pixels before morphology: 18595484
+[1011] Binary pixels after morphology: 18554846
+[0700] Raw binary pixels before morphology: 18003522
+[0700] Binary pixels after morphology: 17770754
+[0458] Raw binary pixels before morphology: 9705845
+[0458] Binary pixels after morphology: 9173038
+[0148] Connected regions found: 58
+[0148] LP candidates found: 5
+[0859] Connected regions found: 32
+[0859] LP candidates found: 5
+[0494] Connected regions found: 13
+[0494] LP candidates found: 5
+[1185] Connected regions found: 9
+[1185] LP candidates found: 5
+[1011] Connected regions found: 56
+[1011] LP candidates found: 5
+[0700] Connected regions found: 39
+[0700] LP candidates found: 5
+[0458] Connected regions found: 13
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2197, 3107), (1880, 2548), (1538, 3076)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1879, 2619), (2186, 3098), (2182, 3096)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1597, 3046), (2138, 3069), (1879, 2555)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1418, 3145), (2292, 3156), (1539, 3076)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2197, 3107), (1879, 2620), (1880, 2577)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2197, 3107), (1537, 3076), (1880, 2577)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1444, 3130), (1560, 3066), (1877, 2286)]
+Evaluation over 7 images:
+  Mean Precision: 0.238
+  Mean Recall:    0.238
+  Mean F1 Score:  0.238
+Trying radius 10 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:21<02:06, 21.16s/it] 29%|██▊       | 2/7 [00:43<01:48, 21.74s/it] 43%|████▎     | 3/7 [01:06<01:28, 22.19s/it] 57%|█████▋    | 4/7 [01:28<01:06, 22.15s/it] 71%|███████▏  | 5/7 [01:49<00:44, 22.03s/it] 86%|████████▌ | 6/7 [02:10<00:21, 21.50s/it]100%|██████████| 7/7 [02:31<00:00, 21.53s/it]100%|██████████| 7/7 [02:31<00:00, 21.71s/it]
+[0148] Raw binary pixels before morphology: 155
+[0148] Binary pixels after morphology: 93
+[0859] Raw binary pixels before morphology: 2594
+[0859] Binary pixels after morphology: 2033
+[0494] Raw binary pixels before morphology: 11092
+[0494] Binary pixels after morphology: 8858
+[1185] Raw binary pixels before morphology: 9372
+[1185] Binary pixels after morphology: 7575
+[1011] Raw binary pixels before morphology: 58044
+[1011] Binary pixels after morphology: 54141
+[0700] Raw binary pixels before morphology: 4498
+[0700] Binary pixels after morphology: 4351
+[0458] Raw binary pixels before morphology: 145283
+[0458] Binary pixels after morphology: 136440
+[0148] Connected regions found: 0
+[0148] LP candidates found: 0
+[0859] Connected regions found: 3
+[0859] LP candidates found: 3
+[0494] Connected regions found: 3
+[0494] LP candidates found: 3
+[1185] Connected regions found: 4
+[1185] LP candidates found: 4
+[1011] Connected regions found: 0
+[1011] LP candidates found: 0
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[0458] Connected regions found: 4
+[0458] LP candidates found: 4
+[Warning] Not enough LP candidates for 0148 — storing raw candidates
+[Warning] Not enough LP candidates for 1011 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and []
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3088), (1551, 3070), (1879, 2569)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1558, 3067), (1300, 3217)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2216, 3114), (1523, 3086), (1884, 2525)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1543, 3073)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1881, 2556), (2207, 3114), (2212, 3115)]
+Evaluation over 7 images:
+  Mean Precision: 0.619
+  Mean Recall:    0.571
+  Mean F1 Score:  0.590
+Trying radius 25 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:15<01:35, 15.95s/it] 29%|██▊       | 2/7 [00:29<01:13, 14.74s/it] 43%|████▎     | 3/7 [00:43<00:57, 14.28s/it] 57%|█████▋    | 4/7 [00:57<00:42, 14.15s/it] 71%|███████▏  | 5/7 [01:13<00:29, 14.66s/it] 86%|████████▌ | 6/7 [01:27<00:14, 14.46s/it]100%|██████████| 7/7 [01:40<00:00, 14.23s/it]100%|██████████| 7/7 [01:40<00:00, 14.42s/it]
+[0148] Raw binary pixels before morphology: 10680
+[0148] Binary pixels after morphology: 1612
+[0859] Raw binary pixels before morphology: 225295
+[0859] Binary pixels after morphology: 91093
+[0494] Raw binary pixels before morphology: 508268
+[0494] Binary pixels after morphology: 223559
+[1185] Raw binary pixels before morphology: 1175791
+[1185] Binary pixels after morphology: 471064
+[1011] Raw binary pixels before morphology: 328918
+[1011] Binary pixels after morphology: 270283
+[0700] Raw binary pixels before morphology: 74903
+[0700] Binary pixels after morphology: 42156
+[0458] Raw binary pixels before morphology: 1212575
+[0458] Binary pixels after morphology: 813348
+[0148] Connected regions found: 2
+[0148] LP candidates found: 2
+[0859] Connected regions found: 9
+[0859] LP candidates found: 5
+[0494] Connected regions found: 38
+[0494] LP candidates found: 5
+[1185] Connected regions found: 148
+[1185] LP candidates found: 5
+[1011] Connected regions found: 0
+[1011] LP candidates found: 0
+[0700] Connected regions found: 6
+[0700] LP candidates found: 5
+[0458] Connected regions found: 22
+[0458] LP candidates found: 5
+[Warning] Not enough LP candidates for 0148 — storing raw candidates
+[Warning] Not enough LP candidates for 1011 — storing raw candidates
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1398, 3159)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2395, 3215), (2362, 3211), (1439, 3126)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2173, 3095), (1470, 3102), (1317, 3193)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1885, 2525), (2221, 3114), (1309, 3191)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and []
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1542, 3073), (1905, 2688)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2210, 3114), (1504, 3091), (1519, 3093)]
+Evaluation over 7 images:
+  Mean Precision: 0.476
+  Mean Recall:    0.429
+  Mean F1 Score:  0.448
+Trying radius 40 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:13<01:21, 13.58s/it] 29%|██▊       | 2/7 [00:38<01:42, 20.50s/it] 43%|████▎     | 3/7 [01:06<01:35, 23.82s/it] 57%|█████▋    | 4/7 [01:32<01:13, 24.64s/it] 71%|███████▏  | 5/7 [01:48<00:43, 21.59s/it] 86%|████████▌ | 6/7 [02:09<00:21, 21.44s/it]100%|██████████| 7/7 [02:37<00:00, 23.31s/it]100%|██████████| 7/7 [02:37<00:00, 22.44s/it]
+[0148] Raw binary pixels before morphology: 91909
+[0148] Binary pixels after morphology: 42991
+[0859] Raw binary pixels before morphology: 306677
+[0859] Binary pixels after morphology: 174382
+[0494] Raw binary pixels before morphology: 645141
+[0494] Binary pixels after morphology: 366253
+[1185] Raw binary pixels before morphology: 2452154
+[1185] Binary pixels after morphology: 1623878
+[1011] Raw binary pixels before morphology: 790367
+[1011] Binary pixels after morphology: 706766
+[0700] Raw binary pixels before morphology: 145961
+[0700] Binary pixels after morphology: 105703
+[0458] Raw binary pixels before morphology: 1472279
+[0458] Binary pixels after morphology: 1084545
+[0148] Connected regions found: 20
+[0148] LP candidates found: 5
+[0859] Connected regions found: 37
+[0859] LP candidates found: 5
+[0494] Connected regions found: 102
+[0494] LP candidates found: 5
+[1185] Connected regions found: 278
+[1185] LP candidates found: 5
+[1011] Connected regions found: 13
+[1011] LP candidates found: 5
+[0700] Connected regions found: 19
+[0700] LP candidates found: 5
+[0458] Connected regions found: 68
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1397, 3158)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3088), (1550, 3069), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3096), (1853, 2425), (1559, 3068)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1881, 2664), (1888, 2613), (2104, 3041)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2311, 3188), (1880, 2443), (1409, 3152)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (2175, 3135), (1543, 3073)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1506, 3095), (2210, 3114), (1881, 2555)]
+Evaluation over 7 images:
+  Mean Precision: 0.714
+  Mean Recall:    0.714
+  Mean F1 Score:  0.714
+Trying radius 60 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:21<02:10, 21.78s/it] 29%|██▊       | 2/7 [00:39<01:35, 19.13s/it] 43%|████▎     | 3/7 [00:56<01:12, 18.24s/it] 57%|█████▋    | 4/7 [01:12<00:52, 17.65s/it] 71%|███████▏  | 5/7 [01:33<00:37, 18.85s/it] 86%|████████▌ | 6/7 [01:50<00:17, 17.97s/it]100%|██████████| 7/7 [02:07<00:00, 17.58s/it]100%|██████████| 7/7 [02:07<00:00, 18.14s/it]
+[0148] Raw binary pixels before morphology: 6183
+[0148] Binary pixels after morphology: 1522
+[0859] Raw binary pixels before morphology: 117302
+[0859] Binary pixels after morphology: 78864
+[0494] Raw binary pixels before morphology: 265889
+[0494] Binary pixels after morphology: 189886
+[1185] Raw binary pixels before morphology: 768169
+[1185] Binary pixels after morphology: 456380
+[1011] Raw binary pixels before morphology: 398170
+[1011] Binary pixels after morphology: 365220
+[0700] Raw binary pixels before morphology: 42098
+[0700] Binary pixels after morphology: 32764
+[0458] Raw binary pixels before morphology: 965254
+[0458] Binary pixels after morphology: 790569
+[0148] Connected regions found: 8
+[0148] LP candidates found: 5
+[0859] Connected regions found: 14
+[0859] LP candidates found: 5
+[0494] Connected regions found: 71
+[0494] LP candidates found: 5
+[1185] Connected regions found: 237
+[1185] LP candidates found: 5
+[1011] Connected regions found: 13
+[1011] LP candidates found: 5
+[0700] Connected regions found: 9
+[0700] LP candidates found: 5
+[0458] Connected regions found: 32
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1397, 3159), (1879, 2353)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1518, 3142), (2165, 3087), (2363, 3211)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1303, 3216), (2173, 3095), (1923, 2529)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1304, 3251), (1882, 2534), (2223, 3112)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2315, 3194), (2286, 3198), (2286, 3185)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1543, 3073), (2169, 3135)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1508, 3094), (2211, 3115), (1881, 2556)]
+Evaluation over 7 images:
+  Mean Precision: 0.571
+  Mean Recall:    0.571
+  Mean F1 Score:  0.571
+Trying radius 80 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:12<01:16, 12.83s/it] 29%|██▊       | 2/7 [00:37<01:40, 20.06s/it] 43%|████▎     | 3/7 [01:03<01:31, 22.76s/it] 57%|█████▋    | 4/7 [01:28<01:10, 23.41s/it] 71%|███████▏  | 5/7 [01:43<00:41, 20.51s/it] 86%|████████▌ | 6/7 [02:08<00:21, 21.82s/it]100%|██████████| 7/7 [02:33<00:00, 22.87s/it]100%|██████████| 7/7 [02:33<00:00, 21.87s/it]
+[0148] Raw binary pixels before morphology: 993772
+[0148] Binary pixels after morphology: 829309
+[0859] Raw binary pixels before morphology: 825634
+[0859] Binary pixels after morphology: 574371
+[0494] Raw binary pixels before morphology: 1384498
+[0494] Binary pixels after morphology: 1028707
+[1185] Raw binary pixels before morphology: 6796793
+[1185] Binary pixels after morphology: 5889415
+[1011] Raw binary pixels before morphology: 2238856
+[1011] Binary pixels after morphology: 2035202
+[0700] Raw binary pixels before morphology: 788094
+[0700] Binary pixels after morphology: 660385
+[0458] Raw binary pixels before morphology: 2564034
+[0458] Binary pixels after morphology: 2144511
+[0148] Connected regions found: 215
+[0148] LP candidates found: 5
+[0859] Connected regions found: 208
+[0859] LP candidates found: 5
+[0494] Connected regions found: 427
+[0494] LP candidates found: 5
+[1185] Connected regions found: 746
+[1185] LP candidates found: 5
+[1011] Connected regions found: 143
+[1011] LP candidates found: 5
+[0700] Connected regions found: 170
+[0700] LP candidates found: 5
+[0458] Connected regions found: 376
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1921, 2646), (1862, 2720), (2219, 3192)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2131, 3062), (1551, 3070), (1616, 2986)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2018, 3030), (1878, 2562), (1559, 3068)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1863, 2427), (1657, 3020), (2268, 3197)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2296, 3195), (2353, 3256), (2338, 3204)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2166, 3141), (1905, 2454), (1444, 3171)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1519, 3090), (1627, 3036), (1884, 2552)]
+Evaluation over 7 images:
+  Mean Precision: 0.238
+  Mean Recall:    0.238
+  Mean F1 Score:  0.238
+Trying radius 200 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:14<01:29, 14.89s/it] 29%|██▊       | 2/7 [00:37<01:38, 19.66s/it] 43%|████▎     | 3/7 [01:04<01:31, 22.83s/it] 57%|█████▋    | 4/7 [01:28<01:10, 23.44s/it] 71%|███████▏  | 5/7 [01:46<00:42, 21.17s/it] 86%|████████▌ | 6/7 [02:03<00:19, 19.99s/it]100%|██████████| 7/7 [02:29<00:00, 21.78s/it]100%|██████████| 7/7 [02:29<00:00, 21.31s/it]
+[0148] Raw binary pixels before morphology: 177287
+[0148] Binary pixels after morphology: 109140
+[0859] Raw binary pixels before morphology: 589153
+[0859] Binary pixels after morphology: 346003
+[0494] Raw binary pixels before morphology: 1254664
+[0494] Binary pixels after morphology: 767937
+[1185] Raw binary pixels before morphology: 4042549
+[1185] Binary pixels after morphology: 3085227
+[1011] Raw binary pixels before morphology: 1109282
+[1011] Binary pixels after morphology: 1000495
+[0700] Raw binary pixels before morphology: 282070
+[0700] Binary pixels after morphology: 200805
+[0458] Raw binary pixels before morphology: 2311726
+[0458] Binary pixels after morphology: 1759242
+[0148] Connected regions found: 330
+[0148] LP candidates found: 5
+[0859] Connected regions found: 463
+[0859] LP candidates found: 5
+[0494] Connected regions found: 1029
+[0494] LP candidates found: 5
+[1185] Connected regions found: 1883
+[1185] LP candidates found: 5
+[1011] Connected regions found: 213
+[1011] LP candidates found: 5
+[0700] Connected regions found: 202
+[0700] LP candidates found: 5
+[0458] Connected regions found: 1105
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2078, 3256), (2333, 3185), (1830, 2592)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2495, 3149), (1542, 2903), (1979, 2485)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1774, 2148), (2053, 2675), (1299, 3226)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1966, 2809), (1948, 2430), (1769, 2991)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2367, 3073), (2303, 3195), (2473, 3388)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2143, 2916), (1907, 2720), (1398, 3259)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2952, 5065), (2694, 4882), (2858, 5095)]
+Evaluation over 7 images:
+  Mean Precision: 0.048
+  Mean Recall:    0.048
+  Mean F1 Score:  0.048
+Trying radius 10 for laser point color clustering
+Trying radius 1 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:46<04:38, 46.48s/it] 29%|██▊       | 2/7 [01:19<03:12, 38.53s/it] 43%|████▎     | 3/7 [02:02<02:41, 40.38s/it] 57%|█████▋    | 4/7 [02:52<02:13, 44.42s/it] 71%|███████▏  | 5/7 [03:39<01:30, 45.30s/it] 86%|████████▌ | 6/7 [04:01<00:37, 37.29s/it]100%|██████████| 7/7 [04:48<00:00, 40.69s/it]100%|██████████| 7/7 [04:48<00:00, 41.28s/it]
+[0148] Raw binary pixels before morphology: 2525651
+[0148] Binary pixels after morphology: 2282166
+[0859] Raw binary pixels before morphology: 16353787
+[0859] Binary pixels after morphology: 16076915
+[0494] Raw binary pixels before morphology: 14943254
+[0494] Binary pixels after morphology: 14557998
+[1185] Raw binary pixels before morphology: 14041751
+[1185] Binary pixels after morphology: 13590015
+[1011] Raw binary pixels before morphology: 4682616
+[1011] Binary pixels after morphology: 4390945
+[0700] Raw binary pixels before morphology: 19517550
+[0700] Binary pixels after morphology: 19415902
+[0458] Raw binary pixels before morphology: 14049513
+[0458] Binary pixels after morphology: 13737918
+[0148] Connected regions found: 16
+[0148] LP candidates found: 5
+[0859] Connected regions found: 50
+[0859] LP candidates found: 5
+[0494] Connected regions found: 33
+[0494] LP candidates found: 5
+[1185] Connected regions found: 18
+[1185] LP candidates found: 5
+[1011] Connected regions found: 5
+[1011] LP candidates found: 5
+[0700] Connected regions found: 55
+[0700] LP candidates found: 5
+[0458] Connected regions found: 27
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1879, 2620), (1884, 2679), (1501, 3094)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1538, 3076), (1880, 2577), (2186, 3098)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1880, 2548), (1880, 2577), (1571, 3062)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1538, 3076), (1418, 3145), (2354, 3193)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2086, 3042), (1571, 3061), (1575, 3056)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2197, 3107), (1538, 3076), (1880, 2577)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1877, 2286), (1365, 3173), (2292, 3156)]
+Evaluation over 7 images:
+  Mean Precision: 0.381
+  Mean Recall:    0.381
+  Mean F1 Score:  0.381
+Trying radius 10 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:24<02:26, 24.50s/it] 29%|██▊       | 2/7 [00:50<02:06, 25.36s/it] 43%|████▎     | 3/7 [01:17<01:44, 26.20s/it] 57%|█████▋    | 4/7 [01:43<01:18, 26.01s/it] 71%|███████▏  | 5/7 [02:08<00:51, 25.61s/it] 86%|████████▌ | 6/7 [02:30<00:24, 24.42s/it]100%|██████████| 7/7 [02:56<00:00, 24.95s/it]100%|██████████| 7/7 [02:56<00:00, 25.21s/it]
+[0148] Raw binary pixels before morphology: 3331
+[0148] Binary pixels after morphology: 1281
+[0859] Raw binary pixels before morphology: 37705
+[0859] Binary pixels after morphology: 28821
+[0494] Raw binary pixels before morphology: 93115
+[0494] Binary pixels after morphology: 75102
+[1185] Raw binary pixels before morphology: 153857
+[1185] Binary pixels after morphology: 94542
+[1011] Raw binary pixels before morphology: 285720
+[1011] Binary pixels after morphology: 264227
+[0700] Raw binary pixels before morphology: 20229
+[0700] Binary pixels after morphology: 17602
+[0458] Raw binary pixels before morphology: 453204
+[0458] Binary pixels after morphology: 407725
+[0148] Connected regions found: 0
+[0148] LP candidates found: 0
+[0859] Connected regions found: 3
+[0859] LP candidates found: 3
+[0494] Connected regions found: 9
+[0494] LP candidates found: 5
+[1185] Connected regions found: 15
+[1185] LP candidates found: 5
+[1011] Connected regions found: 3
+[1011] LP candidates found: 3
+[0700] Connected regions found: 4
+[0700] LP candidates found: 4
+[0458] Connected regions found: 5
+[0458] LP candidates found: 5
+[Warning] Not enough LP candidates for 0148 — storing raw candidates
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and []
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3088), (1551, 3070), (1878, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1558, 3068), (1878, 2563)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1880, 2525), (1523, 3085), (2202, 3117)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2858, 4952), (1410, 3151), (2393, 3214)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1543, 3073), (1889, 2458)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1881, 2556), (2206, 3114), (1504, 3096)]
+Evaluation over 7 images:
+  Mean Precision: 0.762
+  Mean Recall:    0.762
+  Mean F1 Score:  0.762
+Trying radius 25 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:28<02:52, 28.78s/it] 29%|██▊       | 2/7 [00:56<02:19, 27.97s/it] 43%|████▎     | 3/7 [01:24<01:52, 28.19s/it] 57%|█████▋    | 4/7 [01:53<01:25, 28.34s/it] 71%|███████▏  | 5/7 [02:22<00:57, 28.68s/it] 86%|████████▌ | 6/7 [02:45<00:26, 26.88s/it]100%|██████████| 7/7 [03:13<00:00, 27.12s/it]100%|██████████| 7/7 [03:13<00:00, 27.64s/it]
+[0148] Raw binary pixels before morphology: 9074
+[0148] Binary pixels after morphology: 3397
+[0859] Raw binary pixels before morphology: 81911
+[0859] Binary pixels after morphology: 64024
+[0494] Raw binary pixels before morphology: 180202
+[0494] Binary pixels after morphology: 146908
+[1185] Raw binary pixels before morphology: 515332
+[1185] Binary pixels after morphology: 384897
+[1011] Raw binary pixels before morphology: 434257
+[1011] Binary pixels after morphology: 408827
+[0700] Raw binary pixels before morphology: 38085
+[0700] Binary pixels after morphology: 34084
+[0458] Raw binary pixels before morphology: 734099
+[0458] Binary pixels after morphology: 656534
+[0148] Connected regions found: 4
+[0148] LP candidates found: 4
+[0859] Connected regions found: 11
+[0859] LP candidates found: 5
+[0494] Connected regions found: 21
+[0494] LP candidates found: 5
+[1185] Connected regions found: 62
+[1185] LP candidates found: 5
+[1011] Connected regions found: 6
+[1011] LP candidates found: 5
+[0700] Connected regions found: 4
+[0700] LP candidates found: 4
+[0458] Connected regions found: 7
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1398, 3158)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3088), (1550, 3070), (1878, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1309, 3196), (1305, 3219)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1879, 2668), (1883, 2615), (2100, 3034)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2371, 3206), (1409, 3152), (2381, 3207)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (1543, 3073), (1889, 2459)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1509, 3094), (2210, 3115), (1881, 2548)]
+Evaluation over 7 images:
+  Mean Precision: 0.667
+  Mean Recall:    0.667
+  Mean F1 Score:  0.667
+Trying radius 40 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:26<02:38, 26.35s/it] 29%|██▊       | 2/7 [01:08<02:58, 35.72s/it] 43%|████▎     | 3/7 [01:50<02:33, 38.40s/it] 57%|█████▋    | 4/7 [02:29<01:56, 38.89s/it] 71%|███████▏  | 5/7 [02:58<01:10, 35.17s/it] 86%|████████▌ | 6/7 [03:38<00:36, 36.67s/it]100%|██████████| 7/7 [04:16<00:00, 37.34s/it]100%|██████████| 7/7 [04:16<00:00, 36.68s/it]
+[0148] Raw binary pixels before morphology: 1869862
+[0148] Binary pixels after morphology: 1634240
+[0859] Raw binary pixels before morphology: 584857
+[0859] Binary pixels after morphology: 332822
+[0494] Raw binary pixels before morphology: 851238
+[0494] Binary pixels after morphology: 530595
+[1185] Raw binary pixels before morphology: 4479221
+[1185] Binary pixels after morphology: 3422603
+[1011] Raw binary pixels before morphology: 2842379
+[1011] Binary pixels after morphology: 2575088
+[0700] Raw binary pixels before morphology: 691652
+[0700] Binary pixels after morphology: 537454
+[0458] Raw binary pixels before morphology: 1565493
+[0458] Binary pixels after morphology: 1136138
+[0148] Connected regions found: 134
+[0148] LP candidates found: 5
+[0859] Connected regions found: 63
+[0859] LP candidates found: 5
+[0494] Connected regions found: 127
+[0494] LP candidates found: 5
+[1185] Connected regions found: 281
+[1185] LP candidates found: 5
+[1011] Connected regions found: 75
+[1011] LP candidates found: 5
+[0700] Connected regions found: 67
+[0700] LP candidates found: 5
+[0458] Connected regions found: 120
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2342, 3199), (1489, 3093), (1860, 2452)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2160, 3084), (1551, 3070), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1559, 3068), (1915, 2647), (1910, 2619)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1864, 2429), (2240, 3112), (1521, 3088)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2294, 3189), (1589, 3060), (1880, 2443)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1325, 3228), (1904, 2453), (2380, 3239)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1522, 3090), (1881, 2557), (1634, 3045)]
+Evaluation over 7 images:
+  Mean Precision: 0.429
+  Mean Recall:    0.429
+  Mean F1 Score:  0.429
+Trying radius 60 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:25<02:33, 25.59s/it] 29%|██▊       | 2/7 [00:51<02:10, 26.02s/it] 43%|████▎     | 3/7 [01:20<01:48, 27.02s/it] 57%|█████▋    | 4/7 [01:47<01:21, 27.23s/it] 71%|███████▏  | 5/7 [02:13<00:53, 26.88s/it] 86%|████████▌ | 6/7 [02:36<00:25, 25.39s/it]100%|██████████| 7/7 [03:03<00:00, 25.92s/it]100%|██████████| 7/7 [03:03<00:00, 26.21s/it]
+[0148] Raw binary pixels before morphology: 35622
+[0148] Binary pixels after morphology: 12787
+[0859] Raw binary pixels before morphology: 175335
+[0859] Binary pixels after morphology: 132507
+[0494] Raw binary pixels before morphology: 372208
+[0494] Binary pixels after morphology: 289597
+[1185] Raw binary pixels before morphology: 1523883
+[1185] Binary pixels after morphology: 1172133
+[1011] Raw binary pixels before morphology: 619958
+[1011] Binary pixels after morphology: 577610
+[0700] Raw binary pixels before morphology: 82881
+[0700] Binary pixels after morphology: 70936
+[0458] Raw binary pixels before morphology: 1261802
+[0458] Binary pixels after morphology: 1094914
+[0148] Connected regions found: 21
+[0148] LP candidates found: 5
+[0859] Connected regions found: 24
+[0859] LP candidates found: 5
+[0494] Connected regions found: 102
+[0494] LP candidates found: 5
+[1185] Connected regions found: 277
+[1185] LP candidates found: 5
+[1011] Connected regions found: 15
+[1011] LP candidates found: 5
+[0700] Connected regions found: 14
+[0700] LP candidates found: 5
+[0458] Connected regions found: 59
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1397, 3159)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1519, 3141), (2165, 3087), (2363, 3211)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1303, 3216), (2173, 3096), (1921, 2530)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1893, 2631), (1306, 3187), (2110, 3038)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2288, 3209), (2261, 3167), (2286, 3186)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2567), (2171, 3136), (1543, 3073)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1506, 3094), (2210, 3115), (1881, 2556)]
+Evaluation over 7 images:
+  Mean Precision: 0.476
+  Mean Recall:    0.476
+  Mean F1 Score:  0.476
+Trying radius 80 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:23<02:23, 23.89s/it] 29%|██▊       | 2/7 [01:05<02:50, 34.18s/it] 43%|████▎     | 3/7 [01:47<02:31, 37.79s/it] 57%|█████▋    | 4/7 [02:28<01:57, 39.04s/it] 71%|███████▏  | 5/7 [02:55<01:09, 34.80s/it] 86%|████████▌ | 6/7 [03:32<00:35, 35.67s/it]100%|██████████| 7/7 [04:13<00:00, 37.20s/it]100%|██████████| 7/7 [04:13<00:00, 36.19s/it]
+[0148] Raw binary pixels before morphology: 1724558
+[0148] Binary pixels after morphology: 1513303
+[0859] Raw binary pixels before morphology: 860474
+[0859] Binary pixels after morphology: 521827
+[0494] Raw binary pixels before morphology: 1195437
+[0494] Binary pixels after morphology: 778867
+[1185] Raw binary pixels before morphology: 6007257
+[1185] Binary pixels after morphology: 4857232
+[1011] Raw binary pixels before morphology: 2941023
+[1011] Binary pixels after morphology: 2685133
+[0700] Raw binary pixels before morphology: 978969
+[0700] Binary pixels after morphology: 764143
+[0458] Raw binary pixels before morphology: 2283576
+[0458] Binary pixels after morphology: 1763868
+[0148] Connected regions found: 289
+[0148] LP candidates found: 5
+[0859] Connected regions found: 213
+[0859] LP candidates found: 5
+[0494] Connected regions found: 338
+[0494] LP candidates found: 5
+[1185] Connected regions found: 896
+[1185] LP candidates found: 5
+[1011] Connected regions found: 170
+[1011] LP candidates found: 5
+[0700] Connected regions found: 221
+[0700] LP candidates found: 5
+[0458] Connected regions found: 388
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1922, 2644), (1864, 2716), (2221, 3190)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2138, 3068), (1551, 3069), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1881, 2567), (1559, 3068), (2017, 3035)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1857, 2424), (2264, 3200), (1337, 3224)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2297, 3195), (2368, 3161), (1312, 3275)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1332, 3233), (2165, 3142), (1906, 2453)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1521, 3091), (1881, 2555), (1634, 3044)]
+Evaluation over 7 images:
+  Mean Precision: 0.286
+  Mean Recall:    0.286
+  Mean F1 Score:  0.286
+Trying radius 200 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:20<02:01, 20.30s/it] 29%|██▊       | 2/7 [01:00<02:40, 32.02s/it] 43%|████▎     | 3/7 [01:47<02:34, 38.66s/it] 57%|█████▋    | 4/7 [02:27<01:58, 39.33s/it] 71%|███████▏  | 5/7 [02:51<01:07, 33.71s/it] 86%|████████▌ | 6/7 [03:24<00:33, 33.47s/it]100%|██████████| 7/7 [04:06<00:00, 36.48s/it]100%|██████████| 7/7 [04:06<00:00, 35.27s/it]
+[0148] Raw binary pixels before morphology: 569754
+[0148] Binary pixels after morphology: 447270
+[0859] Raw binary pixels before morphology: 1058148
+[0859] Binary pixels after morphology: 719144
+[0494] Raw binary pixels before morphology: 2044661
+[0494] Binary pixels after morphology: 1490219
+[1185] Raw binary pixels before morphology: 7011494
+[1185] Binary pixels after morphology: 6103852
+[1011] Raw binary pixels before morphology: 1980708
+[1011] Binary pixels after morphology: 1817910
+[0700] Raw binary pixels before morphology: 728505
+[0700] Binary pixels after morphology: 566976
+[0458] Raw binary pixels before morphology: 3588383
+[0458] Binary pixels after morphology: 2953655
+[0148] Connected regions found: 605
+[0148] LP candidates found: 5
+[0859] Connected regions found: 1026
+[0859] LP candidates found: 5
+[0494] Connected regions found: 1545
+[0494] LP candidates found: 5
+[1185] Connected regions found: 1955
+[1185] LP candidates found: 5
+[1011] Connected regions found: 393
+[1011] LP candidates found: 5
+[0700] Connected regions found: 552
+[0700] LP candidates found: 5
+[0458] Connected regions found: 1628
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1730, 2482), (2090, 3263), (1858, 2764)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1864, 2137), (1670, 3104), (1361, 3385)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2036, 2949), (1794, 2808), (2004, 2693)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2466, 3150), (1687, 3016), (1962, 2661)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2365, 3072), (2424, 3216), (2309, 3191)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1399, 3260), (2000, 2931), (2171, 3142)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2953, 5052), (2867, 5107), (2717, 4918)]
+Evaluation over 7 images:
+  Mean Precision: 0.000
+  Mean Recall:    0.000
+  Mean F1 Score:  0.000
+Trying radius 20 for laser point color clustering
+Trying radius 1 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [02:30<15:02, 150.43s/it] 29%|██▊       | 2/7 [04:36<11:19, 135.94s/it] 43%|████▎     | 3/7 [07:36<10:24, 156.12s/it] 57%|█████▋    | 4/7 [10:28<08:07, 162.35s/it] 71%|███████▏  | 5/7 [12:50<05:10, 155.19s/it] 86%|████████▌ | 6/7 [13:59<02:05, 125.86s/it]100%|██████████| 7/7 [17:04<00:00, 145.21s/it]100%|██████████| 7/7 [17:04<00:00, 146.39s/it]
+[0148] Raw binary pixels before morphology: 3536502
+[0148] Binary pixels after morphology: 3212640
+[0859] Raw binary pixels before morphology: 14924257
+[0859] Binary pixels after morphology: 14611190
+[0494] Raw binary pixels before morphology: 11786529
+[0494] Binary pixels after morphology: 11155802
+[1185] Raw binary pixels before morphology: 11304994
+[1185] Binary pixels after morphology: 10816171
+[1011] Raw binary pixels before morphology: 5342218
+[1011] Binary pixels after morphology: 5022014
+[0700] Raw binary pixels before morphology: 18615554
+[0700] Binary pixels after morphology: 18439143
+[0458] Raw binary pixels before morphology: 10812350
+[0458] Binary pixels after morphology: 10311281
+[0148] Connected regions found: 22
+[0148] LP candidates found: 5
+[0859] Connected regions found: 36
+[0859] LP candidates found: 5
+[0494] Connected regions found: 19
+[0494] LP candidates found: 5
+[1185] Connected regions found: 11
+[1185] LP candidates found: 5
+[1011] Connected regions found: 6
+[1011] LP candidates found: 5
+[0700] Connected regions found: 43
+[0700] LP candidates found: 5
+[0458] Connected regions found: 17
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1879, 2620), (1884, 2679), (1501, 3094)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1879, 2620), (1538, 3076), (1877, 2637)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1597, 3046), (1879, 2555), (2138, 3069)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1418, 3145), (2292, 3156), (1538, 3076)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(1571, 3062), (2086, 3042), (2187, 3098)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2197, 3107), (1537, 3076), (1880, 2577)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1877, 2286), (1560, 3066), (1444, 3130)]
+Evaluation over 7 images:
+  Mean Precision: 0.238
+  Mean Recall:    0.238
+  Mean F1 Score:  0.238
+Trying radius 10 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:30<03:02, 30.38s/it] 29%|██▊       | 2/7 [00:57<02:22, 28.47s/it] 43%|████▎     | 3/7 [01:25<01:53, 28.30s/it] 57%|█████▋    | 4/7 [01:52<01:23, 27.80s/it] 71%|███████▏  | 5/7 [02:22<00:57, 28.52s/it] 86%|████████▌ | 6/7 [02:44<00:26, 26.46s/it]100%|██████████| 7/7 [03:10<00:00, 26.27s/it]100%|██████████| 7/7 [03:10<00:00, 27.25s/it]
+[0148] Raw binary pixels before morphology: 71972
+[0148] Binary pixels after morphology: 35498
+[0859] Raw binary pixels before morphology: 295904
+[0859] Binary pixels after morphology: 222896
+[0494] Raw binary pixels before morphology: 625268
+[0494] Binary pixels after morphology: 480506
+[1185] Raw binary pixels before morphology: 2597994
+[1185] Binary pixels after morphology: 2118030
+[1011] Raw binary pixels before morphology: 797868
+[1011] Binary pixels after morphology: 741088
+[0700] Raw binary pixels before morphology: 141339
+[0700] Binary pixels after morphology: 119828
+[0458] Raw binary pixels before morphology: 1741199
+[0458] Binary pixels after morphology: 1507775
+[0148] Connected regions found: 3
+[0148] LP candidates found: 3
+[0859] Connected regions found: 10
+[0859] LP candidates found: 5
+[0494] Connected regions found: 24
+[0494] LP candidates found: 5
+[1185] Connected regions found: 51
+[1185] LP candidates found: 5
+[1011] Connected regions found: 7
+[1011] LP candidates found: 5
+[0700] Connected regions found: 6
+[0700] LP candidates found: 5
+[0458] Connected regions found: 20
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2167, 3084), (1619, 3033), (1617, 3024)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2164, 3087), (1551, 3070), (1878, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1558, 3068), (1879, 2562)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1879, 2640), (2118, 3058), (1884, 2679)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(1880, 2443), (2393, 3215), (1410, 3151)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2567), (1543, 3073), (1882, 2457)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1499, 3095), (1881, 2556), (2206, 3113)]
+Evaluation over 7 images:
+  Mean Precision: 0.667
+  Mean Recall:    0.667
+  Mean F1 Score:  0.667
+Trying radius 25 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:21<02:07, 21.24s/it] 29%|██▊       | 2/7 [01:08<03:01, 36.36s/it] 43%|████▎     | 3/7 [02:01<02:55, 43.90s/it] 57%|█████▋    | 4/7 [02:48<02:15, 45.17s/it] 71%|███████▏  | 5/7 [03:13<01:16, 38.18s/it] 86%|████████▌ | 6/7 [03:55<00:39, 39.20s/it]100%|██████████| 7/7 [04:43<00:00, 42.32s/it]100%|██████████| 7/7 [04:43<00:00, 40.55s/it]
+[0148] Raw binary pixels before morphology: 417954
+[0148] Binary pixels after morphology: 309150
+[0859] Raw binary pixels before morphology: 730585
+[0859] Binary pixels after morphology: 499579
+[0494] Raw binary pixels before morphology: 1457640
+[0494] Binary pixels after morphology: 1056908
+[1185] Raw binary pixels before morphology: 5831485
+[1185] Binary pixels after morphology: 4956937
+[1011] Raw binary pixels before morphology: 1697944
+[1011] Binary pixels after morphology: 1555374
+[0700] Raw binary pixels before morphology: 479101
+[0700] Binary pixels after morphology: 383491
+[0458] Raw binary pixels before morphology: 2671889
+[0458] Binary pixels after morphology: 2193572
+[0148] Connected regions found: 37
+[0148] LP candidates found: 5
+[0859] Connected regions found: 55
+[0859] LP candidates found: 5
+[0494] Connected regions found: 128
+[0494] LP candidates found: 5
+[1185] Connected regions found: 182
+[1185] LP candidates found: 5
+[1011] Connected regions found: 24
+[1011] LP candidates found: 5
+[0700] Connected regions found: 34
+[0700] LP candidates found: 5
+[0458] Connected regions found: 76
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1621, 3022), (1891, 2604), (2165, 3072)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2162, 3087), (1551, 3070), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1559, 3068), (2059, 3024), (1866, 2600)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2227, 3125), (1879, 2610), (1311, 3212)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(1880, 2443), (1409, 3152), (2338, 3181)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (2080, 3022), (1543, 3073)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1501, 3096), (2209, 3114), (1882, 2552)]
+Evaluation over 7 images:
+  Mean Precision: 0.571
+  Mean Recall:    0.571
+  Mean F1 Score:  0.571
+Trying radius 40 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:20<02:03, 20.64s/it] 29%|██▊       | 2/7 [01:05<02:55, 35.08s/it] 43%|████▎     | 3/7 [01:57<02:50, 42.62s/it] 57%|█████▋    | 4/7 [02:42<02:10, 43.51s/it] 71%|███████▏  | 5/7 [03:06<01:12, 36.40s/it] 86%|████████▌ | 6/7 [03:44<00:37, 37.14s/it]100%|██████████| 7/7 [04:30<00:00, 40.12s/it]100%|██████████| 7/7 [04:30<00:00, 38.70s/it]
+[0148] Raw binary pixels before morphology: 390546
+[0148] Binary pixels after morphology: 288954
+[0859] Raw binary pixels before morphology: 757141
+[0859] Binary pixels after morphology: 528862
+[0494] Raw binary pixels before morphology: 1546669
+[0494] Binary pixels after morphology: 1139946
+[1185] Raw binary pixels before morphology: 5827970
+[1185] Binary pixels after morphology: 5002159
+[1011] Raw binary pixels before morphology: 1674463
+[1011] Binary pixels after morphology: 1538866
+[0700] Raw binary pixels before morphology: 464057
+[0700] Binary pixels after morphology: 380327
+[0458] Raw binary pixels before morphology: 2708495
+[0458] Binary pixels after morphology: 2250115
+[0148] Connected regions found: 68
+[0148] LP candidates found: 5
+[0859] Connected regions found: 93
+[0859] LP candidates found: 5
+[0494] Connected regions found: 199
+[0494] LP candidates found: 5
+[1185] Connected regions found: 290
+[1185] LP candidates found: 5
+[1011] Connected regions found: 33
+[1011] LP candidates found: 5
+[0700] Connected regions found: 63
+[0700] LP candidates found: 5
+[0458] Connected regions found: 161
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1397, 3158)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2162, 3087), (1551, 3070), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1855, 2426), (2171, 3095), (1559, 3068)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1626, 3027), (2224, 3125), (1884, 2609)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2317, 3186), (1880, 2443), (1409, 3152)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2177, 3133), (1891, 2457), (1443, 3169)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1498, 3093), (1664, 3016), (2209, 3114)]
+Evaluation over 7 images:
+  Mean Precision: 0.619
+  Mean Recall:    0.619
+  Mean F1 Score:  0.619
+Trying radius 60 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:22<02:14, 22.38s/it] 29%|██▊       | 2/7 [01:07<02:58, 35.71s/it] 43%|████▎     | 3/7 [01:58<02:50, 42.57s/it] 57%|█████▋    | 4/7 [02:41<02:09, 43.00s/it] 71%|███████▏  | 5/7 [03:07<01:13, 36.60s/it] 86%|████████▌ | 6/7 [03:45<00:37, 37.17s/it]100%|██████████| 7/7 [04:30<00:00, 39.80s/it]100%|██████████| 7/7 [04:30<00:00, 38.65s/it]
+[0148] Raw binary pixels before morphology: 412299
+[0148] Binary pixels after morphology: 308703
+[0859] Raw binary pixels before morphology: 792612
+[0859] Binary pixels after morphology: 563583
+[0494] Raw binary pixels before morphology: 1606080
+[0494] Binary pixels after morphology: 1205650
+[1185] Raw binary pixels before morphology: 6082869
+[1185] Binary pixels after morphology: 5271352
+[1011] Raw binary pixels before morphology: 1725889
+[1011] Binary pixels after morphology: 1587839
+[0700] Raw binary pixels before morphology: 496742
+[0700] Binary pixels after morphology: 410809
+[0458] Raw binary pixels before morphology: 2823922
+[0458] Binary pixels after morphology: 2375674
+[0148] Connected regions found: 108
+[0148] LP candidates found: 5
+[0859] Connected regions found: 141
+[0859] LP candidates found: 5
+[0494] Connected regions found: 309
+[0494] LP candidates found: 5
+[1185] Connected regions found: 445
+[1185] LP candidates found: 5
+[1011] Connected regions found: 71
+[1011] LP candidates found: 5
+[0700] Connected regions found: 100
+[0700] LP candidates found: 5
+[0458] Connected regions found: 282
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1316, 3162)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2162, 3087), (1551, 3070), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1851, 2424), (2171, 3095), (1559, 3068)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1629, 3026), (2223, 3119), (1862, 2560)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2309, 3191), (2324, 3211), (1880, 2443)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2172, 3140), (1894, 2457), (1445, 3172)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1498, 3093), (1645, 3021), (1836, 2519)]
+Evaluation over 7 images:
+  Mean Precision: 0.476
+  Mean Recall:    0.476
+  Mean F1 Score:  0.476
+Trying radius 80 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:18<01:52, 18.73s/it] 29%|██▊       | 2/7 [01:03<02:49, 33.98s/it] 43%|████▎     | 3/7 [01:53<02:44, 41.22s/it] 57%|█████▋    | 4/7 [02:37<02:07, 42.35s/it] 71%|███████▏  | 5/7 [03:00<01:10, 35.29s/it] 86%|████████▌ | 6/7 [03:38<00:36, 36.21s/it]100%|██████████| 7/7 [04:25<00:00, 39.78s/it]100%|██████████| 7/7 [04:25<00:00, 37.88s/it]
+[0148] Raw binary pixels before morphology: 389089
+[0148] Binary pixels after morphology: 287999
+[0859] Raw binary pixels before morphology: 799525
+[0859] Binary pixels after morphology: 555831
+[0494] Raw binary pixels before morphology: 1635346
+[0494] Binary pixels after morphology: 1202163
+[1185] Raw binary pixels before morphology: 5949095
+[1185] Binary pixels after morphology: 5111747
+[1011] Raw binary pixels before morphology: 1688344
+[1011] Binary pixels after morphology: 1551198
+[0700] Raw binary pixels before morphology: 482524
+[0700] Binary pixels after morphology: 393081
+[0458] Raw binary pixels before morphology: 2816080
+[0458] Binary pixels after morphology: 2333203
+[0148] Connected regions found: 172
+[0148] LP candidates found: 5
+[0859] Connected regions found: 205
+[0859] LP candidates found: 5
+[0494] Connected regions found: 448
+[0494] LP candidates found: 5
+[1185] Connected regions found: 636
+[1185] LP candidates found: 5
+[1011] Connected regions found: 105
+[1011] LP candidates found: 5
+[0700] Connected regions found: 142
+[0700] LP candidates found: 5
+[0458] Connected regions found: 392
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1228, 3196)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2162, 3087), (1551, 3070), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1851, 2424), (2171, 3095), (2012, 3030)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1638, 3028), (1860, 2568), (2223, 3119)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2309, 3191), (2322, 3211), (2372, 3162)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2172, 3141), (1891, 2457), (1331, 3233)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1498, 3093), (1833, 2518), (1664, 3016)]
+Evaluation over 7 images:
+  Mean Precision: 0.381
+  Mean Recall:    0.381
+  Mean F1 Score:  0.381
+Trying radius 200 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:20<02:05, 20.90s/it] 29%|██▊       | 2/7 [01:05<02:54, 34.92s/it] 43%|████▎     | 3/7 [01:56<02:49, 42.42s/it] 57%|█████▋    | 4/7 [02:41<02:09, 43.09s/it] 71%|███████▏  | 5/7 [03:04<01:12, 36.06s/it] 86%|████████▌ | 6/7 [03:41<00:36, 36.37s/it]100%|██████████| 7/7 [04:28<00:00, 39.80s/it]100%|██████████| 7/7 [04:28<00:00, 38.36s/it]
+[0148] Raw binary pixels before morphology: 535081
+[0148] Binary pixels after morphology: 420864
+[0859] Raw binary pixels before morphology: 1134122
+[0859] Binary pixels after morphology: 788280
+[0494] Raw binary pixels before morphology: 2223611
+[0494] Binary pixels after morphology: 1658766
+[1185] Raw binary pixels before morphology: 7198395
+[1185] Binary pixels after morphology: 6326918
+[1011] Raw binary pixels before morphology: 2003479
+[1011] Binary pixels after morphology: 1847374
+[0700] Raw binary pixels before morphology: 750414
+[0700] Binary pixels after morphology: 584899
+[0458] Raw binary pixels before morphology: 3846555
+[0458] Binary pixels after morphology: 3217646
+[0148] Connected regions found: 611
+[0148] LP candidates found: 5
+[0859] Connected regions found: 1110
+[0859] LP candidates found: 5
+[0494] Connected regions found: 1625
+[0494] LP candidates found: 5
+[1185] Connected regions found: 1846
+[1185] LP candidates found: 5
+[1011] Connected regions found: 406
+[1011] LP candidates found: 5
+[0700] Connected regions found: 623
+[0700] LP candidates found: 5
+[0458] Connected regions found: 1645
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1729, 2483), (2090, 3263), (1855, 2755)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1860, 2137), (1668, 3105), (1361, 3383)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1799, 2814), (2035, 2949), (2051, 2696)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1946, 2585), (2465, 3151), (1244, 3244)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2424, 3215), (2365, 3072), (2308, 3193)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1399, 3260), (2000, 2931), (2171, 3141)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1229, 3167), (1499, 3093), (2404, 3066)]
+Evaluation over 7 images:
+  Mean Precision: 0.048
+  Mean Recall:    0.048
+  Mean F1 Score:  0.048
+Trying radius 30 for laser point color clustering
+Trying radius 1 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:36<03:36, 36.09s/it] 29%|██▊       | 2/7 [06:35<18:52, 226.41s/it] 43%|████▎     | 3/7 [13:44<21:15, 318.87s/it] 57%|█████▋    | 4/7 [19:24<16:21, 327.14s/it] 71%|███████▏  | 5/7 [20:44<07:56, 238.12s/it] 86%|████████▌ | 6/7 [26:15<04:29, 269.78s/it]100%|██████████| 7/7 [32:01<00:00, 294.46s/it]100%|██████████| 7/7 [32:01<00:00, 274.46s/it]
+[0148] Raw binary pixels before morphology: 20803690
+[0148] Binary pixels after morphology: 20756183
+[0859] Raw binary pixels before morphology: 5036882
+[0859] Binary pixels after morphology: 4472724
+[0494] Raw binary pixels before morphology: 1258765
+[0494] Binary pixels after morphology: 1007075
+[1185] Raw binary pixels before morphology: 3448703
+[1185] Binary pixels after morphology: 3110587
+[1011] Raw binary pixels before morphology: 17493968
+[1011] Binary pixels after morphology: 17412333
+[0700] Raw binary pixels before morphology: 6377510
+[0700] Binary pixels after morphology: 5978325
+[0458] Raw binary pixels before morphology: 2977768
+[0458] Binary pixels after morphology: 2801213
+[0148] Connected regions found: 55
+[0148] LP candidates found: 5
+[0859] Connected regions found: 1
+[0859] LP candidates found: 1
+[0494] Connected regions found: 0
+[0494] LP candidates found: 0
+[1185] Connected regions found: 0
+[1185] LP candidates found: 0
+[1011] Connected regions found: 54
+[1011] LP candidates found: 5
+[0700] Connected regions found: 2
+[0700] LP candidates found: 2
+[0458] Connected regions found: 0
+[0458] LP candidates found: 0
+[Warning] Not enough LP candidates for 0859 — storing raw candidates
+[Warning] Not enough LP candidates for 0494 — storing raw candidates
+[Warning] Not enough LP candidates for 1185 — storing raw candidates
+[Warning] Not enough LP candidates for 0700 — storing raw candidates
+[Warning] Not enough LP candidates for 0458 — storing raw candidates
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2197, 3107), (1880, 2548), (1538, 3076)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2182, 3095)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and []
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and []
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2197, 3107), (1879, 2620), (1880, 2577)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2112, 3055), (1417, 3145)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and []
+Evaluation over 7 images:
+  Mean Precision: 0.143
+  Mean Recall:    0.048
+  Mean F1 Score:  0.071
+Trying radius 10 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [04:23<26:22, 263.75s/it] 29%|██▊       | 2/7 [08:09<20:06, 241.35s/it] 43%|████▎     | 3/7 [11:23<14:39, 219.88s/it] 57%|█████▋    | 4/7 [14:29<10:19, 206.40s/it] 71%|███████▏  | 5/7 [18:35<07:21, 220.52s/it] 86%|████████▌ | 6/7 [22:36<03:47, 227.53s/it]100%|██████████| 7/7 [25:47<00:00, 215.67s/it]100%|██████████| 7/7 [25:47<00:00, 221.06s/it]
+[0148] Raw binary pixels before morphology: 144468
+[0148] Binary pixels after morphology: 91511
+[0859] Raw binary pixels before morphology: 3306027
+[0859] Binary pixels after morphology: 2316241
+[0494] Raw binary pixels before morphology: 5045814
+[0494] Binary pixels after morphology: 3726939
+[1185] Raw binary pixels before morphology: 5785683
+[1185] Binary pixels after morphology: 4647861
+[1011] Raw binary pixels before morphology: 1148304
+[1011] Binary pixels after morphology: 998381
+[0700] Raw binary pixels before morphology: 1450869
+[0700] Binary pixels after morphology: 1058544
+[0458] Raw binary pixels before morphology: 5008341
+[0458] Binary pixels after morphology: 4051105
+[0148] Connected regions found: 3
+[0148] LP candidates found: 3
+[0859] Connected regions found: 58
+[0859] LP candidates found: 5
+[0494] Connected regions found: 108
+[0494] LP candidates found: 5
+[1185] Connected regions found: 89
+[1185] LP candidates found: 5
+[1011] Connected regions found: 5
+[1011] LP candidates found: 5
+[0700] Connected regions found: 53
+[0700] LP candidates found: 5
+[0458] Connected regions found: 73
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1623, 3027), (2166, 3086), (1418, 3147)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1657, 3008), (2193, 3108), (1635, 3028)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1878, 2458), (2204, 3113), (1526, 3079)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1582, 3052), (2118, 3060), (1879, 2543)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(1581, 3051), (1575, 3058), (1587, 3057)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2567), (2171, 3094), (1881, 2635)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1880, 2636), (2131, 3065), (1610, 3035)]
+Evaluation over 7 images:
+  Mean Precision: 0.190
+  Mean Recall:    0.190
+  Mean F1 Score:  0.190
+Trying radius 25 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:20<02:00, 20.06s/it] 29%|██▊       | 2/7 [01:01<02:43, 32.69s/it] 43%|████▎     | 3/7 [01:50<02:40, 40.08s/it] 57%|█████▋    | 4/7 [02:32<02:01, 40.66s/it] 71%|███████▏  | 5/7 [02:53<01:07, 33.91s/it] 86%|████████▌ | 6/7 [03:28<00:34, 34.01s/it]100%|██████████| 7/7 [04:13<00:00, 37.71s/it]100%|██████████| 7/7 [04:13<00:00, 36.21s/it]
+[0148] Raw binary pixels before morphology: 452391
+[0148] Binary pixels after morphology: 347546
+[0859] Raw binary pixels before morphology: 987717
+[0859] Binary pixels after morphology: 707691
+[0494] Raw binary pixels before morphology: 1980818
+[0494] Binary pixels after morphology: 1511788
+[1185] Raw binary pixels before morphology: 6732825
+[1185] Binary pixels after morphology: 5911466
+[1011] Raw binary pixels before morphology: 1864739
+[1011] Binary pixels after morphology: 1720337
+[0700] Raw binary pixels before morphology: 608805
+[0700] Binary pixels after morphology: 494436
+[0458] Raw binary pixels before morphology: 3366740
+[0458] Binary pixels after morphology: 2863682
+[0148] Connected regions found: 39
+[0148] LP candidates found: 5
+[0859] Connected regions found: 75
+[0859] LP candidates found: 5
+[0494] Connected regions found: 134
+[0494] LP candidates found: 5
+[1185] Connected regions found: 172
+[1185] LP candidates found: 5
+[1011] Connected regions found: 24
+[1011] LP candidates found: 5
+[0700] Connected regions found: 46
+[0700] LP candidates found: 5
+[0458] Connected regions found: 101
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1621, 3022), (1890, 2604), (2166, 3077)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2162, 3087), (1551, 3070), (1879, 2568)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2171, 3098), (1559, 3068), (1876, 2565)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1880, 2640), (1613, 3033), (2107, 3047)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(1880, 2443), (1409, 3152), (2339, 3181)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1880, 2568), (2080, 3022), (1543, 3073)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1500, 3096), (2209, 3114), (1883, 2552)]
+Evaluation over 7 images:
+  Mean Precision: 0.619
+  Mean Recall:    0.619
+  Mean F1 Score:  0.619
+Trying radius 40 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:18<01:52, 18.77s/it] 29%|██▊       | 2/7 [01:01<02:45, 33.06s/it] 43%|████▎     | 3/7 [01:50<02:40, 40.21s/it] 57%|█████▋    | 4/7 [02:33<02:04, 41.34s/it] 71%|███████▏  | 5/7 [02:56<01:09, 34.69s/it] 86%|████████▌ | 6/7 [03:32<00:35, 35.13s/it]100%|██████████| 7/7 [04:18<00:00, 38.72s/it]100%|██████████| 7/7 [04:18<00:00, 36.95s/it]
+[0148] Raw binary pixels before morphology: 421959
+[0148] Binary pixels after morphology: 320861
+[0859] Raw binary pixels before morphology: 1015192
+[0859] Binary pixels after morphology: 717625
+[0494] Raw binary pixels before morphology: 2059793
+[0494] Binary pixels after morphology: 1553175
+[1185] Raw binary pixels before morphology: 6736183
+[1185] Binary pixels after morphology: 5901801
+[1011] Raw binary pixels before morphology: 1833758
+[1011] Binary pixels after morphology: 1690155
+[0700] Raw binary pixels before morphology: 607912
+[0700] Binary pixels after morphology: 489184
+[0458] Raw binary pixels before morphology: 3454353
+[0458] Binary pixels after morphology: 2920853
+[0148] Connected regions found: 67
+[0148] LP candidates found: 5
+[0859] Connected regions found: 122
+[0859] LP candidates found: 5
+[0494] Connected regions found: 211
+[0494] LP candidates found: 5
+[1185] Connected regions found: 265
+[1185] LP candidates found: 5
+[1011] Connected regions found: 36
+[1011] LP candidates found: 5
+[0700] Connected regions found: 97
+[0700] LP candidates found: 5
+[0458] Connected regions found: 192
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1879, 2353), (1397, 3158)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2130, 3061), (1641, 3008), (1551, 3070)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2171, 3098), (1301, 3239), (1856, 2426)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1884, 2644), (1622, 3030), (2090, 3048)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2316, 3186), (2261, 3164), (1880, 2443)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1894, 2457), (2177, 3133), (1325, 3231)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1499, 3094), (1639, 3023), (2209, 3115)]
+Evaluation over 7 images:
+  Mean Precision: 0.381
+  Mean Recall:    0.381
+  Mean F1 Score:  0.381
+Trying radius 60 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [03:13<19:19, 193.21s/it] 29%|██▊       | 2/7 [06:07<15:11, 182.32s/it] 43%|████▎     | 3/7 [08:46<11:26, 171.62s/it] 57%|█████▋    | 4/7 [11:27<08:21, 167.23s/it] 71%|███████▏  | 5/7 [14:31<05:46, 173.49s/it] 86%|████████▌ | 6/7 [17:36<02:57, 177.13s/it]100%|██████████| 7/7 [20:09<00:00, 169.39s/it]100%|██████████| 7/7 [20:09<00:00, 172.79s/it]
+[0148] Raw binary pixels before morphology: 39565
+[0148] Binary pixels after morphology: 17764
+[0859] Raw binary pixels before morphology: 2697948
+[0859] Binary pixels after morphology: 2167387
+[0494] Raw binary pixels before morphology: 3788140
+[0494] Binary pixels after morphology: 3021729
+[1185] Raw binary pixels before morphology: 3701488
+[1185] Binary pixels after morphology: 2981284
+[1011] Raw binary pixels before morphology: 815469
+[1011] Binary pixels after morphology: 752919
+[0700] Raw binary pixels before morphology: 656739
+[0700] Binary pixels after morphology: 493134
+[0458] Raw binary pixels before morphology: 3821532
+[0458] Binary pixels after morphology: 3251286
+[0148] Connected regions found: 19
+[0148] LP candidates found: 5
+[0859] Connected regions found: 314
+[0859] LP candidates found: 5
+[0494] Connected regions found: 535
+[0494] LP candidates found: 5
+[1185] Connected regions found: 460
+[1185] LP candidates found: 5
+[1011] Connected regions found: 32
+[1011] LP candidates found: 5
+[0700] Connected regions found: 126
+[0700] LP candidates found: 5
+[0458] Connected regions found: 486
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1627, 2996), (1829, 2584), (1624, 2978)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(1514, 3138), (2293, 3205), (1280, 3170)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1306, 3212), (1848, 2434), (1835, 2649)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1866, 2495), (2218, 3123), (1310, 3185)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2308, 3205), (2325, 3237), (1276, 3268)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(1908, 2694), (1853, 2266), (1275, 3164)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1511, 3109), (1919, 2265), (2184, 3123)]
+Evaluation over 7 images:
+  Mean Precision: 0.095
+  Mean Recall:    0.095
+  Mean F1 Score:  0.095
+Trying radius 80 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:16<01:41, 16.97s/it] 29%|██▊       | 2/7 [00:54<02:24, 28.87s/it] 43%|████▎     | 3/7 [01:38<02:23, 35.82s/it] 57%|█████▋    | 4/7 [02:16<01:50, 36.97s/it] 71%|███████▏  | 5/7 [02:37<01:02, 31.03s/it] 86%|████████▌ | 6/7 [03:07<00:30, 30.80s/it]100%|██████████| 7/7 [03:47<00:00, 33.76s/it]100%|██████████| 7/7 [03:47<00:00, 32.53s/it]
+[0148] Raw binary pixels before morphology: 420335
+[0148] Binary pixels after morphology: 319152
+[0859] Raw binary pixels before morphology: 1037234
+[0859] Binary pixels after morphology: 709649
+[0494] Raw binary pixels before morphology: 2128576
+[0494] Binary pixels after morphology: 1553550
+[1185] Raw binary pixels before morphology: 6650997
+[1185] Binary pixels after morphology: 5796304
+[1011] Raw binary pixels before morphology: 1835067
+[1011] Binary pixels after morphology: 1689789
+[0700] Raw binary pixels before morphology: 609052
+[0700] Binary pixels after morphology: 477533
+[0458] Raw binary pixels before morphology: 3477374
+[0458] Binary pixels after morphology: 2890204
+[0148] Connected regions found: 167
+[0148] LP candidates found: 5
+[0859] Connected regions found: 269
+[0859] LP candidates found: 5
+[0494] Connected regions found: 484
+[0494] LP candidates found: 5
+[1185] Connected regions found: 579
+[1185] LP candidates found: 5
+[1011] Connected regions found: 110
+[1011] LP candidates found: 5
+[0700] Connected regions found: 193
+[0700] LP candidates found: 5
+[0458] Connected regions found: 447
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(2333, 3185), (1309, 3159), (1879, 2353)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2130, 3061), (1637, 3004), (1551, 3070)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1851, 2424), (2171, 3097), (1825, 2291)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(1887, 2635), (1637, 3029), (2079, 3052)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2308, 3194), (2322, 3211), (2372, 3162)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2172, 3141), (1894, 2457), (1331, 3233)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(1498, 3092), (1639, 3023), (1840, 2521)]
+Evaluation over 7 images:
+  Mean Precision: 0.238
+  Mean Recall:    0.238
+  Mean F1 Score:  0.238
+Trying radius 200 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [03:01<18:06, 181.02s/it] 29%|██▊       | 2/7 [06:05<15:15, 183.00s/it] 43%|████▎     | 3/7 [08:47<11:33, 173.31s/it] 57%|█████▋    | 4/7 [11:29<08:26, 168.89s/it] 71%|███████▏  | 5/7 [14:31<05:47, 173.79s/it] 86%|████████▌ | 6/7 [17:36<02:57, 177.38s/it]100%|██████████| 7/7 [20:14<00:00, 171.07s/it]100%|██████████| 7/7 [20:14<00:00, 173.46s/it]
+[0148] Raw binary pixels before morphology: 34320
+[0148] Binary pixels after morphology: 14827
+[0859] Raw binary pixels before morphology: 2598803
+[0859] Binary pixels after morphology: 2083849
+[0494] Raw binary pixels before morphology: 3633828
+[0494] Binary pixels after morphology: 2888832
+[1185] Raw binary pixels before morphology: 3508326
+[1185] Binary pixels after morphology: 2799801
+[1011] Raw binary pixels before morphology: 779595
+[1011] Binary pixels after morphology: 719830
+[0700] Raw binary pixels before morphology: 609567
+[0700] Binary pixels after morphology: 456758
+[0458] Raw binary pixels before morphology: 3706020
+[0458] Binary pixels after morphology: 3153867
+[0148] Connected regions found: 67
+[0148] LP candidates found: 5
+[0859] Connected regions found: 1516
+[0859] LP candidates found: 5
+[0494] Connected regions found: 2253
+[0494] LP candidates found: 5
+[1185] Connected regions found: 2062
+[1185] LP candidates found: 5
+[1011] Connected regions found: 207
+[1011] LP candidates found: 5
+[0700] Connected regions found: 664
+[0700] LP candidates found: 5
+[0458] Connected regions found: 1983
+[0458] LP candidates found: 5
+ground truth and predicted points for 0148 is [(1879, 2352), (1397, 3157), (2333, 3185)] and [(1616, 2958), (1593, 2954), (1690, 2374)]
+ground truth and predicted points for 0859 is [(1878, 2568), (1550, 3068), (2166, 3084)] and [(2272, 3231), (1522, 3162), (1982, 2494)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2357, 3094), (1828, 2807), (2156, 2870)]
+ground truth and predicted points for 1185 is [(1880, 2520), (1519, 3088), (2215, 3113)] and [(2028, 3008), (1859, 2492), (1303, 3172)]
+ground truth and predicted points for 1011 is [(1879, 2442), (1408, 3151), (2378, 3212)] and [(2699, 4903), (2771, 5081), (2950, 4843)]
+ground truth and predicted points for 0700 is [(1878, 2568), (1543, 3072), (2164, 3083)] and [(2151, 2914), (1755, 2477), (1928, 3041)]
+ground truth and predicted points for 0458 is [(1879, 2555), (1521, 3091), (2209, 3115)] and [(2017, 2885), (1922, 3053), (1152, 3165)]
+Evaluation over 7 images:
+  Mean Precision: 0.000
+  Mean Recall:    0.000
+  Mean F1 Score:  0.000
+Trying radius 100 for laser point color clustering
+Trying radius 1 for background color clustering
+The selected images for this test set are: ['0148', '0859', '0494', '1185', '1011', '0700', '0458']
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [04:41<28:09, 281.54s/it] 29%|██▊       | 2/7 [47:12<2:14:43, 1616.70s/it] 43%|████▎     | 3/7 [1:31:12<2:18:55, 2083.83s/it] 57%|█████▋    | 4/7 [2:04:53<1:42:57, 2059.03s/it] 71%|███████▏  | 5/7 [2:13:39<50:12, 1506.32s/it]  slurmstepd: error: *** JOB 11627722 ON cpu-q-55 CANCELLED AT 2025-07-01T23:38:46 DUE TO TIME LIMIT ***

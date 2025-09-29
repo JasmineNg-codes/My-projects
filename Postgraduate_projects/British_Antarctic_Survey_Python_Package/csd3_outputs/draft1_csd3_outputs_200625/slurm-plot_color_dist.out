@@ -1,0 +1,37 @@
+Obtaining file:///home/jn492/jn492
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: opencv-python in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (4.11.0.86)
+Requirement already satisfied: numpy in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (2.3.0)
+Building wheels for collected packages: DELPHI
+  Building editable for DELPHI (pyproject.toml): started
+  Building editable for DELPHI (pyproject.toml): finished with status 'done'
+  Created wheel for DELPHI: filename=delphi-0.1.0-0.editable-py3-none-any.whl size=2976 sha256=19928830792eeee0d963abddaab4a4231abcc1061dc6bed793205d17776991ef
+  Stored in directory: /tmp/pip-ephem-wheel-cache-5nfm_85v/wheels/f5/7c/28/fa37e5f97a8c66c553cf39d179f2f5e40f34db2832c2b100f0
+Successfully built DELPHI
+Installing collected packages: DELPHI
+  Attempting uninstall: DELPHI
+    Found existing installation: DELPHI 0.1.0
+    Uninstalling DELPHI-0.1.0:
+      Successfully uninstalled DELPHI-0.1.0
+Successfully installed DELPHI-0.1.0
+
+[notice] A new release of pip available: 22.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+begin loading packages...
+train hard...
+The selected images for this train set are: ['0148', '1224', '0246', '0926', '1124', '0458', '0188', '0494', '0178', '0734', '0333', '0590', '0231', '0956', '0266', '0470', '0700', '0555', '1220', '0738', '1139', '0381', '0859', '1195', '0455', '0315', '0853', '0816', '1134', '1106', '1023', '1011', '0282', '0828', '0459', '1185', '1208', '0310', '0942']
+train soft...
+The selected images for this train set are: ['0133', '0172', '0156', '0592', '0020', '0358', '0190', '0196', '0052', '0010', '0268', '0011', '0127', '0001', '0697', '0857', '0078', '0420', '0514', '0021', '0591', '0363', '0138', '0225', '0027', '0361', '0804', '0253', '0167', '0480', '0834', '0128', '0154', '0662', '0026', '0717', '0002', '0104', '0232', '0121', '0187', '0607', '0055', '0044', '0790', '0112', '0531', '0081', '0602', '0302', '0336', '0261', '0584', '0456', '0609', '0204', '0383', '0003', '0144', '0024']
+Processing Hard substrates
+Processing Soft substrates
+Calculating means
+Calculating stdev
+Plotting figure
+RGB plot saved to: /home/jn492/jn492/results/laserpoint_rgb_comparison.png

@@ -1,0 +1,885 @@
+Obtaining file:///home/jn492/jn492
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: opencv-python in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (4.11.0.86)
+Requirement already satisfied: numpy in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (2.3.0)
+Building wheels for collected packages: DELPHI
+  Building editable for DELPHI (pyproject.toml): started
+  Building editable for DELPHI (pyproject.toml): finished with status 'done'
+  Created wheel for DELPHI: filename=delphi-0.1.0-0.editable-py3-none-any.whl size=2976 sha256=c0dcda6137c6e09ef970c67df69508bb384978e2d8ec176efec4400ebe456076
+  Stored in directory: /tmp/pip-ephem-wheel-cache-0hbbm01b/wheels/f5/7c/28/fa37e5f97a8c66c553cf39d179f2f5e40f34db2832c2b100f0
+Successfully built DELPHI
+Installing collected packages: DELPHI
+  Attempting uninstall: DELPHI
+    Found existing installation: DELPHI 0.1.0
+    Uninstalling DELPHI-0.1.0:
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/home/jn492/jn492/delphienv/bin/delphi'
+
+WARNING: Ignoring invalid distribution ~elphi (/home/jn492/jn492/delphienv/lib64/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~elphi (/home/jn492/jn492/delphienv/lib64/python3.11/site-packages)
+
+[notice] A new release of pip available: 22.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Duplicated annotations: []
+Found 39 images
+Found 99 annotations
+Matched pairs: 39
+Unmatched images: []
+Unmatched annotations: ['0001', '0002', '0003', '0010', '0011', '0020', '0021', '0024', '0026', '0027', '0044', '0052', '0055', '0078', '0081', '0104', '0112', '0121', '0127', '0128', '0133', '0138', '0144', '0154', '0156', '0167', '0172', '0187', '0190', '0196', '0204', '0225', '0232', '0253', '0261', '0268', '0302', '0336', '0358', '0361', '0363', '0383', '0420', '0456', '0480', '0514', '0531', '0584', '0591', '0592', '0602', '0607', '0609', '0662', '0697', '0717', '0790', '0804', '0834', '0857']
+Matched 39 pairs → 31 train, 0 validation, 8 test.
+The selected images for this train set are: ['0942']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:05<00:37,  5.36s/it] 25%|██▌       | 2/8 [00:10<00:31,  5.22s/it] 38%|███▊      | 3/8 [00:15<00:26,  5.22s/it] 50%|█████     | 4/8 [00:21<00:21,  5.29s/it] 62%|██████▎   | 5/8 [00:26<00:15,  5.32s/it] 75%|███████▌  | 6/8 [00:31<00:10,  5.35s/it] 88%|████████▊ | 7/8 [00:37<00:05,  5.31s/it]100%|██████████| 8/8 [00:42<00:00,  5.28s/it]100%|██████████| 8/8 [00:42<00:00,  5.29s/it]
+[0266] Raw binary pixels before morphology: 138
+[0266] Binary pixels after morphology: 82
+[0816] Raw binary pixels before morphology: 88
+[0816] Binary pixels after morphology: 44
+[1124] Raw binary pixels before morphology: 6
+[1124] Binary pixels after morphology: 0
+[0853] Raw binary pixels before morphology: 2135
+[0853] Binary pixels after morphology: 1043
+[0494] Raw binary pixels before morphology: 143
+[0494] Binary pixels after morphology: 40
+[1106] Raw binary pixels before morphology: 315
+[1106] Binary pixels after morphology: 127
+[0738] Raw binary pixels before morphology: 1400
+[0738] Binary pixels after morphology: 574
+[0590] Raw binary pixels before morphology: 1701
+[0590] Binary pixels after morphology: 1148
+[0266] Connected regions found: 0
+[0266] LP candidates found: 0
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 0
+[0853] LP candidates found: 0
+[0494] Connected regions found: 0
+[0494] LP candidates found: 0
+[1106] Connected regions found: 0
+[1106] LP candidates found: 0
+[0738] Connected regions found: 1
+[0738] LP candidates found: 1
+[0590] Connected regions found: 2
+[0590] LP candidates found: 2
+[Warning] Not enough LP candidates for 0266 — storing raw candidates
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0853 — storing raw candidates
+[Warning] Not enough LP candidates for 0494 — storing raw candidates
+[Warning] Not enough LP candidates for 1106 — storing raw candidates
+[Warning] Not enough LP candidates for 0738 — storing raw candidates
+[Warning] Not enough LP candidates for 0590 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and []
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and []
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and []
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and []
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(1500, 3096)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(2188, 3101), (2182, 3096)]
+Evaluation over 8 images:
+  Mean Precision: 0.188
+  Mean Recall:    0.083
+  Mean F1 Score:  0.113
+The selected images for this train set are: ['0942', '0333']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:04<00:32,  4.70s/it] 25%|██▌       | 2/8 [00:09<00:27,  4.55s/it] 38%|███▊      | 3/8 [00:13<00:22,  4.54s/it] 50%|█████     | 4/8 [00:18<00:18,  4.65s/it] 62%|██████▎   | 5/8 [00:23<00:14,  4.73s/it] 75%|███████▌  | 6/8 [00:28<00:09,  4.76s/it] 88%|████████▊ | 7/8 [00:32<00:04,  4.69s/it]100%|██████████| 8/8 [00:37<00:00,  4.64s/it]100%|██████████| 8/8 [00:37<00:00,  4.66s/it]
+[0266] Raw binary pixels before morphology: 1349
+[0266] Binary pixels after morphology: 1021
+[0816] Raw binary pixels before morphology: 877
+[0816] Binary pixels after morphology: 453
+[1124] Raw binary pixels before morphology: 9
+[1124] Binary pixels after morphology: 0
+[0853] Raw binary pixels before morphology: 53191
+[0853] Binary pixels after morphology: 33181
+[0494] Raw binary pixels before morphology: 3280
+[0494] Binary pixels after morphology: 1809
+[1106] Raw binary pixels before morphology: 16345
+[1106] Binary pixels after morphology: 8800
+[0738] Raw binary pixels before morphology: 25367
+[0738] Binary pixels after morphology: 21437
+[0590] Raw binary pixels before morphology: 24938
+[0590] Binary pixels after morphology: 18058
+[0266] Connected regions found: 1
+[0266] LP candidates found: 1
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 0
+[0853] LP candidates found: 0
+[0494] Connected regions found: 1
+[0494] LP candidates found: 1
+[1106] Connected regions found: 0
+[1106] LP candidates found: 0
+[0738] Connected regions found: 3
+[0738] LP candidates found: 3
+[0590] Connected regions found: 2
+[0590] LP candidates found: 2
+[Warning] Not enough LP candidates for 0266 — storing raw candidates
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0853 — storing raw candidates
+[Warning] Not enough LP candidates for 0494 — storing raw candidates
+[Warning] Not enough LP candidates for 1106 — storing raw candidates
+[Warning] Not enough LP candidates for 0590 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2198, 3105)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and []
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2179, 3098)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and []
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3115), (1502, 3097), (2223, 3118)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(2185, 3099), (1879, 2550)]
+Evaluation over 8 images:
+  Mean Precision: 0.458
+  Mean Recall:    0.250
+  Mean F1 Score:  0.308
+The selected images for this train set are: ['0942', '0333', '0956']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:46,  6.60s/it] 25%|██▌       | 2/8 [00:12<00:36,  6.07s/it] 38%|███▊      | 3/8 [00:18<00:30,  6.09s/it] 50%|█████     | 4/8 [00:24<00:24,  6.24s/it] 62%|██████▎   | 5/8 [00:31<00:19,  6.43s/it] 75%|███████▌  | 6/8 [00:38<00:12,  6.48s/it] 88%|████████▊ | 7/8 [00:44<00:06,  6.35s/it]100%|██████████| 8/8 [00:50<00:00,  6.23s/it]100%|██████████| 8/8 [00:50<00:00,  6.29s/it]
+[0266] Raw binary pixels before morphology: 5251
+[0266] Binary pixels after morphology: 4349
+[0816] Raw binary pixels before morphology: 4869
+[0816] Binary pixels after morphology: 3772
+[1124] Raw binary pixels before morphology: 239
+[1124] Binary pixels after morphology: 166
+[0853] Raw binary pixels before morphology: 289694
+[0853] Binary pixels after morphology: 223085
+[0494] Raw binary pixels before morphology: 30027
+[0494] Binary pixels after morphology: 23467
+[1106] Raw binary pixels before morphology: 172156
+[1106] Binary pixels after morphology: 118148
+[0738] Raw binary pixels before morphology: 78664
+[0738] Binary pixels after morphology: 70589
+[0590] Raw binary pixels before morphology: 132590
+[0590] Binary pixels after morphology: 113639
+[0266] Connected regions found: 1
+[0266] LP candidates found: 1
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 4
+[0853] LP candidates found: 4
+[0494] Connected regions found: 1
+[0494] LP candidates found: 1
+[1106] Connected regions found: 2
+[1106] LP candidates found: 2
+[0738] Connected regions found: 2
+[0738] LP candidates found: 2
+[0590] Connected regions found: 2
+[0590] LP candidates found: 2
+[Warning] Not enough LP candidates for 0266 — storing raw candidates
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0494 — storing raw candidates
+[Warning] Not enough LP candidates for 1106 — storing raw candidates
+[Warning] Not enough LP candidates for 0738 — storing raw candidates
+[Warning] Not enough LP candidates for 0590 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1330, 3195), (1885, 2371), (1871, 2372)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2178, 3099)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1889, 2380), (1889, 2372)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2218, 3116), (1502, 3097)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1879, 2553), (2185, 3098)]
+Evaluation over 8 images:
+  Mean Precision: 0.542
+  Mean Recall:    0.292
+  Mean F1 Score:  0.367
+The selected images for this train set are: ['0942', '0333', '0956', '0315']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:05<00:41,  5.98s/it] 25%|██▌       | 2/8 [00:11<00:35,  5.98s/it] 38%|███▊      | 3/8 [00:18<00:30,  6.05s/it] 50%|█████     | 4/8 [00:24<00:24,  6.09s/it] 62%|██████▎   | 5/8 [00:30<00:18,  6.09s/it] 75%|███████▌  | 6/8 [00:36<00:12,  6.11s/it] 88%|████████▊ | 7/8 [00:42<00:06,  6.13s/it]100%|██████████| 8/8 [00:48<00:00,  6.14s/it]100%|██████████| 8/8 [00:48<00:00,  6.10s/it]
+[0266] Raw binary pixels before morphology: 5436
+[0266] Binary pixels after morphology: 3850
+[0816] Raw binary pixels before morphology: 10719
+[0816] Binary pixels after morphology: 8722
+[1124] Raw binary pixels before morphology: 130
+[1124] Binary pixels after morphology: 36
+[0853] Raw binary pixels before morphology: 247518
+[0853] Binary pixels after morphology: 153092
+[0494] Raw binary pixels before morphology: 28299
+[0494] Binary pixels after morphology: 16077
+[1106] Raw binary pixels before morphology: 207687
+[1106] Binary pixels after morphology: 109770
+[0738] Raw binary pixels before morphology: 59647
+[0738] Binary pixels after morphology: 46292
+[0590] Raw binary pixels before morphology: 190553
+[0590] Binary pixels after morphology: 156654
+[0266] Connected regions found: 4
+[0266] LP candidates found: 4
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 8
+[0853] LP candidates found: 5
+[0494] Connected regions found: 2
+[0494] LP candidates found: 2
+[1106] Connected regions found: 2
+[1106] LP candidates found: 2
+[0738] Connected regions found: 5
+[0738] LP candidates found: 5
+[0590] Connected regions found: 4
+[0590] LP candidates found: 4
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0494 — storing raw candidates
+[Warning] Not enough LP candidates for 1106 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(1879, 2563), (2198, 3102), (1542, 3075)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1328, 3190), (1875, 2357), (1862, 2581)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1559, 3068), (1879, 2563)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1884, 2378), (1889, 2374)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2216, 3117), (1503, 3103), (1882, 2511)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(2181, 3097), (1546, 3075), (1875, 2551)]
+Evaluation over 8 images:
+  Mean Precision: 0.542
+  Mean Recall:    0.500
+  Mean F1 Score:  0.517
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:46,  6.71s/it] 25%|██▌       | 2/8 [00:12<00:38,  6.37s/it] 38%|███▊      | 3/8 [00:18<00:30,  6.18s/it] 50%|█████     | 4/8 [00:25<00:25,  6.29s/it] 62%|██████▎   | 5/8 [00:31<00:19,  6.42s/it] 75%|███████▌  | 6/8 [00:38<00:12,  6.43s/it] 88%|████████▊ | 7/8 [00:44<00:06,  6.28s/it]100%|██████████| 8/8 [00:50<00:00,  6.25s/it]100%|██████████| 8/8 [00:50<00:00,  6.32s/it]
+[0266] Raw binary pixels before morphology: 12710
+[0266] Binary pixels after morphology: 6766
+[0816] Raw binary pixels before morphology: 19464
+[0816] Binary pixels after morphology: 12656
+[1124] Raw binary pixels before morphology: 413
+[1124] Binary pixels after morphology: 143
+[0853] Raw binary pixels before morphology: 599657
+[0853] Binary pixels after morphology: 312664
+[0494] Raw binary pixels before morphology: 94575
+[0494] Binary pixels after morphology: 43292
+[1106] Raw binary pixels before morphology: 787025
+[1106] Binary pixels after morphology: 335750
+[0738] Raw binary pixels before morphology: 114742
+[0738] Binary pixels after morphology: 77252
+[0590] Raw binary pixels before morphology: 300863
+[0590] Binary pixels after morphology: 237755
+[0266] Connected regions found: 3
+[0266] LP candidates found: 3
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 16
+[0853] LP candidates found: 5
+[0494] Connected regions found: 4
+[0494] LP candidates found: 4
+[1106] Connected regions found: 6
+[1106] LP candidates found: 5
+[0738] Connected regions found: 5
+[0738] LP candidates found: 5
+[0590] Connected regions found: 5
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2199, 3105), (1878, 2564), (1542, 3075)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(2348, 3189), (1328, 3190), (2172, 3082)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1558, 3067), (1879, 2562), (2169, 3093)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1886, 2377), (2348, 3201), (1562, 3090)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2216, 3116), (1501, 3095), (1879, 2510)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(2185, 3099), (1873, 2553), (1546, 3075)]
+Evaluation over 8 images:
+  Mean Precision: 0.542
+  Mean Recall:    0.542
+  Mean F1 Score:  0.542
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:06<00:45,  6.52s/it] 25%|██▌       | 2/8 [00:12<00:36,  6.11s/it] 38%|███▊      | 3/8 [00:18<00:30,  6.19s/it] 50%|█████     | 4/8 [00:25<00:25,  6.36s/it] 62%|██████▎   | 5/8 [00:31<00:19,  6.40s/it] 75%|███████▌  | 6/8 [00:38<00:12,  6.47s/it] 88%|████████▊ | 7/8 [00:44<00:06,  6.44s/it]100%|██████████| 8/8 [00:51<00:00,  6.43s/it]100%|██████████| 8/8 [00:51<00:00,  6.39s/it]
+[0266] Raw binary pixels before morphology: 13707
+[0266] Binary pixels after morphology: 7216
+[0816] Raw binary pixels before morphology: 24957
+[0816] Binary pixels after morphology: 17126
+[1124] Raw binary pixels before morphology: 498
+[1124] Binary pixels after morphology: 221
+[0853] Raw binary pixels before morphology: 693822
+[0853] Binary pixels after morphology: 382918
+[0494] Raw binary pixels before morphology: 104403
+[0494] Binary pixels after morphology: 48394
+[1106] Raw binary pixels before morphology: 861986
+[1106] Binary pixels after morphology: 379215
+[0738] Raw binary pixels before morphology: 126653
+[0738] Binary pixels after morphology: 85440
+[0590] Raw binary pixels before morphology: 351660
+[0590] Binary pixels after morphology: 284306
+[0266] Connected regions found: 4
+[0266] LP candidates found: 4
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 18
+[0853] LP candidates found: 5
+[0494] Connected regions found: 4
+[0494] LP candidates found: 4
+[1106] Connected regions found: 8
+[1106] LP candidates found: 5
+[0738] Connected regions found: 5
+[0738] LP candidates found: 5
+[0590] Connected regions found: 5
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(1879, 2563), (2199, 3102), (1542, 3075)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(2348, 3189), (1328, 3190), (2173, 3117)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1559, 3068), (1879, 2563), (2169, 3093)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1886, 2377), (2349, 3201), (2167, 3114)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(1501, 3097), (2216, 3117), (1882, 2511)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1876, 2550), (2181, 3097), (1546, 3075)]
+Evaluation over 8 images:
+  Mean Precision: 0.542
+  Mean Recall:    0.542
+  Mean F1 Score:  0.542
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:49,  7.14s/it] 25%|██▌       | 2/8 [00:12<00:37,  6.31s/it] 38%|███▊      | 3/8 [00:18<00:30,  6.15s/it] 50%|█████     | 4/8 [00:25<00:25,  6.48s/it] 62%|██████▎   | 5/8 [00:33<00:20,  6.75s/it] 75%|███████▌  | 6/8 [00:40<00:13,  6.84s/it] 88%|████████▊ | 7/8 [00:46<00:06,  6.61s/it]100%|██████████| 8/8 [00:52<00:00,  6.48s/it]100%|██████████| 8/8 [00:52<00:00,  6.55s/it]
+[0266] Raw binary pixels before morphology: 51553
+[0266] Binary pixels after morphology: 30712
+[0816] Raw binary pixels before morphology: 39002
+[0816] Binary pixels after morphology: 23521
+[1124] Raw binary pixels before morphology: 2783
+[1124] Binary pixels after morphology: 1402
+[0853] Raw binary pixels before morphology: 1728129
+[0853] Binary pixels after morphology: 1178050
+[0494] Raw binary pixels before morphology: 416203
+[0494] Binary pixels after morphology: 245644
+[1106] Raw binary pixels before morphology: 2418436
+[1106] Binary pixels after morphology: 1673671
+[0738] Raw binary pixels before morphology: 381136
+[0738] Binary pixels after morphology: 283114
+[0590] Raw binary pixels before morphology: 521202
+[0590] Binary pixels after morphology: 410477
+[0266] Connected regions found: 7
+[0266] LP candidates found: 5
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 51
+[0853] LP candidates found: 5
+[0494] Connected regions found: 17
+[0494] LP candidates found: 5
+[1106] Connected regions found: 54
+[1106] LP candidates found: 5
+[0738] Connected regions found: 3
+[0738] LP candidates found: 3
+[0590] Connected regions found: 6
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105), (1540, 3073), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(2350, 3196), (1883, 2369), (1330, 3194)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2173, 3096), (1558, 3068), (1879, 2562)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(2180, 3106), (2164, 3110), (1877, 2401)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2215, 3116), (1502, 3097), (2194, 3109)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1879, 2555), (2185, 3098), (1545, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.500
+  Mean Recall:    0.500
+  Mean F1 Score:  0.500
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:50,  7.16s/it] 25%|██▌       | 2/8 [00:13<00:39,  6.64s/it] 38%|███▊      | 3/8 [00:19<00:31,  6.29s/it] 50%|█████     | 4/8 [00:26<00:26,  6.58s/it] 62%|██████▎   | 5/8 [00:33<00:20,  6.82s/it] 75%|███████▌  | 6/8 [00:40<00:13,  6.89s/it] 88%|████████▊ | 7/8 [00:46<00:06,  6.62s/it]100%|██████████| 8/8 [00:52<00:00,  6.48s/it]100%|██████████| 8/8 [00:52<00:00,  6.61s/it]
+[0266] Raw binary pixels before morphology: 48600
+[0266] Binary pixels after morphology: 29297
+[0816] Raw binary pixels before morphology: 37104
+[0816] Binary pixels after morphology: 22226
+[1124] Raw binary pixels before morphology: 2536
+[1124] Binary pixels after morphology: 1271
+[0853] Raw binary pixels before morphology: 1661986
+[0853] Binary pixels after morphology: 1129014
+[0494] Raw binary pixels before morphology: 391974
+[0494] Binary pixels after morphology: 233388
+[1106] Raw binary pixels before morphology: 2342079
+[1106] Binary pixels after morphology: 1611488
+[0738] Raw binary pixels before morphology: 364904
+[0738] Binary pixels after morphology: 270770
+[0590] Raw binary pixels before morphology: 502063
+[0590] Binary pixels after morphology: 395695
+[0266] Connected regions found: 4
+[0266] LP candidates found: 4
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 49
+[0853] LP candidates found: 5
+[0494] Connected regions found: 16
+[0494] LP candidates found: 5
+[1106] Connected regions found: 55
+[1106] LP candidates found: 5
+[0738] Connected regions found: 2
+[0738] LP candidates found: 2
+[0590] Connected regions found: 5
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0738 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105), (1541, 3073), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(2350, 3196), (1883, 2369), (1330, 3194)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2173, 3096), (1558, 3068), (1879, 2562)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1886, 2384), (2180, 3106), (2164, 3110)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2215, 3115), (1502, 3097)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1879, 2555), (2185, 3098), (1545, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.542
+  Mean Recall:    0.500
+  Mean F1 Score:  0.517
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:55,  7.91s/it] 25%|██▌       | 2/8 [00:17<00:53,  8.98s/it] 38%|███▊      | 3/8 [00:26<00:43,  8.73s/it] 50%|█████     | 4/8 [00:34<00:34,  8.54s/it] 62%|██████▎   | 5/8 [00:42<00:24,  8.31s/it] 75%|███████▌  | 6/8 [00:50<00:16,  8.26s/it] 88%|████████▊ | 7/8 [00:58<00:08,  8.37s/it]100%|██████████| 8/8 [01:07<00:00,  8.51s/it]100%|██████████| 8/8 [01:07<00:00,  8.47s/it]
+[0266] Raw binary pixels before morphology: 13331
+[0266] Binary pixels after morphology: 9966
+[0816] Raw binary pixels before morphology: 1070
+[0816] Binary pixels after morphology: 529
+[1124] Raw binary pixels before morphology: 366
+[1124] Binary pixels after morphology: 305
+[0853] Raw binary pixels before morphology: 422962
+[0853] Binary pixels after morphology: 296087
+[0494] Raw binary pixels before morphology: 104625
+[0494] Binary pixels after morphology: 75896
+[1106] Raw binary pixels before morphology: 585703
+[1106] Binary pixels after morphology: 403550
+[0738] Raw binary pixels before morphology: 100578
+[0738] Binary pixels after morphology: 86253
+[0590] Raw binary pixels before morphology: 61438
+[0590] Binary pixels after morphology: 43642
+[0266] Connected regions found: 3
+[0266] LP candidates found: 3
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 18
+[0853] LP candidates found: 5
+[0494] Connected regions found: 4
+[0494] LP candidates found: 4
+[1106] Connected regions found: 8
+[1106] LP candidates found: 5
+[0738] Connected regions found: 2
+[0738] LP candidates found: 2
+[0590] Connected regions found: 3
+[0590] LP candidates found: 3
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+[Warning] Not enough LP candidates for 0738 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105), (1539, 3074), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1329, 3194), (1864, 2586), (1881, 2367)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3096), (1471, 3101), (1865, 2609)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1560, 3037), (1884, 2388), (2132, 3038)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3115), (1503, 3098)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1878, 2556), (2184, 3099), (2224, 3111)]
+Evaluation over 8 images:
+  Mean Precision: 0.417
+  Mean Recall:    0.375
+  Mean F1 Score:  0.392
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:07<00:54,  7.82s/it] 25%|██▌       | 2/8 [00:13<00:40,  6.79s/it] 38%|███▊      | 3/8 [00:20<00:33,  6.76s/it] 50%|█████     | 4/8 [00:28<00:28,  7.18s/it] 62%|██████▎   | 5/8 [00:36<00:22,  7.49s/it] 75%|███████▌  | 6/8 [00:44<00:15,  7.62s/it] 88%|████████▊ | 7/8 [00:51<00:07,  7.35s/it]100%|██████████| 8/8 [00:57<00:00,  7.15s/it]100%|██████████| 8/8 [00:57<00:00,  7.23s/it]
+[0266] Raw binary pixels before morphology: 34930
+[0266] Binary pixels after morphology: 22914
+[0816] Raw binary pixels before morphology: 23651
+[0816] Binary pixels after morphology: 14861
+[1124] Raw binary pixels before morphology: 1292
+[1124] Binary pixels after morphology: 871
+[0853] Raw binary pixels before morphology: 1252755
+[0853] Binary pixels after morphology: 877775
+[0494] Raw binary pixels before morphology: 281858
+[0494] Binary pixels after morphology: 184314
+[1106] Raw binary pixels before morphology: 1828158
+[1106] Binary pixels after morphology: 1273599
+[0738] Raw binary pixels before morphology: 271999
+[0738] Binary pixels after morphology: 216124
+[0590] Raw binary pixels before morphology: 362432
+[0590] Binary pixels after morphology: 302228
+[0266] Connected regions found: 4
+[0266] LP candidates found: 4
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 42
+[0853] LP candidates found: 5
+[0494] Connected regions found: 10
+[0494] LP candidates found: 5
+[1106] Connected regions found: 48
+[1106] LP candidates found: 5
+[0738] Connected regions found: 5
+[0738] LP candidates found: 5
+[0590] Connected regions found: 5
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3106), (1541, 3073), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(2350, 3195), (1885, 2371), (1330, 3194)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2173, 3095), (1558, 3068), (1878, 2563)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(2165, 3111), (2179, 3103), (1866, 2625)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3116), (1880, 2506), (1511, 3075)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1879, 2555), (2185, 3098), (1545, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.542
+  Mean Recall:    0.542
+  Mean F1 Score:  0.542
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185', '0859', '1195', '0455']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:08<00:56,  8.07s/it] 25%|██▌       | 2/8 [00:17<00:52,  8.73s/it] 38%|███▊      | 3/8 [00:25<00:42,  8.52s/it] 50%|█████     | 4/8 [00:33<00:33,  8.31s/it] 62%|██████▎   | 5/8 [00:41<00:24,  8.18s/it] 75%|███████▌  | 6/8 [00:49<00:16,  8.08s/it] 88%|████████▊ | 7/8 [00:57<00:08,  8.10s/it]100%|██████████| 8/8 [01:05<00:00,  8.16s/it]100%|██████████| 8/8 [01:05<00:00,  8.22s/it]
+[0266] Raw binary pixels before morphology: 23430
+[0266] Binary pixels after morphology: 14936
+[0816] Raw binary pixels before morphology: 4226
+[0816] Binary pixels after morphology: 1765
+[1124] Raw binary pixels before morphology: 558
+[1124] Binary pixels after morphology: 485
+[0853] Raw binary pixels before morphology: 733819
+[0853] Binary pixels after morphology: 485431
+[0494] Raw binary pixels before morphology: 188863
+[0494] Binary pixels after morphology: 120996
+[1106] Raw binary pixels before morphology: 1054921
+[1106] Binary pixels after morphology: 653554
+[0738] Raw binary pixels before morphology: 190708
+[0738] Binary pixels after morphology: 153667
+[0590] Raw binary pixels before morphology: 106300
+[0590] Binary pixels after morphology: 74732
+[0266] Connected regions found: 4
+[0266] LP candidates found: 4
+[0816] Connected regions found: 0
+[0816] LP candidates found: 0
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 23
+[0853] LP candidates found: 5
+[0494] Connected regions found: 6
+[0494] LP candidates found: 5
+[1106] Connected regions found: 22
+[1106] LP candidates found: 5
+[0738] Connected regions found: 3
+[0738] LP candidates found: 3
+[0590] Connected regions found: 4
+[0590] LP candidates found: 4
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105), (1540, 3074), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and []
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1862, 2591), (1875, 2596), (1576, 3074)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3096), (1865, 2609), (1634, 3003)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(2179, 3103), (1884, 2388), (1560, 3038)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3115), (1503, 3098), (1513, 3076)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1878, 2556), (2184, 3099), (2209, 3113)]
+Evaluation over 8 images:
+  Mean Precision: 0.333
+  Mean Recall:    0.333
+  Mean F1 Score:  0.333
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185', '0859', '1195', '0455', '0148', '1224', '1208']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:09<01:03,  9.14s/it] 25%|██▌       | 2/8 [00:15<00:43,  7.29s/it] 38%|███▊      | 3/8 [00:22<00:37,  7.51s/it] 50%|█████     | 4/8 [00:31<00:32,  8.05s/it] 62%|██████▎   | 5/8 [00:41<00:25,  8.48s/it] 75%|███████▌  | 6/8 [00:49<00:17,  8.59s/it] 88%|████████▊ | 7/8 [00:57<00:08,  8.36s/it]100%|██████████| 8/8 [01:05<00:00,  8.21s/it]100%|██████████| 8/8 [01:05<00:00,  8.20s/it]
+[0266] Raw binary pixels before morphology: 65373
+[0266] Binary pixels after morphology: 43521
+[0816] Raw binary pixels before morphology: 205583
+[0816] Binary pixels after morphology: 166718
+[1124] Raw binary pixels before morphology: 13680
+[1124] Binary pixels after morphology: 8649
+[0853] Raw binary pixels before morphology: 4997375
+[0853] Binary pixels after morphology: 4266985
+[0494] Raw binary pixels before morphology: 600298
+[0494] Binary pixels after morphology: 405233
+[1106] Raw binary pixels before morphology: 5012654
+[1106] Binary pixels after morphology: 4130725
+[0738] Raw binary pixels before morphology: 752434
+[0738] Binary pixels after morphology: 591379
+[0590] Raw binary pixels before morphology: 1548331
+[0590] Binary pixels after morphology: 1375948
+[0266] Connected regions found: 13
+[0266] LP candidates found: 5
+[0816] Connected regions found: 6
+[0816] LP candidates found: 5
+[1124] Connected regions found: 2
+[1124] LP candidates found: 2
+[0853] Connected regions found: 132
+[0853] LP candidates found: 5
+[0494] Connected regions found: 32
+[0494] LP candidates found: 5
+[1106] Connected regions found: 123
+[1106] LP candidates found: 5
+[0738] Connected regions found: 37
+[0738] LP candidates found: 5
+[0590] Connected regions found: 36
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(1878, 2564), (2198, 3101), (1543, 3076)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and [(2134, 3044), (1383, 3150), (1879, 2316)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and [(1658, 3005), (2070, 3033)]
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1388, 3160), (2365, 3193), (1883, 2394)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1559, 3068), (1878, 2563), (2198, 3115)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(2196, 3113), (1554, 3051), (1874, 2623)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(1503, 3099), (1880, 2504), (2218, 3111)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(2186, 3098), (1545, 3072), (1877, 2548)]
+Evaluation over 8 images:
+  Mean Precision: 0.583
+  Mean Recall:    0.542
+  Mean F1 Score:  0.558
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185', '0859', '1195', '0455', '0148', '1224', '1208', '0188', '0926', '0828']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:10<01:12, 10.31s/it] 25%|██▌       | 2/8 [00:22<01:09, 11.62s/it] 38%|███▊      | 3/8 [00:33<00:55, 11.08s/it] 50%|█████     | 4/8 [00:44<00:43, 10.95s/it] 62%|██████▎   | 5/8 [00:54<00:32, 10.73s/it] 75%|███████▌  | 6/8 [01:04<00:21, 10.67s/it] 88%|████████▊ | 7/8 [01:15<00:10, 10.66s/it]100%|██████████| 8/8 [01:26<00:00, 10.73s/it]100%|██████████| 8/8 [01:26<00:00, 10.81s/it]
+[0266] Raw binary pixels before morphology: 30813
+[0266] Binary pixels after morphology: 18218
+[0816] Raw binary pixels before morphology: 9357
+[0816] Binary pixels after morphology: 4493
+[1124] Raw binary pixels before morphology: 726
+[1124] Binary pixels after morphology: 582
+[0853] Raw binary pixels before morphology: 914700
+[0853] Binary pixels after morphology: 584631
+[0494] Raw binary pixels before morphology: 246985
+[0494] Binary pixels after morphology: 143773
+[1106] Raw binary pixels before morphology: 1328907
+[1106] Binary pixels after morphology: 812888
+[0738] Raw binary pixels before morphology: 230512
+[0738] Binary pixels after morphology: 178315
+[0590] Raw binary pixels before morphology: 179960
+[0590] Binary pixels after morphology: 134307
+[0266] Connected regions found: 4
+[0266] LP candidates found: 4
+[0816] Connected regions found: 2
+[0816] LP candidates found: 2
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 67
+[0853] LP candidates found: 5
+[0494] Connected regions found: 11
+[0494] LP candidates found: 5
+[1106] Connected regions found: 43
+[1106] LP candidates found: 5
+[0738] Connected regions found: 3
+[0738] LP candidates found: 3
+[0590] Connected regions found: 5
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105), (1540, 3073), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and [(2293, 3160), (1418, 3147)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1880, 2370), (1861, 2590), (1329, 3194)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1470, 3101), (1682, 3010), (1556, 3069)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1444, 3130), (1882, 2455), (2179, 3102)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2216, 3116), (1503, 3098), (1512, 3076)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1878, 2556), (2185, 3098), (1546, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.625
+  Mean Recall:    0.583
+  Mean F1 Score:  0.600
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185', '0859', '1195', '0455', '0148', '1224', '1208', '0188', '0926', '0828', '0231', '0734', '0470']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:11<01:21, 11.66s/it] 25%|██▌       | 2/8 [00:26<01:22, 13.72s/it] 38%|███▊      | 3/8 [00:39<01:06, 13.39s/it] 50%|█████     | 4/8 [00:52<00:52, 13.10s/it] 62%|██████▎   | 5/8 [01:04<00:38, 12.69s/it] 75%|███████▌  | 6/8 [01:16<00:25, 12.56s/it] 88%|████████▊ | 7/8 [01:30<00:12, 12.82s/it]100%|██████████| 8/8 [01:43<00:00, 13.07s/it]100%|██████████| 8/8 [01:43<00:00, 12.96s/it]
+[0266] Raw binary pixels before morphology: 19107
+[0266] Binary pixels after morphology: 13408
+[0816] Raw binary pixels before morphology: 5575
+[0816] Binary pixels after morphology: 2906
+[1124] Raw binary pixels before morphology: 551
+[1124] Binary pixels after morphology: 409
+[0853] Raw binary pixels before morphology: 652059
+[0853] Binary pixels after morphology: 443940
+[0494] Raw binary pixels before morphology: 147979
+[0494] Binary pixels after morphology: 100314
+[1106] Raw binary pixels before morphology: 965266
+[1106] Binary pixels after morphology: 602510
+[0738] Raw binary pixels before morphology: 161121
+[0738] Binary pixels after morphology: 132998
+[0590] Raw binary pixels before morphology: 153095
+[0590] Binary pixels after morphology: 122005
+[0266] Connected regions found: 4
+[0266] LP candidates found: 4
+[0816] Connected regions found: 2
+[0816] LP candidates found: 2
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 53
+[0853] LP candidates found: 5
+[0494] Connected regions found: 12
+[0494] LP candidates found: 5
+[1106] Connected regions found: 29
+[1106] LP candidates found: 5
+[0738] Connected regions found: 3
+[0738] LP candidates found: 3
+[0590] Connected regions found: 4
+[0590] LP candidates found: 4
+[Warning] Not enough LP candidates for 0816 — storing raw candidates
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105), (1541, 3073), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and [(2293, 3160), (1418, 3147)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1881, 2371), (1861, 2590), (2401, 3222)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1470, 3101), (1684, 3010)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1444, 3130), (1882, 2455), (2164, 3113)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3116), (1503, 3098), (1857, 2644)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1879, 2555), (2185, 3098), (1546, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.625
+  Mean Recall:    0.583
+  Mean F1 Score:  0.600
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185', '0859', '1195', '0455', '0148', '1224', '1208', '0188', '0926', '0828', '0231', '0734', '0470', '0458', '1023', '0459']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:12<01:28, 12.67s/it] 25%|██▌       | 2/8 [00:20<00:59,  9.99s/it] 38%|███▊      | 3/8 [00:30<00:48,  9.80s/it] 50%|█████     | 4/8 [00:41<00:41, 10.31s/it] 62%|██████▎   | 5/8 [00:54<00:33, 11.17s/it] 75%|███████▌  | 6/8 [01:05<00:22, 11.21s/it] 88%|████████▊ | 7/8 [01:14<00:10, 10.63s/it]100%|██████████| 8/8 [01:24<00:00, 10.29s/it]100%|██████████| 8/8 [01:24<00:00, 10.55s/it]
+[0266] Raw binary pixels before morphology: 44883
+[0266] Binary pixels after morphology: 28545
+[0816] Raw binary pixels before morphology: 44217
+[0816] Binary pixels after morphology: 29110
+[1124] Raw binary pixels before morphology: 2881
+[1124] Binary pixels after morphology: 1737
+[0853] Raw binary pixels before morphology: 1712273
+[0853] Binary pixels after morphology: 1215584
+[0494] Raw binary pixels before morphology: 357042
+[0494] Binary pixels after morphology: 226686
+[1106] Raw binary pixels before morphology: 2330877
+[1106] Binary pixels after morphology: 1637480
+[0738] Raw binary pixels before morphology: 362201
+[0738] Binary pixels after morphology: 288413
+[0590] Raw binary pixels before morphology: 554672
+[0590] Binary pixels after morphology: 469437
+[0266] Connected regions found: 6
+[0266] LP candidates found: 5
+[0816] Connected regions found: 3
+[0816] LP candidates found: 3
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 114
+[0853] LP candidates found: 5
+[0494] Connected regions found: 34
+[0494] LP candidates found: 5
+[1106] Connected regions found: 86
+[1106] LP candidates found: 5
+[0738] Connected regions found: 11
+[0738] LP candidates found: 5
+[0590] Connected regions found: 11
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3106), (1541, 3073), (1879, 2564)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and [(2293, 3159), (1417, 3148), (1879, 2451)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(2091, 3034), (1880, 2451), (2350, 3197)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(1303, 3223), (2173, 3096), (1558, 3068)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1882, 2455), (1444, 3130), (2163, 3112)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3116), (1502, 3097), (1880, 2506)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1878, 2553), (2185, 3098), (1545, 3072)]
+Evaluation over 8 images:
+  Mean Precision: 0.667
+  Mean Recall:    0.667
+  Mean F1 Score:  0.667
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185', '0859', '1195', '0455', '0148', '1224', '1208', '0188', '0926', '0828', '0231', '0734', '0470', '0458', '1023', '0459', '1011', '0282']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:14<01:38, 14.04s/it] 25%|██▌       | 2/8 [00:31<01:37, 16.23s/it] 38%|███▊      | 3/8 [00:47<01:18, 15.76s/it] 50%|█████     | 4/8 [01:02<01:02, 15.74s/it] 62%|██████▎   | 5/8 [01:17<00:45, 15.29s/it] 75%|███████▌  | 6/8 [01:32<00:30, 15.34s/it] 88%|████████▊ | 7/8 [01:48<00:15, 15.53s/it]100%|██████████| 8/8 [02:05<00:00, 15.85s/it]100%|██████████| 8/8 [02:05<00:00, 15.64s/it]
+[0266] Raw binary pixels before morphology: 19493
+[0266] Binary pixels after morphology: 13396
+[0816] Raw binary pixels before morphology: 5331
+[0816] Binary pixels after morphology: 2791
+[1124] Raw binary pixels before morphology: 535
+[1124] Binary pixels after morphology: 431
+[0853] Raw binary pixels before morphology: 659965
+[0853] Binary pixels after morphology: 447817
+[0494] Raw binary pixels before morphology: 153004
+[0494] Binary pixels after morphology: 103323
+[1106] Raw binary pixels before morphology: 972353
+[1106] Binary pixels after morphology: 606034
+[0738] Raw binary pixels before morphology: 169457
+[0738] Binary pixels after morphology: 140824
+[0590] Raw binary pixels before morphology: 151573
+[0590] Binary pixels after morphology: 121779
+[0266] Connected regions found: 3
+[0266] LP candidates found: 3
+[0816] Connected regions found: 3
+[0816] LP candidates found: 3
+[1124] Connected regions found: 0
+[1124] LP candidates found: 0
+[0853] Connected regions found: 66
+[0853] LP candidates found: 5
+[0494] Connected regions found: 14
+[0494] LP candidates found: 5
+[1106] Connected regions found: 34
+[1106] LP candidates found: 5
+[0738] Connected regions found: 4
+[0738] LP candidates found: 4
+[0590] Connected regions found: 5
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3105), (1540, 3073), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and [(1420, 3147), (2293, 3160), (1880, 2450)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and []
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1881, 2371), (2399, 3221), (1861, 2591)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1306, 3213), (1470, 3101)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1444, 3131), (1882, 2455), (2164, 3113)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3116), (1855, 2642), (1512, 3075)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1878, 2556), (2185, 3098), (1545, 3072)]
+Evaluation over 8 images:
+  Mean Precision: 0.625
+  Mean Recall:    0.625
+  Mean F1 Score:  0.625
+The selected images for this train set are: ['0942', '0333', '0956', '0315', '0381', '0178', '0310', '0700', '1139', '1185', '0859', '1195', '0455', '0148', '1224', '1208', '0188', '0926', '0828', '0231', '0734', '0470', '0458', '1023', '0459', '1011', '0282', '1134', '1220', '0555']
+The selected images for this test set are: ['0266', '0816', '1124', '0853', '0494', '1106', '0738', '0590']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:15<01:49, 15.65s/it] 25%|██▌       | 2/8 [00:31<01:34, 15.77s/it] 38%|███▊      | 3/8 [00:47<01:19, 15.89s/it] 50%|█████     | 4/8 [01:04<01:05, 16.31s/it] 62%|██████▎   | 5/8 [01:20<00:48, 16.33s/it] 75%|███████▌  | 6/8 [01:37<00:32, 16.48s/it] 88%|████████▊ | 7/8 [01:54<00:16, 16.46s/it]100%|██████████| 8/8 [02:10<00:00, 16.47s/it]100%|██████████| 8/8 [02:10<00:00, 16.32s/it]
+[0266] Raw binary pixels before morphology: 23800
+[0266] Binary pixels after morphology: 16566
+[0816] Raw binary pixels before morphology: 8381
+[0816] Binary pixels after morphology: 4815
+[1124] Raw binary pixels before morphology: 711
+[1124] Binary pixels after morphology: 576
+[0853] Raw binary pixels before morphology: 828077
+[0853] Binary pixels after morphology: 584554
+[0494] Raw binary pixels before morphology: 190764
+[0494] Binary pixels after morphology: 131546
+[1106] Raw binary pixels before morphology: 1210040
+[1106] Binary pixels after morphology: 798849
+[0738] Raw binary pixels before morphology: 209514
+[0738] Binary pixels after morphology: 173929
+[0590] Raw binary pixels before morphology: 203049
+[0590] Binary pixels after morphology: 168249
+[0266] Connected regions found: 5
+[0266] LP candidates found: 5
+[0816] Connected regions found: 3
+[0816] LP candidates found: 3
+[1124] Connected regions found: 1
+[1124] LP candidates found: 1
+[0853] Connected regions found: 66
+[0853] LP candidates found: 5
+[0494] Connected regions found: 22
+[0494] LP candidates found: 5
+[1106] Connected regions found: 50
+[1106] LP candidates found: 5
+[0738] Connected regions found: 5
+[0738] LP candidates found: 5
+[0590] Connected regions found: 6
+[0590] LP candidates found: 5
+[Warning] Not enough LP candidates for 1124 — storing raw candidates
+ground truth and predicted points for 0266 is [(1878, 2564), (1537, 3076), (2195, 3105)] and [(2197, 3106), (1541, 3074), (1878, 2565)]
+ground truth and predicted points for 0816 is [(1877, 2449), (1418, 3145), (2292, 3156)] and [(1420, 3147), (2293, 3160), (1879, 2450)]
+ground truth and predicted points for 1124 is [(1884, 2679), (1659, 3006), (2066, 3027)] and [(2069, 3027)]
+ground truth and predicted points for 0853 is [(2399, 3222), (1325, 3199), (1877, 2286)] and [(1882, 2365), (2399, 3221), (1861, 2590)]
+ground truth and predicted points for 0494 is [(1878, 2559), (1556, 3067), (2173, 3094)] and [(2174, 3095), (1470, 3102), (1683, 3009)]
+ground truth and predicted points for 1106 is [(1882, 2455), (1444, 3130), (2258, 3138)] and [(1444, 3131), (1882, 2455), (2165, 3113)]
+ground truth and predicted points for 0738 is [(1880, 2506), (1501, 3094), (2221, 3117)] and [(2217, 3116), (1881, 2507), (1512, 3075)]
+ground truth and predicted points for 0590 is [(1879, 2555), (1545, 3073), (2186, 3098)] and [(1878, 2556), (2185, 3098), (1545, 3073)]
+Evaluation over 8 images:
+  Mean Precision: 0.792
+  Mean Recall:    0.708
+  Mean F1 Score:  0.729
+Saved to: /home/jn492/jn492/results/hard_results_rdm_seed.csv

@@ -1,0 +1,87 @@
+Obtaining file:///home/jn492/jn492
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: opencv-python in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (4.11.0.86)
+Requirement already satisfied: numpy in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (2.3.0)
+Building wheels for collected packages: DELPHI
+  Building editable for DELPHI (pyproject.toml): started
+  Building editable for DELPHI (pyproject.toml): finished with status 'done'
+  Created wheel for DELPHI: filename=delphi-0.1.0-0.editable-py3-none-any.whl size=2976 sha256=dccb66b2e3994e99defec14977c8363808e2c7b24edb7d1c6949a39adaeced81
+  Stored in directory: /tmp/pip-ephem-wheel-cache-teccdwyu/wheels/f5/7c/28/fa37e5f97a8c66c553cf39d179f2f5e40f34db2832c2b100f0
+Successfully built DELPHI
+Installing collected packages: DELPHI
+  Attempting uninstall: DELPHI
+    Found existing installation: DELPHI 0.1.0
+    Uninstalling DELPHI-0.1.0:
+      Successfully uninstalled DELPHI-0.1.0
+Successfully installed DELPHI-0.1.0
+
+[notice] A new release of pip available: 22.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Duplicated annotations: []
+Found 39 images
+Found 99 annotations
+Matched pairs: 39
+Unmatched images: []
+Unmatched annotations: ['0001', '0002', '0003', '0010', '0011', '0020', '0021', '0024', '0026', '0027', '0044', '0052', '0055', '0078', '0081', '0104', '0112', '0121', '0127', '0128', '0133', '0138', '0144', '0154', '0156', '0167', '0172', '0187', '0190', '0196', '0204', '0225', '0232', '0253', '0261', '0268', '0302', '0336', '0358', '0361', '0363', '0383', '0420', '0456', '0480', '0514', '0531', '0584', '0591', '0592', '0602', '0607', '0609', '0662', '0697', '0717', '0790', '0804', '0834', '0857']
+Matched 39 pairs → 31 train, 0 validation, 8 test.
+The selected images for this train set are: ['0859', '0381', '0942', '0315', '0458', '0178', '0282', '0700', '1134', '1139', '0816', '1185', '0459', '0148', '1224', '1195', '0188', '0853', '0738', '0231', '0734', '0555', '0470', '1106', '0494', '1011', '0266', '1124', '1208', '0590', '0246']
+The selected images for this test set are: ['0310', '0926', '1220', '0956', '0333', '1023', '0828', '0455']
+  0%|          | 0/8 [00:00<?, ?it/s] 12%|█▎        | 1/8 [00:17<01:59, 17.06s/it] 25%|██▌       | 2/8 [00:33<01:41, 16.89s/it] 38%|███▊      | 3/8 [00:48<01:20, 16.01s/it] 50%|█████     | 4/8 [01:07<01:08, 17.09s/it] 62%|██████▎   | 5/8 [01:21<00:48, 16.12s/it] 75%|███████▌  | 6/8 [01:42<00:35, 17.73s/it] 88%|████████▊ | 7/8 [01:59<00:17, 17.31s/it]100%|██████████| 8/8 [02:16<00:00, 17.43s/it]100%|██████████| 8/8 [02:16<00:00, 17.11s/it]
+[0310] Raw binary pixels before morphology: 40004
+[0310] Binary pixels after morphology: 28437
+[0926] Raw binary pixels before morphology: 212983
+[0926] Binary pixels after morphology: 137598
+[1220] Raw binary pixels before morphology: 5658
+[1220] Binary pixels after morphology: 2460
+[0956] Raw binary pixels before morphology: 2174865
+[0956] Binary pixels after morphology: 1764706
+[0333] Raw binary pixels before morphology: 2373
+[0333] Binary pixels after morphology: 2108
+[1023] Raw binary pixels before morphology: 2026833
+[1023] Binary pixels after morphology: 1564047
+[0828] Raw binary pixels before morphology: 658201
+[0828] Binary pixels after morphology: 440368
+[0455] Raw binary pixels before morphology: 495971
+[0455] Binary pixels after morphology: 379946
+[0310] Connected regions found: 6
+[0310] LP candidates found: 5
+[0926] Connected regions found: 11
+[0926] LP candidates found: 5
+[1220] Connected regions found: 2
+[1220] LP candidates found: 2
+[0956] Connected regions found: 75
+[0956] LP candidates found: 5
+[0333] Connected regions found: 1
+[0333] LP candidates found: 1
+[1023] Connected regions found: 83
+[1023] LP candidates found: 5
+[0828] Connected regions found: 51
+[0828] LP candidates found: 5
+[0455] Connected regions found: 10
+[0455] LP candidates found: 5
+[Warning] Not enough LP candidates for 1220 — storing raw candidates
+[Warning] Not enough LP candidates for 0333 — storing raw candidates
+ground truth and predicted points for 0310 is [(1880, 2595), (1578, 3055), (2125, 3062)] and [(1576, 3054), (1880, 2595), (2125, 3064)]
+ground truth and predicted points for 0926 is [(1880, 2557), (1540, 3078), (2167, 3090)] and [(2167, 3088), (1540, 3077), (1880, 2559)]
+ground truth and predicted points for 1220 is [(1882, 2634), (1622, 3027), (2102, 3047)] and [(1881, 2634), (2857, 4952)]
+ground truth and predicted points for 0956 is [(1877, 2381), (1350, 3185), (2353, 3193)] and [(2353, 3193), (1350, 3185), (1895, 2456)]
+ground truth and predicted points for 0333 is [(1671, 3003)] and [(2857, 4952)]
+ground truth and predicted points for 1023 is [(1877, 2494), (1469, 3117), (2296, 3163)] and [(1453, 3124), (2292, 3163), (1880, 2493)]
+ground truth and predicted points for 0828 is [(1880, 2452), (1463, 3120), (2293, 3160)] and [(1492, 3110), (2295, 3158), (1889, 2694)]
+ground truth and predicted points for 0455 is [(1880, 2582), (1567, 3064), (2172, 3095)] and [(2172, 3094), (1567, 3063), (1879, 2581)]
+Evaluation over 8 images:
+  Mean Precision: 0.688
+  Mean Recall:    0.667
+  Mean F1 Score:  0.675
+
+These test images failed to predict three laser points (4 total):
+['1220', '0956', '0333', '0828']
+
+Saved failed prediction plot to /home/jn492/jn492/results/failed_predictions_hard.png

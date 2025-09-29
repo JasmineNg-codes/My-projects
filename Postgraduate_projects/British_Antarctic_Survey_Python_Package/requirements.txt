@@ -1,0 +1,25 @@
+# --- Core package dependencies ---
+numpy
+scikit-learn
+scipy
+opencv-python
+matplotlib
+seaborn
+pandas
+plotly
+pillow
+PyYAML
+tqdm
+requests
+
+# --- Jupyter + Notebook Support ---
+jupyterlab
+jupyter
+ipython
+ipywidgets
+notebook
+
+# --- Documentation Tools ---
+sphinx
+sphinx-rtd-theme
+myst-parser

@@ -1,0 +1,31 @@
+Obtaining file:///home/jn492/jn492
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: opencv-python in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (4.11.0.86)
+Requirement already satisfied: numpy in ./delphienv/lib64/python3.11/site-packages (from DELPHI==0.1.0) (2.3.0)
+Building wheels for collected packages: DELPHI
+  Building editable for DELPHI (pyproject.toml): started
+  Building editable for DELPHI (pyproject.toml): finished with status 'done'
+  Created wheel for DELPHI: filename=delphi-0.1.0-0.editable-py3-none-any.whl size=2976 sha256=3ac0208da64c01c0a5ab185385628243ab7b8144b18aedccedfe6498c4f144af
+  Stored in directory: /tmp/pip-ephem-wheel-cache-oi2wtb3w/wheels/f5/7c/28/fa37e5f97a8c66c553cf39d179f2f5e40f34db2832c2b100f0
+Successfully built DELPHI
+Installing collected packages: DELPHI
+  Attempting uninstall: DELPHI
+    Found existing installation: DELPHI 0.1.0
+    Uninstalling DELPHI-0.1.0:
+      Successfully uninstalled DELPHI-0.1.0
+Successfully installed DELPHI-0.1.0
+
+[notice] A new release of pip available: 22.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Training soft substrate...
+The selected images for this train set are: ['0011', '0204', '0834', '0144', '0020', '0607', '0358', '0010', '0514', '0024', '0584', '0078', '0026', '0052', '0104', '0225', '0138', '0361', '0196', '0172', '0662', '0261', '0128', '0363', '0602', '0044', '0591', '0857', '0127', '0027', '0190', '0055', '0253', '0081', '0456', '0133', '0121', '0001', '0717', '0609', '0592', '0187', '0112', '0790', '0697', '0804', '0531', '0002', '0420', '0336', '0302', '0232', '0383', '0156', '0003', '0480', '0021', '0154', '0167', '0268']
+Training hard substrate...
+The selected images for this train set are: ['0148', '1011', '0381', '0470', '0828', '1224', '0853', '0246', '1208', '1023', '1139', '1134', '0816', '1106', '1220', '0859', '1185', '0188', '1195', '0178', '0926', '0266', '0231', '0282', '0459', '0310', '0700', '1124', '0494', '0738', '0956', '0333', '0942', '0455', '0734', '0315', '0555', '0458', '0590']
+CSV saved to: /home/jn492/jn492/additional_information/laser_metadata_summary.csv
