@@ -1,0 +1,19 @@
+# Machine Learning and Deep Learning Libraries
+tensorflow>=2.15.0
+keras>=2.15.0
+scikit-learn>=1.2.2
+optuna>=3.0.0
+
+# Data Manipulation and Numerical Computing
+numpy>=1.23.5
+joblib>=1.2.0
+
+# Visualization Libraries
+matplotlib>=3.7.1
+seaborn>=0.12.2
+
+# Progress Tracking
+tqdm>=4.65.0
+
+# Additional Machine Learning Algorithms
+scikit-learn[extra]>=1.2.2
