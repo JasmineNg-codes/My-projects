@@ -1,0 +1,3 @@
+/home/jn492/coursework_C2/optimisation_5_openMP/build/CMakeFiles/heat_diffusion.dir
+/home/jn492/coursework_C2/optimisation_5_openMP/build/CMakeFiles/edit_cache.dir
+/home/jn492/coursework_C2/optimisation_5_openMP/build/CMakeFiles/rebuild_cache.dir
