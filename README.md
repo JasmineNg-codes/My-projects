@@ -69,7 +69,7 @@ This project asks the question: Can I outsmart ChatGPT at heat diffusion? Starti
 ### Using CoDa-PCA and linear models to understand Barium compositions 
 
 **Results available in webpage format** [here](https://jasmineng-codes.github.io/barium_compositional_pca/).
-**Full R Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/HIF_germany_internship_Rcode.Rmd).
+**Full R Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/External_projects/HIF_germany_internship_Rcode.Rmd).
 
 **Objective**: To explore how trace elements in vegetation may serve as indicators for mineral ores. 
 
@@ -85,7 +85,7 @@ This project asks the question: Can I outsmart ChatGPT at heat diffusion? Starti
 
 ### Analyzing driver for bottom water hypoxia in Loch Etive
 
-**Full Python Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Year_3_Environmental_Geoscience_LochEtive_Project.ipynb).
+**Full Python Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Undergraduate_projects/Year_3_Environmental_Geoscience_LochEtive_Project.ipynb).
 
 **Research question**: In my third year, my individual project in Practical geochemistry and data analysis addressed -
   1) Are Mn/Al and FeHR/FeT reliable indicators for sediment redox?
@@ -96,7 +96,7 @@ This project asks the question: Can I outsmart ChatGPT at heat diffusion? Starti
 
 ### Modelling past climate with oxygen isotopes
 
-**Full Python Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Year_3_climate_modelling.ipynb)
+**Full Python Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Undergraduate_projects/Year_3_climate_modelling.ipynb)
 
 **Research question**: In my third year, my coding assignment addressed how oxygen isotopes infer temperature changes from the Paleocene to the Pliocene.
 
@@ -105,7 +105,7 @@ This project asks the question: Can I outsmart ChatGPT at heat diffusion? Starti
 
 ### Using CoDa-PCA to analyze the spatiotemporal change in trace metal pollutant in Glasgow top soils
 
-**Full R Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Year_4_Dissertation.R)
+**Full R Code available** [here](https://github.com/JasmineNg-codes/My-projects/blob/main/Undergraduate_projects/Year_4_Dissertation.R)
 
 **Research question**: I am currently working on my 4th-year dissertation, which addresses:
   1) From a compositional PCA biplot of soil trace elements, what elements are clustering in urban areas?
